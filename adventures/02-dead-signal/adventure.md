@@ -20,6 +20,7 @@ The players need to find a ripperdoc capable of extracting military-grade Arasak
 | **Lazard** "The Corp" | Droneware project sponsor (from Adv 1) | Desperate. Internal investigation closing in on him. Needs to destroy all evidence — including the players |
 | **Cpl. Reyes** | Arasaka recovery team leader | Professional, cybered-up, runs a tight 6-person squad. Not a psycho — just doing his job. Has the mobile transmitter |
 | **Kira Nantes** | Trauma Team dispatcher, owes Dr. Voss | Controls the logistics for a Trauma Team medical depot. Key to getting the surgical component Voss needs |
+| **Ryla Vox** "The Media" | Independent journalist, News 54 (from Adv 1) | Still investigating the level 17 story. Monitoring corpo/NCPD chatter. Good connection with Mats/Fredrik from Adventure 1. Provides early warning and wants the evidence when it's over |
 
 ## Timeline
 
@@ -97,6 +98,49 @@ Kojo suggests meeting at **Suki's** — a ramen joint in a basement under a laun
 - DV 13: Kojo is telling the truth about not knowing
 - DV 15: He's also scared for himself — if Arasaka connects him to this, he's dead
 - DV 17: He's already thinking about how to profit from this somehow, once the heat dies down. Old habits.
+
+**Kojo's Stash — The Ricochet:**
+
+Before they leave, Kojo opens a locked shipping container behind the laundromat. Inside, under tarps and crates of miscellaneous merc gear, is a military surplus weapon system he's been unable to move.
+
+*"I picked this up six months ago off a Militech logistics convoy that had an 'accident.' Haven't been able to sell it — nobody in this city wants a defensive emplacement. Everyone's mobile, everyone's on the move. But you... you're about to do the one thing nobody does in Night City. You're going to sit still and wait."*
+
+**Ricochet Mk.IV — Fully Automatic Counter-Battery System**
+
+A portable anti-sniper suppression platform. Military hardware, designed for fixed-position defense against ranged attacks.
+
+**Components (3 pieces, must all be deployed):**
+- **2x Radar Units** — Tripod-mounted millimeter-wave sensors, each about the size of a briefcase. Placed to the left and right of the defended position, ideally 15-25 meters apart. They triangulate incoming fire by tracking projectile trajectories in real-time
+- **1x Turret Unit** — A drum-fed automatic weapon on a swivel mount. Feeds targeting data from the radar units. When incoming fire is detected within its coverage zone, it calculates the origin point and returns fully automatic suppressive fire
+
+**Stats:**
+| Stat | Value |
+|------|-------|
+| Damage | 4d6 (fully automatic burst) |
+| ROF | 3 (fires up to 3 bursts per round in response to incoming fire) |
+| Range | 200m effective |
+| Coverage Arc | 120 degrees (determined by radar unit placement) |
+| Ammo | 500 rounds drum (roughly 30 bursts before reload) |
+| SP | Turret housing SP 15, Radar units SP 8 |
+
+**Deployment Rules:**
+- Setup takes **10 minutes** with TECH DV 13 (or 20 minutes without a check). All three components must be placed and linked
+- Radar units must have line of sight to the engagement zone and to each other
+- The turret fires *reactively* — it does NOT fire first. It only engages when it detects incoming projectile trajectories within its arc. Someone has to shoot at the defended position first
+- Fires at the end of any round in which an enemy fires into the coverage zone. Targets the origin point of the most recent incoming fire
+- Can be fooled: throwing objects, decoy shots from an unexpected angle, or flanking outside the radar arc
+- EMP will knock out the radar units (not hardened). Without radar, the turret is just a dumb gun
+- If a radar unit is destroyed, coverage narrows and accuracy drops: -4 to hit with only one radar unit active
+
+**Tactical Implications:**
+This is a game-changer for the clinic defense — but only if the players plan ahead. They need to:
+1. Scout the clinic's surroundings and choose placement for the radar units
+2. Set up the turret with a clear firing arc toward the most likely approach
+3. Bait Reyes' snipers into firing so the Ricochet can return fire
+
+The Ricochet is devastating against snipers and fixed positions. It's less effective against breach teams who close fast and enter the building (inside the radar arc = no coverage). Smart players will use it to neutralize the ranged threat while they handle CQB themselves.
+
+**GM Note:** This is a powerful piece of kit that rewards preparation. If the players set it up well, it should feel earned — they got it from Kojo, they transported it, they deployed it. If they don't set it up (or set it up poorly), that's on them. Don't remind them. Let player agency drive it. Also note: Reyes is smart. After the first burst, he'll figure out what it is and adapt — pull snipers back, try to flank outside the arc, or send someone to disable a radar unit.
 
 **Fredrik's Operator Ability:**
 This is a natural moment for Fredrik's Fixer role to shine. He can use Operator to:
@@ -267,6 +311,7 @@ While the players are working the depot job, the Arasaka recovery team is search
 |-------|-------------|---------|
 | **Street whispers** | After Kojo meeting | Kojo messages them: someone's been asking about them in the Combat Zone. Offering money for sightings. |
 | **Signal ping** | After Mole's message, T+8h | Brief painful jolt through all players. Like an electric shock in the back of the skull. Lasts 2 seconds. The transmitter just pinged their implants. It's calibrating. |
+| **Ryla Vox calls** | Before or during depot job | Ryla reaches out on the contact they established in Adventure 1. She's been monitoring Arasaka corporate comms and NCPD channels as part of her ongoing investigation into the level 17 story. She's picked up chatter: *"Something's moving. Arasaka has a tactical unit deployed in the city — not standard security, something off-books. And they're not searching for property. They're searching for people."* She doesn't know the details, but she's scared for them and for herself. She asks what's happening. Players can share as much or as little as they want. If they tell her about the droneware extraction plan, she'll want to know where the evidence ends up. *"When this is over — if you have proof — call me. The world needs to see this."* This plants the seed for the epilogue option of giving the droneware to Ryla. |
 | **Near miss** | During transit to depot | Players spot an unmarked van moving slowly through an intersection. AWARENESS DV 13: military antennae on the roof, barely concealed. The recovery team, grid-searching. Players need to divert or stay out of sight. |
 | **Informant** | After depot job | A street kid approaches one of the players. "Hey, some corpo guy paid me 500 EB to call this number if I saw people matching your description. You want to pay me more to not call it?" |
 | **Headaches** | T+12h onward | All players develop persistent headaches. -1 to INT-based checks. The transmitter is narrowing its search. Getting closer. |
@@ -345,6 +390,7 @@ Players need to hold the clinic for 45 minutes. This is a siege defense.
 - Back corridor is narrow — one person can hold it
 - Voss has an emergency shuttered blast door for the operating room. SP 30. Takes 2 rounds to close. Once closed, the surgery is protected but the defenders are locked out of the OR
 - Fire suppression can be triggered in the fish market: visibility drops to 5m, all ranged attacks -4
+- **The Ricochet** (if deployed): If the players set up Kojo's counter-battery system before the assault, it can cover the street-facing approach — the snipers' rooftop and the front breach point. Ideal radar placement is one unit inside the fish market entrance and one at the corner of the building, with the turret covering the street. Once Reyes' snipers open fire, the Ricochet returns automatic suppressive fire at their position (4d6, up to 3 bursts/round). This forces the snipers to relocate or be shredded, which buys the defenders critical time. Reyes will adapt — after 1-2 rounds he'll order flanking outside the arc or send someone to destroy a radar unit (SP 8, exposed). The Ricochet doesn't solve the fight, but it punishes the opening gambit hard and shifts the assault from "methodical siege" to "desperate breach"
 
 **Tactical Considerations:**
 - **Kill the transmitter:** If players identify and destroy the delivery truck (or the tech operative controlling it), the signal breakthrough threat ends. But the truck is 200m away and covered by snipers
@@ -444,4 +490,6 @@ If Reyes fails, Lazard escalates.
 - Reyes' squad equipment (if defeated): military-grade weapons, armor, comms gear
 - Kojo's continued support as a fixer contact (relationship strengthened if handled well)
 - Dr. Voss as a future medical contact (owes them nothing — they're even — but respects them)
+- Ricochet Mk.IV counter-battery system (if survived intact — military hardware, ~15,000 EB value, extremely hard to sell without attracting attention)
+- Ryla Vox as an ongoing media contact (relationship deepened from Adventure 1)
 - Potential Trauma Team enemy (if depot job went loud)
