@@ -8,8 +8,6 @@ The party still has two sealed droneware units. Sitting on them in Night City is
 
 Kojo has the lead. He's been quietly putting out the word south of the border, where the post-Corp-War legal vacuum means a sealed Arasaka R&D black box is a *trophy*, not a *risk*. Buyers have surfaced. The big one happens once a month: **Costa Muerta**, the offshore black-market biotech auction held on the Pacific rig city of **Nueva Costa**. Three days of credibility tour in Tijuana to land a sponsor, then helicopter to the rigs for auction night.
 
-Departure window: now. The next Costa Muerta is in seven days, and the lunar timing won't repeat for a month.
-
 **Core tension:** This isn't a chase any more. The players are sellers, not prey. They have leverage, they have time, they have a road south — and they have two unmarked devices in a cooler that the most dangerous corporation on Earth would set the continent on fire to recover. The pressure now is *what they choose to do with that power*, and which faction they want carrying their card after this is done.
 
 ## Major NPCs
@@ -57,6 +55,13 @@ Two weeks of downtime have given the team time to heal, sit on the droneware, an
 
 **GM Note:** This is essentially a structured shopping montage with three stops. Aim for 30-45 minutes of play. The point is to let players pick their loadout, get a return-visit beat with Voss, and arrive at the highway *kitted.* Don't make it a fetch quest — there's no obstacles or rolls here unless the players insert their own drama. Run it like a montage with a few dialogue beats.
 
+**Actions:**
+- Kojo pitches the southern run at Suki's — sells them on the trip (no roll, exposition beat)
+- Negotiate Kojo's brokerage cut — **Mats's scene** as the Fixer. Default ask: **15k up front + 10% backend.** PERSUASION DV 13 → drop to 10k up front. DV 15 → drop to 5k up front. DV 17 → no cash up front, 12% backend instead. DV 19 → flat 10% backend, nothing up front. (He won't go below 10% on principle — he's putting his name on this)
+- **Stop 1 — Voss's clinic:** cyberware install. Hand players the *Voss's Menu* handout
+- **Stop 2 — Kojo's Yard:** pick **Van or Sedan** (one or the other). Optional bike for Fredrik. Hand players the *Kojo's Garage* handout
+- **Stop 3 — Final Prep:** ammo, comms, melee weapon for Fredrik (lucha-ready), level-up paperwork resolved here
+
 ---
 
 **Stop 1: Dr. Voss's Clinic — Cyberware Install**
@@ -69,7 +74,7 @@ She greets them politely. They are *even* — she does not owe them, they do not
 
 She charges fair market rate. Standard install times are abbreviated for the team — Voss is fast, and she has favorable opinions of their nervous systems by now. Surgical downtime: 24-48 hours, which they spend recovering on the road during Day 1 of travel. Fredrik can sleep in the cargo van; Mats and Digitz can drive in shifts.
 
-**Suggested cyberware packages** (each PC picks ~10-15k eb of upgrades; flexible):
+**Suggested cyberware packages** (each PC picks from their list — pick a few; Voss can install up to three pieces in one sitting before the convoy leaves). *The clean equipment lists are in the **Voss's Menu** handout at the back of this document — hand those to the players.*
 
 *For Fredrik (Solo — survivability + lucha + ranged):*
 - **Subdermal Armor** (1,000 eb, +SP under clothes — stacks with armor)
@@ -99,17 +104,19 @@ She charges fair market rate. Standard install times are abbreviated for the tea
 
 **Stop 2: Kojo's Yard — Wheels**
 
-A walled compound behind a strip mall in Watson. Kojo runs a side business in clean vehicles — mostly stolen-and-laundered, but with full real paperwork. Three vehicles on offer for the trip:
+A walled compound behind a strip mall in Watson. Kojo runs a side business in clean vehicles — mostly stolen-and-laundered, but with full real paperwork. He has two main options on the floor (pick one) plus a bike for Fredrik.
 
-1. **The Cargo Van.** Pre-Krash diesel, manual fallbacks (no remote-hijack surface), reinforced cabin, smuggler compartments in the floor for the droneware coolers, firing slits cut into the rear doors. Slow but durable. *This is non-negotiable — they need cargo space for the Ricochet and the goods.* SP 15, HP 50, Speed 5.
+**The Main Vehicle — pick one:**
 
-2. **A Dirtbike for Fredrik.** Per his lifepath, Fredrik has dirtbike experience. Kojo has a clean **Roadbike** ready (Cardinal Industries-style off-road model). Fast, agile, can flank in highway combat, can scout ahead, can leave a fight when the fight gets stupid. Speed 8, HP 25, SP 0. This dramatically changes road-combat dynamics — Fredrik becomes a mobile flanker rather than rear gunner. **Strongly recommended.**
+1. **The Cargo Van.** Pre-Krash diesel, manual fallbacks (no remote-hijack surface), reinforced cabin, smuggler compartments in the floor for the droneware coolers, firing slits cut into the rear doors. Slow but durable. Carries the Ricochet without anyone asking questions. SP 15, HP 50, Speed 5. *Free with the brokerage deal — Kojo is invested.*
 
-3. **Optional Third Vehicle.** Kojo can lease them a sleek sedan or a second pickup. The argument for a sedan: arriving at Tijuana buyer meetings in a corpo-grade vehicle is a status signal — Mats's Fixer instincts will love it. The argument for a pickup: redundancy and cargo. The argument against either: two vehicles is enough; three splits their fire. **GM recommendation: take the sedan only if the players want it. Two-vehicle convoy (van + bike) is the cleaner table experience.**
+2. **The Sedan.** Sleek corpo-grade four-door, tinted glass, registered to a real shell company. Arriving at Tijuana buyer meetings in this is a status signal — Mats's Fixer instincts will love it. Faster and quieter than the van but a fraction of the cargo. The Ricochet does not fit cleanly; they'd have to break it down into the trunk and reassemble at the waystation. SP 11, HP 30, Speed 7. *25,000 eb.*
+
+**GM Note — the tradeoff:** Van is the tactical pick (Ricochet, cargo, durability, free). Sedan is the social pick (status at TJ buyer meetings, faster on the road, but Part 2's Ricochet defense becomes harder to set up — they're hauling crates out of a trunk under fire). Let them choose. Either choice is fine; the adventure flexes around it.
+
+**Plus — A Dirtbike for Fredrik.** Per his lifepath, Fredrik has dirtbike experience. Kojo has a clean **Roadbike** ready (Cardinal Industries-style off-road model). Fast, agile, can flank in highway combat, can scout ahead, can leave a fight when the fight gets stupid. Speed 8, HP 25, SP 0. Changes road-combat dynamics — Fredrik becomes a mobile flanker rather than rear gunner. **Strongly recommended.** *12,000 eb.*
 
 **Kojo's note on the bike:** *"It's clean. Papers are real, plate is real, the engine has no remote anything. Don't crash it, but if you have to crash it, crash it at someone."*
-
-**Pricing:** Van comes free with the brokerage deal (Kojo is invested). Bike is 12,000 eb. Optional sedan is 25,000 eb. Players are good for it.
 
 ---
 
@@ -132,9 +139,9 @@ Players choose their final loadout adjustments. Some likely additions:
 
 He hands Mats a small leather notebook. *"My read on the buyers. Don't lose this. Don't read it in front of anyone. And don't show me a copy."* Inside: handwritten notes on each TJ contact, with stars next to who Kojo would trust if it were his neck.
 
-He takes his cut up front: 15,000 eb. Cheap given what he's putting on the line.
+He takes his cut as negotiated (default 15k up front + 10% backend). Cheap given what he's putting on the line.
 
-**The convoy:** The cargo van (Mats driving, Digitz shotgun, Fredrik recovering from chrome install in the back through Day 1) and Fredrik's roadbike (parked in the van's cargo bay for the highway transit, ridden once they hit Free Fire Zone where flanking becomes useful). Optional sedan if they bought one — running ahead as a scout.
+**The convoy:** Their main vehicle (van or sedan — Mats driving, Digitz shotgun, Fredrik recovering from chrome install in the back through Day 1) and Fredrik's roadbike (parked or trailered for the highway transit, ridden once they hit Free Fire Zone where flanking becomes useful). If they took the sedan, the Ricochet is in the trunk in pieces — they'll need a setup beat at the Snake's Nest before Part 2.
 
 **The route:** Old I-5 south through what used to be San Diego County. The highway is technically intact — the off-ramps are not. Most of it is Free Fire Zone now, a 200-km stretch where the Aldecaldos and Snake Nation run informal toll waystations and *everyone else* is hostile.
 
@@ -156,10 +163,10 @@ Run as a chase scene with three pursuers. Goal: lose them or reach the **Snake's
 
 | Vehicle | Type | Stats | Notes |
 |---------|------|-------|-------|
-| Players' Van | Cargo van, reinforced | Speed 5, SP 15, HP 50 | Slow, durable. Mats drives, Digitz shotgun |
-| Fredrik's Roadbike | Dirtbike | Speed 8, HP 25, SP 0 | Fredrik can deploy from the van's rear ramp once contact starts. Off-road capable — can leave the highway |
-| Optional Sedan | Sleek sedan | Speed 7, HP 30, SP 11 | Only if they bought it. Lighter, faster, less durable than the van |
-| Don Bicho's Tow-Rig | Heavy ram vehicle | Speed 6, SP 18, HP 60, ram 4d6 | Driven by Don Bicho. Wants to pit the van off the road |
+| Players' Van *(if chosen)* | Cargo van, reinforced | Speed 5, SP 15, HP 50 | Slow, durable. Mats drives, Digitz shotgun. Firing slits in rear doors |
+| Players' Sedan *(if chosen)* | Sleek corpo sedan | Speed 7, SP 11, HP 30 | Faster, lighter, less durable. No firing slits — rear-seat fire means rolling windows down |
+| Fredrik's Roadbike | Dirtbike | Speed 8, HP 25, SP 0 | Fredrik deploys once contact starts. Off-road capable — can leave the highway |
+| Don Bicho's Tow-Rig | Heavy ram vehicle | Speed 6, SP 18, HP 60, ram 4d6 | Driven by Don Bicho. Wants to pit the main vehicle off the road |
 | Technical #1 / #2 | Light pickup with autocannon | Speed 7, SP 11, HP 35 | Crew of 3 each. Gunner does 5d6, ROF 1. Outrun-fast but glass |
 
 **Fredrik on the bike:** Major tactical wrinkle. Fredrik can flank the technicals (their autocannons are mounted, slow to traverse), draw the tow-rig's attention away from the van, or scout ahead for the Aldecaldos sniper position. His Pop-up VHP cyberarm and bike mobility together make him a serious threat to the lightly-armored technicals. This is the first encounter where the bike *changes* the fight rather than just being scenery.
@@ -700,3 +707,61 @@ Run a flat leveling package per PC rather than counting IP for two infrequent se
 
 **Faction standing inheritance from this adventure:**
 - Track each faction (Curanderos, Aldecaldos, Militech, Arasaka, Trauma Team, Tanaka/Section-9) on a -2 to +2 scale and update at session close. Future adventures should reference these
+
+---
+
+## Player Handouts
+
+*The pages that follow are formatted to be printed and handed to the players. No GM commentary, no purpose notes — just menus.*
+
+### Voss's Menu — Cyberware
+
+*Tanaka's Fish Market, back-room clinic. Dr. Voss installs up to three pieces in one sitting before the convoy leaves at dusk.*
+
+**For Fredrik**
+
+| Item | Cost |
+|------|------|
+| Subdermal Armor | 1,000 eb |
+| Big Knux | 100 eb |
+| Pain Editor | 1,000 eb |
+| Smartgun Link | 1,000 eb |
+| Cybereye TeleOptics | 1,000 eb |
+| Kerenzikov | 1,000 eb |
+
+**For Mats**
+
+| Item | Cost |
+|------|------|
+| Skinweave (premium) | 500 eb |
+| Tactile Boost | 500 eb |
+| Armorjack Businesswear (SP 13) | 2,000 eb |
+| Personal AI Driver Interface | 2,000 eb |
+| Cyberdeck (basic) | 1,000 eb |
+
+**For Digitz**
+
+| Item | Cost |
+|------|------|
+| Cybermodem upgrade (top-shelf) | 5,000 eb |
+| Extra Interface Plugs | 200 eb |
+| Sandevistan | 1,000 eb |
+| Two combat/utility programs | ~1,000 eb |
+| Subdermal Pocket | 500 eb |
+
+### Kojo's Garage — Vehicles
+
+*Walled compound behind a strip mall in Watson. Clean paperwork, all of it.*
+
+**Main Vehicle — pick one**
+
+| Vehicle | Speed | SP | HP | Cost |
+|---------|-------|----|----|------|
+| **Cargo Van** (reinforced, firing slits, smuggler compartments) | 5 | 15 | 50 | Free (brokerage) |
+| **Sedan** (sleek corpo four-door, tinted glass, shell-company plates) | 7 | 11 | 30 | 25,000 eb |
+
+**Side Vehicle — for Fredrik**
+
+| Vehicle | Speed | SP | HP | Cost |
+|---------|-------|----|----|------|
+| **Roadbike** (off-road model, no remote anything, clean plate) | 8 | 0 | 25 | 12,000 eb |
