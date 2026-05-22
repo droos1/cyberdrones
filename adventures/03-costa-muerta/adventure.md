@@ -40,7 +40,7 @@ The auction is fixed. The journey is paced backwards from auction night.
 | D-4 | Border crossing (La Frontera). Brief glimpse of the Mole heading north. |
 | D-3 | Arrive Tijuana. Ofelia's safehouse. Buyer landscape briefing. |
 | D-2 | La Lucha Cromada (cyber-lucha bout). |
-| D-1 | Buyer tour (Curanderos, Militech, Aldecaldos, Tanaka). Robbery attempt on safehouse. |
+| D-1 | Buyer tour (Curanderos, Militech, Aldecaldos, Tanaka). |
 | D-0 | Helicopter transit to Nueva Costa. Costa Muerta auction. |
 
 **GM Note:** Don't run the calendar as a literal pressure clock. Use it as a structural skeleton. The auction date is the only hard deadline — if the players want to spend two sessions on the credibility tour because they're loving it, let them. The schedule above is "if they keep moving."
@@ -151,7 +151,7 @@ He takes his cut as negotiated (default 15k up front + 10% backend). Cheap given
 
 **The Highway Ambush (Don Bicho's Crew)**
 
-Late afternoon. Long shadows across the cracked highway. Fredrik spots it first — a tipped-over truck across both lanes about 800m ahead, smoke rising lazily. AWARENESS DV 13: it's staged. The smoke is wrong, too clean, and there are no skid marks.
+Late afternoon. Long shadows across the cracked highway.  AWARENESS DV 13: carscoming in from side of road.
 
 Behind them, two converted technicals pull onto the highway from a frontage road — light pickups with autocannons welded to the beds and chain-skirt armor on the doors. A third vehicle, a heavy tow-rig with a ram bumper, accelerates from a side road on the right.
 
@@ -213,39 +213,34 @@ Don Bicho's crew has been growing. They hit the Snake's Nest three weeks ago —
 
 ---
 
-**The Camp Defense (Combat — Ricochet's Big Day)**
+**The Camp Defense (Abstracted)**
 
-Sundown. The camp is settling for night. Mateo's scouts report movement on the I-5 corridor — Don Bicho's force is heavier this time. Three technicals, the ram-rig, and a stolen *mil-spec MRAP* (where the hell did he get one). 18-22 raiders total.
+Sundown. Mateo's scouts report Don Bicho's force closing — three technicals, a stolen mil-spec MRAP, ~20 raiders. Heavier than last time. He brought everything because the players just made him look weak on the highway.
 
-**The setup:**
-- The camp has two natural approaches: north along the highway (open ground for ~400m), south through a wash that gives cover
-- The players are the *anchor* of the defense. Mateo's people fight, but the players are positioned at the most likely breach point — the north gate
-- This is the **Ricochet's day in the sun.** Players have time to deploy it (10 min, TECH DV 13). The two-radar arc covers the entire north approach. The turret has a clean firing line to ~250m
+Run this as a **single resolution beat**, not a full combat. The highway chase already filled the vehicle-fight quota; save the table's combat energy for the auction.
 
-**Deployment options:**
-1. Standard placement covering the north approach — punishes the technicals as they come down the highway
-2. Repositioned to cover the south wash — saves the camp from a flanking attack but leaves the north gate to the players directly
-3. Split: one radar covering each approach (the -4 penalty applies, but coverage doubles)
+**Setup beat (~5 min of tactical talk).** Players choose:
+- **Ricochet placement** — north highway approach (open ground, 400m fire lane), south wash (flanking cover), or split between both (-4 effectiveness, doubled coverage)
+- **Where each PC anchors** — Fredrik on the wash with his bike for mobility? Mats running coordination from the gate? Digitz jacked in to slave the Ricochet sensors?
+- **PERSUASION DV 15 (Mats):** position Aldecaldos fighters where you want them; otherwise Mateo places them
 
-**The Fight:**
+**Then one roll per player:**
+- **Fredrik:** best combat skill vs **DV 15** (his anchor holds)
+- **Mats:** Tactics, Leadership, or Persuasion vs **DV 13** (Aldecaldos coordination)
+- **Digitz:** Interface vs **DV 15** (Ricochet slaved + comms-jam on Bicho's net)
 
-| Wave | Composition | Notes |
-|------|-------------|-------|
-| 1 (round 1-2) | 3 technicals advancing up the highway, autocannon suppression | Ricochet's ideal target. Two bursts and at least one technical is wrecked |
-| 2 (round 3-4) | MRAP rolls forward as cover for 8 raiders dismounting | The MRAP is SP 25, HP 80. Ricochet damage rolls poorly here — needs concentrated PC fire or improvisation. Fredrik with the assault rifle and aimed shots can hurt the dismounts |
-| 3 (round 5-6) | Don Bicho personally leads 4 melee specialists through the south wash | Aldecaldos and players need to flex to the south. Genuine CQB risk. This is where someone takes serious damage |
-| 4 (round 7+, if still going) | Bicho's remaining force breaks. He himself fights to escape, takes 2 PCs with him if he can, runs in a hover-cycle stashed in the wash | He survives unless players really commit. Future antagonist |
+**Tally successes (out of 3):**
 
-**Raider stats (rank-and-file):** SP 7, HP 30, Heavy Pistol 3d6 or SMG 2d6.
-**Melee specialists:** SP 11, HP 40, Cyberlimb 3d6 or Combat Knife with Reflexes upgrade.
-**Don Bicho:** SP 18, HP 50, Heavy SMG 4d6, mantis-blade cyberarm 3d6, Sandevistan (one-time use, +3 init when activated).
+| Successes | Outcome |
+|-----------|---------|
+| 3 | Clean win. No PC injuries. Cati and Reyna's cousin both fine. Full faction reward |
+| 2 | Win, messy. One PC takes a Light Wound (their choice). Reyna's cousin is among the wounded (sets up the Part 5 hook) |
+| 1 | Pyrrhic. One PC Seriously Wounded. Cati is grazed and shaken (lives). Camp holds but Mateo is grim |
+| 0 | Camp barely holds. Two PCs Seriously Wounded. Mateo's gratitude is muted — Tía Esmé's family-bond offer in Part 6 requires PERSUASION DV 17 instead of being offered freely |
 
-**Tactical wrinkles:**
-- Mateo's people are competent but outnumbered. Without the players, the south wash collapses in round 4
-- A Aldecaldos kid — maybe 12 years old — runs ammunition to the players during the fight. Optional roleplay beat: do they let her? Tell her to get back? She's brave and she's been doing this since she was eight. Her name is **Cati**
-- After the fight: the camp survives, and Reyna Solano's *cousin* is among the wounded Aldecaldos. This plants a soft connection for Part 5 — Reyna will recognize the players' name when they meet at the bout
+**Cati.** A 12-year-old Aldecaldos kid runs ammunition during the fight. Optional roleplay beat in the setup minute — do they wave her off, thank her, learn her name? She's brave and she's been doing this since she was eight. Whatever happens to her in the outcome table is the consequence of the dice.
 
-**GM Note:** This combat should *feel* like a defense. Players choosing positioning matters. The Ricochet rewards forethought. Don't pull punches — someone should take Seriously Wounded damage here. The Aldecaldos celebration that night is the reward.
+**Don Bicho** survives regardless. He retreats on a hover-cycle stashed in the wash, vowing return. Future antagonist.
 
 **Aftermath:** Camp survives. Mateo embraces each of them in turn. Cati gives Fredrik a small steel pendant her mother made. Mateo provides:
 - Letter of introduction to **Tía Esmé Aldecaldo** in Nueva Costa
@@ -263,13 +258,8 @@ The old US-Mexico border crossing south of San Ysidro. The Federal infrastructur
 
 A line of trucks, motorcycles, and one impossibly old yellow taxi. Castillo's men work the line professionally — a kind of feudal bureaucracy. Forms, fees, vehicle search. The whole operation feels closer to a TSA checkpoint than to a smuggler crossing.
 
-The team is two from the front when a **Trauma Team escort van** comes through the *opposite* lane, heading north. It's traveling with a black armored sedan. AWARENESS DV 15 in passing: through the rear window of the sedan, a figure in profile — older, glasses, the kind of bone structure that the players spent some time staring at in old Arasaka R&D headshots. **The Mole.**
-
-The convoy is past in five seconds. Trauma Team protocol is private and unanswerable; the players can't follow, can't intercept, can't even confirm. But they know what they saw.
 
 *"They got out."*
-
-**GM Note:** Do not play this as a plot turn. It's an Easter egg — a silent confirmation for the players that the Mole is alive and has exfiltrated north. They don't get a conversation, they don't get a thank-you, they don't get any of it. If they ask anyone about Trauma Team convoys passing the border, the answer is *"Trauma Team takes a lot of people across that line, friend. They don't tell us who."* Let it be a quiet emotional beat.
 
 ---
 
@@ -285,9 +275,12 @@ The team reaches Castillo's clerk. Standard interrogation. Vehicle search incomi
 
 3. **Bluff their way through.** Forged paperwork, corpo cover. PERSUASION DV 17, with -2 if anyone in the party still has obvious chrome-merc presentation. Failure: vehicle search, see #2.
 
-4. **Force.** Suicide. Castillo's anti-air takes the van apart at 200m on the south side. *Don't do this.*
+4. **Netrun fake permits.** Castillo's checkpoint runs a sad little local NET arch on the clerk's terminal — Federal-issue, never updated, jacked into the line scanner. Digitz (or any Netrunner) can plant pre-cleared transit permits while the van crawls forward in line. Architecture: 3 floors. Password (DV 8), Wisp (Black ICE, light), File (the permit registry). Net Action DVs as standard. On success, the clerk's scanner pings green, paperwork prints itself, vehicle search waived. *"Huh. You're already cleared. Move along."* On a botched Cloak or a beaten Wisp, the terminal flags an intrusion — Castillo walks out personally and the team has to fall back to coin / bribe / bluff at -2 (he knows something is wrong).
+   - **GM Note:** This is a chance for Digitz to actually carry a scene. Run it as a quick 2–3 turn dive, not a full dungeon. If Mats helps with a face-to-face distraction at the window, give Digitz +2 on the Cloak.
 
-**GM Note:** Most groups will use the coin. If they didn't earn the coin (skipped Part 2's defense) they have to bribe or bluff. That's the design.
+5. **Force.** Suicide. Castillo's anti-air takes the van apart at 200m on the south side. *Don't do this.*
+
+**GM Note:** Most groups will use the coin. If they didn't earn the coin (skipped Part 2's defense) they have to bribe, bluff, or run the NET. The netrun option exists specifically so Digitz has a meaningful play and so groups without persuasion stats still have a clean path.
 
 ---
 
@@ -370,24 +363,48 @@ She lays out the **3-day plan**:
 
 **Wednesday. Players run their meetings.**
 
-This part is roleplay-heavy. Each meeting is a short scene (~15-25 min of play). Order is up to the players. Each buyer will subtly try to learn what the other buyers offered — Mats will pick up on this immediately (Human Perception). Each one offers their best terms, and each will *raise* their terms once they realize they're in a competitive bidding situation.
+This part is roleplay-heavy. Three scenes total — the first stacks Doña Esperanza and Vega together at a public plaza, then a private cantina meet with Tía Esmé, then dinner with Tanaka. Each buyer will try to learn what the others offered (Mats picks up on this immediately, Human Perception), and each raises terms once they realize they're in a competitive bid.
 
 ---
 
-**Meet 1: Doña Esperanza Vargas (Curanderos)**
+**Meet 1: Doña Esperanza & Mr. Vega — Plaza Santa Cecilia (public, two-at-once)**
 
-Location: Iglesia de la Santa Trinidad, a deconsecrated church in Colonia Libertad. Used as the Curanderos' main clinic. Surgical theater behind the altar. Stained glass intact.
+Location: Plaza Santa Cecilia, a major pre-festival altar plaza in central TJ. Marigolds, photographs, the smell of pan de muerto, half-finished parade floats. Both buyers are *publicly* here — Doña Esperanza is hosting a Curanderos charity clinic tent (free check-ups for the neighborhood, the Día PR play of the year), and a Militech-flagged parade float is being readied two corners away, with Vega himself overseeing setup from a folding chair under a marigold awning.
 
-She receives them in the rectory. The smell is incense and isopropyl alcohol. She makes them coffee herself.
+Ofelia warned the team: *"They'll both be there. They both know you're coming. Don't get cornered in either tent — stay on the plaza floor, keep moving."*
 
-*"Two units. One for me. The other you sell elsewhere. I do not need to be a monopolist — I need to be the buyer your community remembers fondly. I pay 80,000 eb for one unit, and you have permanent surgical privileges at any Curanderos clinic, for the three of you, for life. This is a forever offer."*
+Run this as **one ~25-30 minute scene** where the players shuttle between the two buyers, each pitch happening in earshot or eyeline of the other. The competitive pressure is the whole point of stacking them.
 
-**Read:** Genuine. She means it. The "permanent clinic" terms are real and traceable through Curanderos's reputation. This is the *safest* buyer.
+**Doña Esperanza intercepts first**, near the altar.
 
-**Negotiation possibilities (Mats):**
-- DV 13: +10,000 eb on the cash component
-- DV 15: She'll add a Curanderos-installed piece of mid-grade cyberware (~5k eb value) for each PC
-- DV 17: She'll also pay protection if Arasaka comes asking — Curanderos has a small but vicious cyber-medical militia
+*"Both units. I do not need to be a monopolist — I need to be the buyer your community remembers fondly. 140,000 eb for the pair, and you have permanent surgical privileges at any Curanderos clinic, for the three of you, for life. This is a forever offer."*
+
+**Read:** Genuine. The "permanent clinic" terms are real and traceable through Curanderos's reputation. The *safest* buyer.
+
+**Negotiation (Mats):**
+- DV 13: +15,000 eb cash
+- DV 15: Curanderos-installed mid-grade cyberware (~5k eb value) for each PC
+- DV 17: Curanderos militia protection if Arasaka comes asking
+
+**Vega's staffer intercepts** as the players step away from the tent and gestures them toward the float. Vega meets them in the shade of the awning — Fredrik AWARENESS DV 15: a sniper team is set up across the boulevard, not for the players, for Vega's safety. Standard practice.
+
+*"I represent parties for whom your two units are of substantial interest. We pay 150,000 eb for both. Wire transfer through any laundry of your choosing. We do not require a sponsor's mark or an alliance. We do not require gratitude. We do require that the units transfer cleanly and that you and we never have this conversation again."*
+
+**The catch:** He never says "Militech," but his speech, his protection detail, his briefcase, the man's *posture* all say it. Selling here means:
+- They become *assets* on Militech's books — not enemies, but people Militech can call on
+- They never appear on the payroll, but they will be expected to receive Militech calls in the future
+- If Arasaka ever comes back at them, Militech *might* help. Or might not. *"Discretion serves both parties."*
+
+**Negotiation:**
+- DV 15: +20,000 eb
+- DV 17: A non-extradition guarantee — if Arasaka issues a bounty, Militech-aligned territories will not honor it
+- DV 19: Vega will go to 250,000 total but at this point he's irritated and the relationship sours. Mats will *feel* the chill
+
+**Cross-pressure (the reason they're stacked).** Doña has a clean sightline of Vega's awning across the plaza, and vice versa. Each is *watching* the other talk to the players. Mats can leverage this:
+- **PERSUASION DV 15:** Either buyer raises an additional 10,000 eb on the spot, *because the other one is looking*. Works once per buyer
+- **PERSUASION DV 17:** Get one buyer to publicly de-escalate (back off a term) in exchange for a verbal exclusivity tease the players don't have to actually honor
+
+**Tanaka is not here.** Día de los Muertos PR isn't his crowd, and he'd be remembered.
 
 ---
 
@@ -401,11 +418,11 @@ Tía Esmé is in her 50s, lean, gray-streaked braid, snake-mark coin on a chain.
 
 *"The Aldecaldos want the droneware. We want it because every year more of us die to corps who think we are road kill. We want a weapon that puts the fear on the other side of the equation. We cannot pay what Militech pays. We can pay what alliance pays."*
 
-**Her offer:**
-- 35,000 eb in cash
+**Her offer (for the pair):**
+- 60,000 eb in cash
 - Permanent Aldecaldos family bond for the three of them — meaning every Aldecaldos waystation, on every road in the Americas, becomes a place where they sleep safe, eat free, and can call for backup
 - A position with the family if any of them ever wants it (relevant for long-term character arcs)
-- **One condition:** they don't sell the second unit to anyone in the corporate sphere, and they don't tell *anyone* it was the Aldecaldos who bought it
+- **One condition:** they don't tell *anyone* it was the Aldecaldos who bought
 
 **Read:** True. The family bond is the kind of thing that pays out for the rest of their lives. The cash is lousy by comparison to Vega's offer. The bond is priceless.
 
@@ -413,25 +430,7 @@ Tía Esmé is in her 50s, lean, gray-streaked braid, snake-mark coin on a chain.
 
 ---
 
-**Meet 3: Mr. Vega (Militech cutout)**
-
-Location: Rooftop bar of the Hotel Camino del Mar. Mediterranean cocktails. View of the Pacific. Vega is on time. He's alone, or at least appears alone (Fredrik's AWARENESS DV 15: there is a sniper team across the boulevard. They are not for the players. They are for Vega's safety. Standard practice).
-
-*"I represent parties for whom your two units are of substantial interest. We pay 150,000 eb for both. Wire transfer through any laundry of your choosing. We do not require a sponsor's mark or an alliance. We do not require gratitude. We do require that the units transfer cleanly and that you and we never have this conversation again."*
-
-**The catch:** He never says "Militech," but his speech, his protection detail, his briefcase, the man's *posture* all say it. Selling here means:
-- They become *assets* on Militech's books — not exactly enemies, but people Militech can call on
-- They never appear on Militech's payroll, but they will be expected to receive Militech calls in the future
-- If Arasaka ever comes back at them, Militech *might* help. Or might not. *"Discretion serves both parties."*
-
-**Negotiation:**
-- DV 15: +20,000 eb
-- DV 17: A non-extradition guarantee — if Arasaka issues a bounty, Militech-aligned territories will not honor it
-- DV 19: Vega will go to 250,000 total but at this point he's irritated and the relationship sours. Mats will *feel* the chill
-
----
-
-**Meet 4: Iku Tanaka (the trap)**
+**Meet 3: Iku Tanaka (the trap)**
 
 Location: A private dining room at a sushi place near the seawall. White tablecloths. Quiet. Tanaka is alone. Mid-40s, Japanese, perfect posture, a single subtle neural-link port behind his ear.
 
@@ -445,36 +444,9 @@ Location: A private dining room at a sushi place near the seawall. White tablecl
 
 **He is Arasaka counterintelligence.** He is not here to buy. He is here to *learn the meet location, learn who else is bidding, and arrange a Section-9 takedown at the auction venue.*
 
-**If players signal they're onto him:** Tanaka is polite, finishes dinner, leaves the bill. Inside the next two hours, the safehouse robbery (below) becomes much more aggressive.
+**If players signal they're onto him:** Tanaka is polite, finishes dinner, leaves the bill. He has now *confirmed* that the team is alert — the Section-9 auction-night raid will be heavier and better prepared (add 2 troopers, see Part 7).
 
 **If players don't catch him:** He walks away pleased. The auction-night attack still happens, but the players are unprepared for it.
-
----
-
-**The Safehouse Robbery (Combat — Urban CQB)**
-
-Wednesday night, 03:00. The team is sleeping or planning. Suddenly Ofelia's perimeter sensors (she has them — she has *a lot* of them) trigger.
-
-Six masked operators are coming over the flower-shop roof and through the back gate simultaneously. **They are not Tanaka's people.** They are local talent — Tijuana-grade muscle hired by one of the *losing* buyers (or Tanaka, if the players tipped him off too hard) to *steal the droneware before the auction.*
-
-**This combat is urban CQB:**
-- Tight quarters — apartment hallway, stairwell, flower shop floor
-- Ofelia fights alongside the players (SP 11, HP 35, Heavy Pistol 3d6, knows the building like her own hand)
-- The Ricochet is in the van in the alley. **Can be deployed but only as a "fire from cover" position** — players need to fight their way *to* it to bring it online (TECH DV 13 + 5 min)
-
-**Opposition:**
-
-| Type | SP | HP | Weapon | Notes |
-|------|----|----|--------|-------|
-| Robber (x4) | 11 | 35 | SMG 2d6, flashbang | Pros, not aces. Will not push if losing |
-| Crew Boss | 13 | 40 | Heavy SMG 4d6 | The mind. Calls retreat at 2 casualties |
-| Their Netrunner | 9 | 25 | Light Pistol 1d6 | Stays in a van outside, tries to scramble Ofelia's cameras. Digitz can engage him from inside — short combat net run, DV 15 Interface, takes 1d6 net damage on failure |
-
-**Resolution:**
-- Robbers driven off: standard outcome. They lose 2-3, retreat with wounded. Ofelia is *furious*. Players can interrogate any captured for who hired them — leads to a buyer (GM choice: Tanaka if players didn't read him, or one of the losing buyers as a sour-grapes play)
-- Players overwhelm: rare, but possible. All hostiles down. Police presence in 20 min. They need to be gone before then
-
-**GM Note:** This is a fast combat. 30-40 minutes. The point is variety (urban CQB after the lucha and after the road fights) and a reminder that the auction is not going to be quiet.
 
 ---
 
@@ -502,9 +474,9 @@ Picture a daisy-chain of converted Pemex platforms, lashed together with bridges
 
 **Auction Mechanics.**
 
-There are six lots tonight. The droneware units are **Lot 4 and Lot 5** — back-to-back, by design. Other lots include: a militec-grade dataset, a Petrochem core sample (chemistry secret), some other dark-end items. None of those are the players' problem.
+There are five lots tonight. The droneware is **Lot 4**, sold as a sealed pair — Ofelia made this a non-negotiable house rule when she sealed the case ("*they go together or they don't go at all; I'm not selling halves of a thing that should never have left a lab*"). Other lots include: a militec-grade dataset, a Petrochem core sample (chemistry secret), some other dark-end items. None of those are the players' problem.
 
-**Pre-bid setup:** Before Lot 4, the auctioneer (a woman in a black-and-gold mask, mic'd to the room) introduces the lot. The room sees what they're buying. Each buyer can examine the unit briefly through a glass case. Doña Esperanza nods slightly. Tía Esmé's bodyguard whispers something to her. Vega's staffer is taking notes on a paper pad. **Tanaka is not there.**
+**Pre-bid setup:** Before Lot 4, the auctioneer (a woman in a black-and-gold mask, mic'd to the room) introduces the lot. The room sees what they're buying — both units in a single glass case, paired. Doña Esperanza nods slightly. Tía Esmé's bodyguard whispers something to her. Vega's staffer is taking notes on a paper pad. **Tanaka is not there.**
 
 That is the first red flag.
 
@@ -524,9 +496,7 @@ Emergency lighting kicks in — dim red. The room is on its feet. Someone is sho
 
 1. **Defend the Salón.** Hold the auction floor. The other buyers will fight alongside them if asked properly — Doña Esperanza has her bodyguard, Tía Esmé's cousins, Vega's staffer with a hidden Sandevistan-Heavy Pistol combo. All in, the players have +4 allies in the room. The Section-9 team is 6 strong and very, very good.
 
-2. **Counter-board the submersible.** A wild play — fight to one of the docking points, take the submersible, capture Tanaka. High risk, high reward. Tanaka is alive at the end if so.
-
-3. **Run with the case.** Take the droneware and bolt — out a service hatch, across the gangways to the helicopter rig. Section-9 will follow. Running fight across multiple platforms.
+2. **Run with the case.** Take the droneware and bolt — out a service hatch, across the gangways to the helicopter rig. Section-9 will follow. Running fight across multiple platforms.
 
 **Section-9 Team:**
 
@@ -534,7 +504,8 @@ Emergency lighting kicks in — dim red. The room is on its feet. Someone is sho
 |------|----|----|--------|-------|
 | Section-9 Operator (x5) | 15 | 45 | SMG 4d6, Smart Frag Grenades, Sandevistan | Coordinated. Professional. Will not freelance — every action serves the team mission |
 | Section-9 Team Lead | 17 | 55 | Tech-rifle 5d6, full neural interface, micro-drone scout | Will sacrifice ops to grab the case |
-| Iku Tanaka (on sub) | 11 | 40 | Heavy Pistol 3d6, Smart link | Only encountered if players counter-board. Surrenders immediately if cornered |
+
+Tanaka stays on the submersible the entire engagement, coordinating by radio. He is not reachable from the auction floor or the gangways. When the Section-9 team breaks or fails the grab, he pulls the sub and is gone.
 
 **The Salón Defense.**
 
@@ -551,12 +522,6 @@ The Salón is an ideal *defensive* space — one main entry, two service entries
 - Round 4-5: Section-9 tries the service corridor. Vega's staffer reveals his Sandevistan and *delivers.* One more operator down
 - Round 6-7: The Team Lead leads a final push directly for the case. This is the most dangerous round — frag grenades into the bidder section, Sandevistan-enhanced charge. Aim for someone PC-adjacent to get hurt
 - Round 8+: If Section-9 has lost 4, they retreat. If they've lost the Team Lead, they retreat immediately. If the players are losing, *Doña Esperanza herself* takes a 6d6 shot to defend the case — she lives, but it's a near thing. *She remembers who paid that debt.*
-
-**The Counter-board option.**
-
-Risky but possible. Players must fight to the residential rig dockpoint where the submersible is moored. ~3 minutes of platform-running and incidental fire. Once at the sub: the operators left a small guard (2 Section-9 + Tanaka).
-
-If captured, Tanaka is a *gold mine* — but interrogating him is its own complication. Arasaka will pay anything to get him back. Other buyers (especially Tía Esmé and Doña Esperanza) will *want* him. Selling Tanaka becomes an additional auction lot the players control. Tía Esmé will pay handsomely. Doña Esperanza will pay more. Vega's staffer will go cold and *very interested.*
 
 **Run with the case option.**
 
@@ -575,9 +540,9 @@ The auction *continues.* The room knows they just watched a corporate raid get r
 - **Vega's staffer** opens a phone line, gets approval, raises to 200,000 eb
 - **A new buyer** — a quiet Petrochem rep who hadn't been on Ofelia's list — opens at 220,000 eb (GM may introduce this only if pacing wants a complication)
 
-**Final price floor: 220,000 eb for both units, or split between two buyers.**
+**Final price floor: 220,000 eb for the paired lot.**
 
-Players can split: sell one to Tía Esmé for the bond (taking a cash hit but gaining the alliance), and one to a cash buyer for top dollar. Or sell both as a lot. Their call.
+The pair sells to a single winner. Tía Esmé's family bond is offered alongside her bid, so picking her means a lower cash number in exchange for the alliance — players decide on values, not on splits.
 
 **Negotiation tools at this point:**
 - PERSUASION DV 13: extract a "you owe me a favor" from whoever wins, on top of cash
@@ -588,14 +553,14 @@ Players can split: sell one to Tía Esmé for the bond (taking a cash hit but ga
 
 ### Part 8: Aftermath
 
-**The helicopter lifts at midnight.** The auction is closing, the auctioneer is taking a deep breath, the Pacers are cleaning up bodies on the gangways. Three Section-9 operators are alive and prisoner; the Team Lead is dead. Tanaka either escaped on the sub (most likely outcome) or is in a Pacers holding cell, depending on player choices.
+**The helicopter lifts at midnight.** The auction is closing, the auctioneer is taking a deep breath, the Pacers are cleaning up bodies on the gangways. Three Section-9 operators are alive and prisoner; the Team Lead is dead. Tanaka pulled the submersible during the firefight and is gone — bound for whichever Arasaka safehouse rinses corporate-mascot counterintel agents.
 
 **Cash situation (typical outcome):**
 - 100,000-250,000 eb in liquid funds, depending on negotiation
 - Curanderos clinic-for-life standing (if sold to Doña)
 - Aldecaldos family bond (if sold to Tía Esmé)
 - Militech roster entry (if sold to Vega)
-- One unit possibly retained — paranoid players sometimes keep one as leverage. *Strongly discourage this; the heat is over only because the units are gone*
+- Droneware is **off the table** — both units sold, sealed case handed over at auction close. The heat lifts because the units are gone. Don't second-guess this; the adventure ends clean
 
 **Faction post-state:**
 - **Doña Esperanza Vargas:** Strong ally if she got a unit. Owes one if she didn't bid high enough
@@ -615,21 +580,6 @@ The players spend the morning of Friday, November 2, on Nueva Costa as the syndi
 Quiet beat. Fredrik stops at a small altar that has been set up in a corner of the plaza, looks at the photographs of strangers laid out in marigold petals. He has not put up an altar for anyone in a long time. He should think about that.
 
 Mats buys flowers. Digitz, the GMPC, calls his mentor.
-
----
-
-**Setting up Adventure 4.**
-
-A few seeds for the next adventure, planted lightly:
-
-1. **The Mole's exfil network.** Trauma Team across the border was paid by someone. The Mole had a sponsor. *Who?* This is the long-tail mystery
-2. **Don Bicho on the road.** He survived. He has a grudge. He will be on the road north when they go back
-3. **The Aldecaldos family bond.** If they took it, they're in for a Nomad-flavored future adventure — possibly a corp incursion on Nomad territory
-4. **Militech's call** (if Vega bought). At some point, Vega's people will *ask* for something. That's a debt
-5. **The Tanaka file.** If they captured him, what they extracted from him sets up a counterintelligence-adjacent arc. If he escaped, Section 9 has a new file open on the players
-6. **Reyna Solano.** She wants out of the lucha circuit. The players are the only people who could plausibly help. She'll call
-
-**GM Note:** Don't tip any of these. Let the players decide what they want to pull on. The strongest hook is whichever one they latch onto first.
 
 ---
 
@@ -660,19 +610,15 @@ Every scene in TJ should have a Día de los Muertos beat. A street altar. A face
 |-------|-------------|-------|
 | Part 0: The Send-Off | 30-45 min | Cyberware install at Voss's, vehicles at Kojo's, loadout choices |
 | Part 1: The Long Road | 30-40 min | Establish road tone, run the highway ambush |
-| Part 2: Snake's Nest | 50-70 min | Roleplay + Ricochet's big defensive scene |
+| Part 2: Snake's Nest | 25-35 min | Roleplay with Mateo + abstracted Ricochet defense (single resolution roll) |
 | Part 3: La Frontera | 15-25 min | Quick negotiation, the Mole cameo |
 | Part 4: Tijuana arrival | 30-40 min | Atmosphere, Ofelia, buyer landscape |
 | Part 5: La Lucha Cromada | 40-60 min | Fredrik's spotlight, narrative combat |
-| Part 6: Buyer Tour | 80-110 min | Four meetings + safehouse robbery |
+| Part 6: Buyer Tour | 50-65 min | Three scenes: Doña+Vega combined at Plaza Santa Cecilia, Tía Esmé at the cantina, Tanaka at dinner |
 | Part 7: Costa Muerta | 90-120 min | Auction + Section-9 climax |
-| Part 8: Aftermath | 25-40 min | Faction states, Día beat, hooks |
+| Part 8: Aftermath | 25-40 min | Faction states, Día beat |
 
-**Total estimated session time:** 7-9 hours. This is bigger than #2. Consider splitting across two sessions:
-- **Session 3A:** Parts 0-4 (kit up, road south, arrival in Tijuana)
-- **Session 3B:** Parts 5-8 (Tijuana + auction)
-
-If running as one session, trim Part 6 buyer meetings (combine two into a single "two-at-once" scene at a public location) and shorten Part 2 (skip the camp-defense as a full combat, run it abstracted with a single roll).
+**Total estimated session time:** 5-7 hours, single session.
 
 ---
 
@@ -680,7 +626,7 @@ If running as one session, trim Part 6 buyer meetings (combine two into a single
 
 **Key DVs used in this adventure:**
 - Easy: DV 11 (basic STREETWISE)
-- Standard: DV 13 (Aldecaldos negotiations, robbery defense)
+- Standard: DV 13 (Aldecaldos negotiations, border bribe persuasion)
 - Difficult: DV 15 (most buyer haggling, key AWARENESS reads on Tanaka)
 - Hard: DV 17 (vehicle-pit counter-driving, top-tier buyer raises, deep reads on Tanaka)
 - Very Hard: DV 19 (catching the Arasaka watch logo, max Vega negotiation)

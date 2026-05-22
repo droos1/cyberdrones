@@ -36,9 +36,9 @@ print.css                   styles for adventure-md → PDF
 | 2 | Dead Signal | Completed ~April 2026 — session notes filed |
 | 3 | Costa Muerta | First draft of adventure.md filed; details still in flight |
 
-**Adventure 3 frame ("Costa Muerta"):** Players go south to sell two droneware units on the black market. Tijuana + Nueva Costa (offshore Free-City rig). Day of the Dead aesthetic. Cyber-lucha credibility gate. Four buyers including a trap (Arasaka counterintel under cover). Auction-night Section-9 raid as climax. Combat variety: highway ambush (vehicle) / Aldecaldos camp defense (Ricochet) / cyber-lucha (melee) / safehouse robbery (urban CQB) / auction siege.
+**Adventure 3 frame ("Costa Muerta"):** Players go south to sell two droneware units on the black market. Tijuana + Nueva Costa (offshore Free-City rig). Day of the Dead aesthetic. Cyber-lucha credibility gate. Four buyers including a trap (Arasaka counterintel under cover). Auction-night Section-9 raid as climax. Combat variety: highway ambush (vehicle) / Aldecaldos camp defense (Ricochet) / cyber-lucha (melee) / auction siege.
 
-**Continuity carrying into Adventure 4:** Mole exfil-network mystery, Don Bicho road grudge, Aldecaldos family bond (if taken), Militech call-in debt (if sold to Vega), Tanaka file (captured or escaped), Reyna Solano wanting out of the lucha circuit.
+**Continuity carrying into Adventure 4:** Mole exfil-network mystery, Don Bicho road grudge, Aldecaldos family bond (if taken), Militech call-in debt (if sold to Vega), Tanaka file (he escaped — Section 9 has the players on file), Reyna Solano wanting out of the lucha circuit.
 
 ## How adventures are written
 
