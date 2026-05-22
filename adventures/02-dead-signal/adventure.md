@@ -14,13 +14,13 @@ The players need to find a ripperdoc capable of extracting military-grade Arasak
 
 | NPC | Role | Details |
 |-----|------|---------|
-| **Kojo Asante** "The Fixer" | Fredrik's fixer contact, original job broker | Set up the players with the gig that got them implanted. Didn't know. Angry, scared, motivated to help |
+| **Kojo Asante** "The Fixer" | Mats's fixer contact, original job broker | Set up the players with the gig that got them implanted. Didn't know. Angry, scared, motivated to help |
 | **The Mole** | Arasaka insider scientist (from Adv 1) | Still inside Arasaka. Communications are more dangerous now. Provides intel on the backup transmitter timeline |
 | **Dr. Yuki Voss** | Underground ripperdoc, Digitz's contact | One of very few people in Night City who can extract military neural-interface cyberware. Runs a hidden clinic in the old waterfront district |
 | **Lazard** "The Corp" | Droneware project sponsor (from Adv 1) | Desperate. Internal investigation closing in on him. Needs to destroy all evidence — including the players |
 | **Cpl. Reyes** | Arasaka recovery team leader | Professional, cybered-up, runs a tight 6-person squad. Not a psycho — just doing his job. Has the mobile transmitter |
 | **Kira Nantes** | Trauma Team dispatcher, owes Dr. Voss | Controls the logistics for a Trauma Team medical depot. Key to getting the surgical component Voss needs |
-| **Ryla Vox** "The Media" | Independent journalist, News 54 (from Adv 1) | Still investigating the level 17 story. Monitoring corpo/NCPD chatter. Good connection with Mats/Fredrik from Adventure 1. Provides early warning and wants the evidence when it's over |
+| **Ryla Vox** "The Media" | Independent journalist, News 54 (from Adv 1) | Still investigating the level 17 story. Monitoring corpo/NCPD chatter. Good connection with Fredrik/Mats from Adventure 1. Provides early warning and wants the evidence when it's over |
 
 ## Timeline
 
@@ -60,7 +60,7 @@ Picks up directly from Adventure 1. The players are on the fire escape of the Ar
 **Getting Clear:**
 - They need to get at least 3 blocks away before the perimeter locks down
 - Options: jack a car (TECH DV 15), grab a cab (STREETWISE DV 11 to find one willing), disappear into the metro (STEALTH DV 13)
-- Once clear, they need to decide where to go. Fredrik's fixer instincts kick in — he knows someone who can help. He knows who gave them this job in the first place.
+- Once clear, they need to decide where to go. Mats's fixer instincts kick in — he knows someone who can help. He knows who gave them this job in the first place.
 
 **GM Note:** Keep this fast. 10-15 minutes of play. Don't let it become a full combat encounter. The point is chaos, adrenaline, and getting out. Adventure 1 ended with a big fight — this needs to open with momentum, not another slog.
 
@@ -70,7 +70,7 @@ Picks up directly from Adventure 1. The players are on the fire escape of the Ar
 
 **Who is Kojo Asante?**
 
-Fredrik's established fixer contact. A middle-tier operator who brokers merc work across the Combat Zone and lower corpo districts. He's the one who brought the original job to the players — "simple gig, install some new cyberware, do a run, good money." He sourced it from a cutout and didn't ask too many questions because the money was right.
+Mats's established fixer contact. A middle-tier operator who brokers merc work across the Combat Zone and lower corpo districts. He's the one who brought the original job to the players — "simple gig, install some new cyberware, do a run, good money." He sourced it from a cutout and didn't ask too many questions because the money was right.
 
 He's been watching the news. He knows what happened. He's been expecting a call.
 
@@ -142,8 +142,8 @@ The Ricochet is devastating against snipers and fixed positions. It's less effec
 
 **GM Note:** This is a powerful piece of kit that rewards preparation. If the players set it up well, it should feel earned — they got it from Kojo, they transported it, they deployed it. If they don't set it up (or set it up poorly), that's on them. Don't remind them. Let player agency drive it. Also note: Reyes is smart. After the first burst, he'll figure out what it is and adapt — pull snipers back, try to flank outside the arc, or send someone to disable a radar unit.
 
-**Fredrik's Operator Ability:**
-This is a natural moment for Fredrik's Fixer role to shine. He can use Operator to:
+**Mats's Operator Ability:**
+This is a natural moment for Mats's Fixer role to shine. He can use Operator to:
 - Get better terms on the safehouse (48 hours instead of 24)
 - Extract more detailed intel from Kojo about the Arasaka team's movements
 - Negotiate Kojo's ongoing support (supplies, transport, backup comms)
@@ -269,7 +269,7 @@ Kira meets them briefly at a parking garage. She's nervous, fast, professional.
    - Must be gone before the AV arrives
 
 3. **Social engineering**
-   - Fredrik could attempt to bluff entry using the cloned keycard and some convincing corpo attire (he has Businesswear in his loadout)
+   - Mats could attempt to bluff entry using the cloned keycard and some convincing corpo attire (he has Businesswear in his loadout)
    - PERSUASION DV 15 to convince monitoring station he's an authorized auditor / inspector
    - If successful, can walk to Bay C with an escort — then needs a distraction to access the cabinet
    - Digitz could provide the distraction via netrunning (trigger a false system alert elsewhere in the building)
@@ -423,7 +423,7 @@ This is now **physical evidence** of an illegal Arasaka black ops program. Three
 
 2. **Give them to Ryla Vox.** The journalist from Adventure 1 who they connected with. Physical evidence plus her footage and investigation could blow the story wide open. Arasaka takes massive public damage. But Ryla becomes a target, and so do they — permanently. *"You sure you want to hand a journalist the keys to a war with Arasaka?"*
 
-3. **Sell to Militech.** Fredrik's fixer network (through Kojo) could broker a sale to Arasaka's biggest rival. Huge payout — potentially 100,000+ EB. But Militech gets droneware technology. *The genie is out of the bottle.* The players are richer. The world is worse.
+3. **Sell to Militech.** Mats's fixer network (through Kojo) could broker a sale to Arasaka's biggest rival. Huge payout — potentially 100,000+ EB. But Militech gets droneware technology. *The genie is out of the bottle.* The players are richer. The world is worse.
 
 4. **Leverage against Arasaka.** Contact Arasaka directly (not Lazard — above him) and offer to return the droneware and stay silent in exchange for guaranteed safety and Lazard's head. Dangerous play. Requires trusting a megacorp. But it's the only option that might actually end the threat permanently. *"You'd trust the snake to keep its word just because you're holding its tail?"*
 
@@ -463,7 +463,7 @@ If Reyes fails, Lazard escalates.
 | Phase | Target Time | Notes |
 |-------|-------------|-------|
 | Part 1: Fire Escape | 15 min | Fast, kinetic. Don't let it drag |
-| Part 2: Kojo | 20-30 min | Roleplay-heavy. Let Fredrik shine |
+| Part 2: Kojo | 20-30 min | Roleplay-heavy. Let Mats shine |
 | Part 3: Mole's Warning | 10 min | Information delivery. Let it land |
 | Part 4: Dr. Voss | 20 min | Setup and planning |
 | Part 5: The Depot Job | 60-90 min | Core gameplay loop — heist/infiltration |

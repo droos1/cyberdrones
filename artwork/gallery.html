@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYBER DRONES — Campaign Art</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Share Tech Mono', monospace;
+    line-height: 1.6;
+  }
+
+  header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 1px solid #333;
+    background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+  }
+
+  header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255,255,255,0.1);
+    margin-bottom: 8px;
+  }
+
+  header .subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+  }
+
+  header .tagline {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .category {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 0;
+  }
+
+  .category h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #999;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+
+  .card {
+    background: #111;
+    border: 1px solid #222;
+    overflow: hidden;
+    transition: border-color 0.3s;
+  }
+
+  .card:hover {
+    border-color: #444;
+  }
+
+  .card img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: filter 0.3s;
+  }
+
+  .card img:hover {
+    filter: brightness(1.1);
+  }
+
+  .card .info {
+    padding: 16px 20px;
+    border-top: 1px solid #222;
+  }
+
+  .card .info h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 6px;
+  }
+
+  .card .info p {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 20px 60px;
+    border-top: 1px solid #222;
+    color: #444;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  /* Lightbox */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    z-index: 1000;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox.active {
+    display: flex;
+  }
+
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; letter-spacing: 0.15em; }
+    .gallery { grid-template-columns: 1fr; gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Cyber Drones</h1>
+  <div class="subtitle">A Cyberpunk RED Campaign</div>
+  <div class="tagline">"This city chews people up and spits them out. You woke up with someone else's blood on your hands and no memory of how it got there."</div>
+</header>
+
+<section class="category">
+  <h2>Characters</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="solo_portrait.png" alt="The Solo" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>The Solo &mdash; Street Samurai</h3>
+        <p>East Asian, wild spiked hair, left cyberarm with pop-up pistol. Heavy weapons specialist wrestling with rage and fading humanity. "Get rid of the Rage" is all he wants.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="fixer_portrait.png" alt="The Fixer" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>The Fixer &mdash; Deal Maker</h3>
+        <p>East Asian, sharp mohawk, ritual scars. High-fashion warrenrat who lost everything through betrayal. Honor-bound deal-maker trying to get off the street.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="netrunner_portrait.png" alt="Digitz" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>Digitz &mdash; The Netrunner</h3>
+        <p>Pacific Islander, urban flash, cool as ice. Former nomad pack runner turned edge runner. Hungers for fame, settles for survival. Interface Rank 5.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="ryla_vox.png" alt="Ryla Vox" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>Ryla Vox &mdash; Investigative Journalist</h3>
+        <p>Independent media, News 54. Ran the doctored footage before she knew the truth. Terrified but determined to expose the droneware conspiracy. The team's moral compass.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="dr_voss.png" alt="Dr. Yuki Voss" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>Dr. Yuki Voss &mdash; Underground Ripperdoc</h3>
+        <p>Former Trauma Team combat surgeon gone independent. One of three people in Night City who can extract military Arasaka neural-interface cyberware. Pristine clinic hidden behind Tanaka's Fish Market.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="cpl_reyes.png" alt="Cpl. Reyes" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>Cpl. Reyes &mdash; Arasaka Recovery Team</h3>
+        <p>Professional. Cold. "Just doing his job." Leads a six-person tactical squad hunting the players across Night City. Smart tactician who adapts after first contact. Base 16, HP 50.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <h2>Adventure 1: Cyber Drones</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="scene_awakening.png" alt="The Awakening" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>The Awakening &mdash; "Why are we on the news?"</h3>
+        <p>Three mercenaries wake in a safehouse to discover themselves on television &mdash; security footage shows them massacring Arasaka scientists. They don't remember any of it. The 8-hour clock starts now.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="scene_pachinko.png" alt="Pachinko Parlor" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>The Pachinko Parlor &mdash; Hacking Under Neon</h3>
+        <p>The netrunner jacks into a hidden port beneath a pachinko machine, downloading security footage while guards patrol the sensory overload of the gambling floor. Double jackpot as cover.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="scene_arasaka_assault.png" alt="Assault on Level 17" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>Level 17 &mdash; Assault on Arasaka Tower</h3>
+        <p>The final assault on Arasaka's droneware control facility. Cyber drones, corporate security, and a massive signal transmitter that must be destroyed &mdash; even if it means 50 innocent casualties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <h2>Adventure 2: Dead Signal</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="scene_fire_escape.png" alt="The Escape" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>Dead Signal &mdash; The Escape</h3>
+        <p>Rusted fire escape, collapsing metal, an AV searchlight sweeping the building face. The city sprawls far below. One figure hangs by one arm as the grating gives way. 18 hours until the signal locks.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="scene_kojos_safehouse.png" alt="Kojo's Safehouse" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>Kojo's Safehouse &mdash; The Shipping Container</h3>
+        <p>A converted shipping container in the dockyards. Kojo Asante, chain-smoking and guilt-ridden, reveals the Ricochet Mk.IV counter-battery system. Military hardware for a military problem.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="scene_depot_heist.png" alt="The Depot Job" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>The Depot Job &mdash; Northside Medical Heist</h3>
+        <p>Breaking into a Trauma Team medical warehouse at 02:00 for the neural bridge decoupler. Motion sensors, guard dogs, a 4-minute AV response window. Kira's rules: 15 minutes, no kills, no pharma.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="scene_clinic_siege.png" alt="The Siege" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>The Siege at Tanaka's Fish Market</h3>
+        <p>Reyes' team closes in while Voss operates. Snipers on rooftops, breach teams at exits, EMP pulse. Udo the full-borg holds the entrance. One player on the table, two to defend. 90 minutes per extraction.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="scene_extraction.png" alt="The Extraction" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>The Extraction &mdash; Pulling the Droneware</h3>
+        <p>Thread-thin cybernetic filaments being pulled from the base of a skull. Sinister black nodes with blinking lights. The patient is conscious, gritting teeth. Freedom from corporate control, one wire at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="category">
+  <h2>Setting &amp; Mood</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="night_city_skyline.png" alt="Night City" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>Night City &mdash; The Urban Sprawl</h3>
+        <p>Corporate arcologies pierce the smog layer. Holographic ads cover every surface. AVs cruise between towers. Somewhere down in the maze of neon and concrete, three people are running out of time.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="droneware_diagram.png" alt="Droneware Schematic" onclick="openLightbox(this)">
+      <div class="info">
+        <h3>DRONEWARE MK.III &mdash; Technical Schematic</h3>
+        <p>Illegal military cyberware threaded along the spine and into the brain stem. Signal receiver, motor override nodes, memory suppressor, neural bridge. Full remote takeover with complete memory wipe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Cyberpunk RED &bull; Cyber Drones Campaign &bull; Art generated with Gemini Nano Banana
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function openLightbox(el) {
+  const lb = document.getElementById('lightbox');
+  document.getElementById('lightbox-img').src = el.src;
+  lb.classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#1a2a3a" stroke-width="0.4" opacity="0.4"/>
+    </pattern>
+    <!-- Enemy icon -->
+    <symbol id="enemy" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="5" fill="#e63946" stroke="#fff" stroke-width="1.5"/>
+      <path d="M6 22 L6 16 A6 6 0 0 1 18 16 L18 22" fill="#e63946" stroke="#fff" stroke-width="1.5"/>
+    </symbol>
+    <!-- Friendly icon -->
+    <symbol id="friendly" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="5" fill="#06d6a0" stroke="#fff" stroke-width="1.5"/>
+      <path d="M6 22 L6 16 A6 6 0 0 1 18 16 L18 22" fill="#06d6a0" stroke="#fff" stroke-width="1.5"/>
+    </symbol>
+    <!-- Sniper scope -->
+    <symbol id="sniper" viewBox="0 0 28 28">
+      <circle cx="14" cy="14" r="11" fill="none" stroke="#e63946" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="4" fill="none" stroke="#e63946" stroke-width="1"/>
+      <line x1="14" y1="1" x2="14" y2="8" stroke="#e63946" stroke-width="1"/>
+      <line x1="14" y1="20" x2="14" y2="27" stroke="#e63946" stroke-width="1"/>
+      <line x1="1" y1="14" x2="8" y2="14" stroke="#e63946" stroke-width="1"/>
+      <line x1="20" y1="14" x2="27" y2="14" stroke="#e63946" stroke-width="1"/>
+    </symbol>
+    <!-- Radar unit -->
+    <symbol id="radar" viewBox="0 0 20 24">
+      <polygon points="10,0 18,8 14,8 14,22 6,22 6,8 2,8" fill="#2ec4b6" stroke="#fff" stroke-width="1"/>
+      <circle cx="10" cy="5" r="2" fill="#fff" opacity="0.6"/>
+    </symbol>
+    <!-- Turret -->
+    <symbol id="turret" viewBox="0 0 28 28">
+      <rect x="6" y="14" width="16" height="12" fill="#2ec4b6" stroke="#fff" stroke-width="1.2" rx="2"/>
+      <rect x="10" y="6" width="8" height="12" fill="#2ec4b6" stroke="#fff" stroke-width="1.2" rx="1"/>
+      <rect x="12" y="2" width="4" height="8" fill="#1a8a7a" stroke="#fff" stroke-width="1"/>
+    </symbol>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sm">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#0d1b2a"/>
+  <rect x="30" y="75" width="940" height="695" fill="#101d2e" rx="4"/>
+  <rect x="30" y="75" width="940" height="695" fill="url(#grid)" rx="4"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" fill="#e63946" font-size="22" font-weight="700" letter-spacing="3">VOSS CLINIC — SIEGE DEFENSE</text>
+  <text x="500" y="62" text-anchor="middle" fill="#8899aa" font-size="12" letter-spacing="2">TACTICAL OVERVIEW — PART 7: THE EXTRACTION</text>
+
+  <!-- ============= STREET (top) ============= -->
+  <rect x="30" y="90" width="940" height="90" fill="#0f1a28" stroke="none"/>
+  <text x="500" y="115" text-anchor="middle" fill="#3a5060" font-size="13" letter-spacing="4">WATERFRONT STREET</text>
+
+  <!-- Street markings -->
+  <line x1="100" y1="135" x2="900" y2="135" stroke="#2a3a4a" stroke-width="1.5" stroke-dasharray="20,15"/>
+
+  <!-- ============= ROOFTOP BUILDING (top) ============= -->
+  <rect x="550" y="90" width="250" height="55" fill="#1a2535" stroke="#3a5a7a" stroke-width="1.5" rx="2"/>
+  <text x="675" y="115" text-anchor="middle" fill="#5a7a9a" font-size="11" letter-spacing="1">ROOFTOP — OPPOSITE BUILDING</text>
+  <text x="675" y="130" text-anchor="middle" fill="#5a7a9a" font-size="9">SNIPER POSITIONS</text>
+
+  <!-- Snipers on rooftop -->
+  <use href="#sniper" x="596" y="96" width="22" height="22"/>
+  <text x="607" y="133" text-anchor="middle" fill="#e63946" font-size="8" font-weight="600">SNIPER 1</text>
+  <use href="#sniper" x="730" y="96" width="22" height="22"/>
+  <text x="741" y="133" text-anchor="middle" fill="#e63946" font-size="8" font-weight="600">SNIPER 2</text>
+
+  <!-- Sniper firing lines -->
+  <line x1="607" y1="120" x2="420" y2="260" stroke="#e63946" stroke-width="0.8" stroke-dasharray="6,4" opacity="0.4"/>
+  <line x1="607" y1="120" x2="350" y2="340" stroke="#e63946" stroke-width="0.8" stroke-dasharray="6,4" opacity="0.3"/>
+  <line x1="741" y1="120" x2="480" y2="280" stroke="#e63946" stroke-width="0.8" stroke-dasharray="6,4" opacity="0.4"/>
+
+  <!-- ============= UNMARKED VAN ============= -->
+  <rect x="100" y="98" width="70" height="35" fill="#2a1a1a" stroke="#e63946" stroke-width="1.5" rx="3"/>
+  <text x="135" y="120" text-anchor="middle" fill="#e63946" font-size="9" font-weight="600">VAN</text>
+  <text x="135" y="148" text-anchor="middle" fill="#e63946" font-size="8">Reyes + 1 operative</text>
+  <text x="135" y="160" text-anchor="middle" fill="#e63946" font-size="8">200m up street</text>
+
+  <!-- ============= DELIVERY TRUCK (TRANSMITTER) ============= -->
+  <rect x="830" y="98" width="90" height="40" fill="#3a0a0a" stroke="#ff0044" stroke-width="2" rx="3" filter="url(#glow)"/>
+  <text x="875" y="115" text-anchor="middle" fill="#ff4466" font-size="9" font-weight="700">TRANSMITTER</text>
+  <text x="875" y="128" text-anchor="middle" fill="#ff4466" font-size="8">TRUCK</text>
+  <text x="875" y="155" text-anchor="middle" fill="#ff4466" font-size="8" font-weight="600">PRIORITY TARGET</text>
+  <!-- Danger radius -->
+  <circle cx="875" cy="118" r="55" fill="none" stroke="#ff0044" stroke-width="0.6" stroke-dasharray="4,3" opacity="0.3"/>
+
+  <!-- ============= FISH MARKET ============= -->
+  <rect x="180" y="195" width="420" height="190" fill="#1a2838" stroke="#3a5a7a" stroke-width="2" rx="3"/>
+  <text x="390" y="220" text-anchor="middle" fill="#5a9aba" font-size="16" font-weight="700" letter-spacing="2">TANAKA'S FISH MARKET</text>
+
+  <!-- Fish market interior details -->
+  <!-- Metal counters (cover) -->
+  <rect x="210" y="240" width="100" height="12" fill="#2a4a5a" stroke="#4a7a8a" stroke-width="1" rx="1"/>
+  <text x="260" y="250" text-anchor="middle" fill="#4a7a8a" font-size="7">COUNTER SP15</text>
+  <rect x="210" y="270" width="100" height="12" fill="#2a4a5a" stroke="#4a7a8a" stroke-width="1" rx="1"/>
+  <rect x="210" y="300" width="100" height="12" fill="#2a4a5a" stroke="#4a7a8a" stroke-width="1" rx="1"/>
+  <rect x="210" y="330" width="100" height="12" fill="#2a4a5a" stroke="#4a7a8a" stroke-width="1" rx="1"/>
+
+  <!-- Hanging fish area -->
+  <rect x="340" y="235" width="120" height="60" fill="#1a3040" stroke="#3a6070" stroke-width="1" stroke-dasharray="3,2" rx="2"/>
+  <text x="400" y="262" text-anchor="middle" fill="#3a6070" font-size="9">HANGING FISH</text>
+  <text x="400" y="274" text-anchor="middle" fill="#3a6070" font-size="8">CONCEALMENT</text>
+
+  <!-- Freezer units -->
+  <rect x="490" y="235" width="90" height="80" fill="#152535" stroke="#4a7a8a" stroke-width="1.5" rx="2"/>
+  <text x="535" y="270" text-anchor="middle" fill="#5a9aba" font-size="9" font-weight="600">FREEZER</text>
+  <text x="535" y="283" text-anchor="middle" fill="#5a9aba" font-size="9" font-weight="600">SP 15</text>
+
+  <!-- Choke point labels -->
+  <text x="390" y="375" text-anchor="middle" fill="#06d6a0" font-size="9" font-weight="600">CHOKE POINTS — GOOD DEFENSE</text>
+
+  <!-- Fire suppression -->
+  <circle cx="350" cy="350" r="4" fill="#ffd166" stroke="#fff" stroke-width="0.5"/>
+  <text x="370" y="354" fill="#ffd166" font-size="7">FIRE SUPPRESSION TRIGGER</text>
+  <text x="370" y="364" fill="#ffd166" font-size="7">(visibility 5m, ranged -4)</text>
+
+  <!-- Front entrance -->
+  <rect x="350" y="190" width="60" height="10" fill="#2a4a5a" stroke="#ffd166" stroke-width="1.5"/>
+  <text x="380" y="188" text-anchor="middle" fill="#ffd166" font-size="9" font-weight="600">MAIN ENTRANCE</text>
+
+  <!-- ============= FREEZER DOOR / PASSAGE TO CLINIC ============= -->
+  <rect x="500" y="360" width="80" height="30" fill="#1a3545" stroke="#5a9aba" stroke-width="1.5" rx="2"/>
+  <text x="540" y="379" text-anchor="middle" fill="#5a9aba" font-size="8" font-weight="600">FREEZER DOOR</text>
+
+  <!-- ============= BACK CORRIDOR (narrow) ============= -->
+  <rect x="510" y="390" width="55" height="60" fill="#1a2535" stroke="#3a5a7a" stroke-width="1.5"/>
+  <text x="537" y="415" text-anchor="middle" fill="#5a8aaa" font-size="8" font-weight="600">NARROW</text>
+  <text x="537" y="426" text-anchor="middle" fill="#5a8aaa" font-size="8" font-weight="600">CORRIDOR</text>
+  <text x="537" y="442" text-anchor="middle" fill="#06d6a0" font-size="7">1 person holds</text>
+
+  <!-- ============= CLINIC ============= -->
+  <rect x="300" y="450" width="380" height="210" fill="#162838" stroke="#06d6a0" stroke-width="2.5" rx="3"/>
+  <text x="490" y="475" text-anchor="middle" fill="#06d6a0" font-size="16" font-weight="700" letter-spacing="2">DR. VOSS — CLINIC</text>
+
+  <!-- Operating Room -->
+  <rect x="320" y="495" width="200" height="145" fill="#0d2020" stroke="#06d6a0" stroke-width="2" rx="3"/>
+  <text x="420" y="520" text-anchor="middle" fill="#06d6a0" font-size="13" font-weight="700">OPERATING ROOM</text>
+
+  <!-- Operating tables -->
+  <rect x="345" y="535" width="60" height="25" fill="#1a3a3a" stroke="#2ec4b6" stroke-width="1" rx="2"/>
+  <text x="375" y="552" text-anchor="middle" fill="#2ec4b6" font-size="7">TABLE 1</text>
+  <rect x="435" y="535" width="60" height="25" fill="#1a3a3a" stroke="#2ec4b6" stroke-width="1" rx="2"/>
+  <text x="465" y="552" text-anchor="middle" fill="#2ec4b6" font-size="7">TABLE 2</text>
+
+  <!-- Monitoring equipment -->
+  <rect x="340" y="575" width="80" height="15" fill="#1a2a2a" stroke="#2ec4b6" stroke-width="0.8" rx="1"/>
+  <text x="380" y="586" text-anchor="middle" fill="#2ec4b6" font-size="7">MONITORS (HARDENED)</text>
+
+  <!-- Blast door -->
+  <rect x="315" y="490" width="8" height="60" fill="#e63946" stroke="#fff" stroke-width="1" rx="1" filter="url(#glow-sm)"/>
+  <text x="290" y="510" text-anchor="end" fill="#e63946" font-size="8" font-weight="700">BLAST</text>
+  <text x="290" y="520" text-anchor="end" fill="#e63946" font-size="8" font-weight="700">DOOR</text>
+  <text x="290" y="532" text-anchor="end" fill="#e63946" font-size="7">SP 30</text>
+  <text x="290" y="542" text-anchor="end" fill="#e63946" font-size="7">2 rnds to close</text>
+
+  <!-- Voss -->
+  <use href="#friendly" x="400" y="560" width="18" height="18"/>
+  <text x="409" y="590" text-anchor="middle" fill="#06d6a0" font-size="8" font-weight="600">DR. VOSS</text>
+
+  <!-- Storage / supplies -->
+  <rect x="540" y="495" width="120" height="65" fill="#162535" stroke="#3a5a7a" stroke-width="1" rx="2"/>
+  <text x="600" y="520" text-anchor="middle" fill="#5a8aaa" font-size="9">SUPPLIES</text>
+  <text x="600" y="535" text-anchor="middle" fill="#5a8aaa" font-size="9">CYBERWARE</text>
+
+  <!-- Udo -->
+  <use href="#friendly" x="555" y="580" width="22" height="22"/>
+  <text x="566" y="612" text-anchor="middle" fill="#06d6a0" font-size="9" font-weight="700">UDO</text>
+  <text x="566" y="623" text-anchor="middle" fill="#06d6a0" font-size="7">SP18 HP60</text>
+  <text x="566" y="633" text-anchor="middle" fill="#06d6a0" font-size="7">Hammer Fist 4d6</text>
+
+  <!-- Back entrance to clinic -->
+  <rect x="650" y="530" width="35" height="10" fill="#162838" stroke="#ffd166" stroke-width="1.5"/>
+  <text x="720" y="538" fill="#ffd166" font-size="8" font-weight="600">BACK EXIT</text>
+
+  <!-- ============= BACK ALLEY ============= -->
+  <rect x="695" y="250" width="100" height="380" fill="#0f1822" stroke="#2a3a4a" stroke-width="1" rx="2"/>
+  <text x="745" y="440" text-anchor="middle" fill="#2a4a5a" font-size="10" letter-spacing="1" transform="rotate(-90, 745, 440)">BACK ALLEY</text>
+
+  <!-- Back alley enemies -->
+  <use href="#enemy" x="720" y="380" width="20" height="20"/>
+  <text x="730" y="410" text-anchor="middle" fill="#e63946" font-size="8" font-weight="600">ASSAULT 2</text>
+  <use href="#enemy" x="720" y="440" width="20" height="20"/>
+  <text x="730" y="470" text-anchor="middle" fill="#e63946" font-size="8" font-weight="600">BACK COVER</text>
+
+  <!-- ============= FRONT BREACH POINT ============= -->
+  <!-- Breach arrows -->
+  <line x1="380" y1="165" x2="380" y2="188" stroke="#e63946" stroke-width="2.5" opacity="0.7"/>
+  <polygon points="373,186 380,196 387,186" fill="#e63946" opacity="0.7"/>
+  <text x="380" y="175" text-anchor="middle" fill="#e63946" font-size="8" font-weight="700">BREACH</text>
+
+  <!-- Assault operative at front -->
+  <use href="#enemy" x="420" y="155" width="20" height="20"/>
+  <text x="430" y="177" text-anchor="middle" fill="#e63946" font-size="8">ASSAULT 1</text>
+
+  <!-- Tech operative near truck -->
+  <use href="#enemy" x="840" y="145" width="18" height="18"/>
+  <text x="849" y="173" text-anchor="middle" fill="#ff4466" font-size="8" font-weight="600">TECH OP</text>
+  <text x="849" y="183" text-anchor="middle" fill="#ff4466" font-size="7">(transmitter)</text>
+
+  <!-- ============= RICOCHET SYSTEM ============= -->
+  <!-- Radar Unit 1 — fish market entrance -->
+  <use href="#radar" x="335" y="195" width="16" height="20"/>
+  <text x="330" y="192" text-anchor="end" fill="#2ec4b6" font-size="8" font-weight="600">RADAR 1</text>
+  <text x="330" y="202" text-anchor="end" fill="#2ec4b6" font-size="7">SP 8</text>
+
+  <!-- Radar Unit 2 — corner of building -->
+  <use href="#radar" x="175" y="195" width="16" height="20"/>
+  <text x="170" y="195" text-anchor="end" fill="#2ec4b6" font-size="8" font-weight="600">RADAR 2</text>
+  <text x="170" y="205" text-anchor="end" fill="#2ec4b6" font-size="7">SP 8</text>
+
+  <!-- Turret — covering the street -->
+  <use href="#turret" x="245" y="198" width="22" height="22"/>
+  <text x="256" y="195" text-anchor="middle" fill="#2ec4b6" font-size="9" font-weight="700">TURRET</text>
+  <text x="256" y="232" text-anchor="middle" fill="#2ec4b6" font-size="7">4d6 x3 bursts/rnd</text>
+
+  <!-- Ricochet coverage arc -->
+  <path d="M 183 205 L 80 100 A 300 300 0 0 1 550 100 L 343 205" fill="#2ec4b6" opacity="0.06" stroke="#2ec4b6" stroke-width="1" stroke-dasharray="6,3" opacity="0.25"/>
+  <text x="300" y="105" text-anchor="middle" fill="#2ec4b6" font-size="9" font-weight="600" opacity="0.6">RICOCHET COVERAGE ARC (120°)</text>
+
+  <!-- ============= EMP EFFECT ZONE ============= -->
+  <circle cx="490" cy="300" r="150" fill="none" stroke="#ffd166" stroke-width="1" stroke-dasharray="8,5" opacity="0.25"/>
+  <text x="490" y="170" text-anchor="middle" fill="#ffd166" font-size="8" opacity="0.5">EMP PULSE (minute 3) — kills cameras, not medical gear</text>
+
+  <!-- ============= LEGEND ============= -->
+  <rect x="30" y="690" width="940" height="70" fill="#0a1520" rx="3"/>
+
+  <use href="#enemy" x="50" y="700" width="18" height="18"/>
+  <text x="75" y="714" fill="#e63946" font-size="10">Arasaka (Reyes' squad)</text>
+
+  <use href="#friendly" x="220" y="700" width="18" height="18"/>
+  <text x="245" y="714" fill="#06d6a0" font-size="10">Friendlies</text>
+
+  <use href="#sniper" x="330" y="698" width="18" height="18"/>
+  <text x="355" y="714" fill="#e63946" font-size="10">Sniper</text>
+
+  <use href="#radar" x="420" y="699" width="14" height="18"/>
+  <text x="440" y="714" fill="#2ec4b6" font-size="10">Ricochet Radar</text>
+
+  <use href="#turret" x="555" y="698" width="18" height="18"/>
+  <text x="580" y="714" fill="#2ec4b6" font-size="10">Ricochet Turret</text>
+
+  <text x="690" y="714" fill="#ffd166" font-size="10">Cover: Counters SP15, Freezer SP15</text>
+
+  <text x="500" y="745" text-anchor="middle" fill="#8899aa" font-size="10" font-weight="600">Reyes' plan: Perimeter (min 0-3) → EMP (min 3) → Breach (min 5) — Players must hold 45 minutes</text>
+
+  <text x="500" y="765" text-anchor="middle" fill="#4a6a7a" font-size="9">SIGNAL BREAKTHROUGH: 3rd player (still implanted) — WILL DV 17 or lose control 1d6 rounds</text>
+</svg>

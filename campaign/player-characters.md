@@ -1,6 +1,25 @@
 # Player Characters
 
-## Solo [Mats]
+_Last updated: post-Adventure 2 (Dead Signal). All PCs took major damage this session; HP listed below reflects pre-session values unless noted. No Humanity changes. Road Runner cyberware (MA +1) was extracted along with the droneware on all three PCs. Adventure 3 leveling is pending — all PCs to level up before next session._
+
+## Shared Party Inventory (post-Adv 2)
+
+- **2 × Arasaka droneware units** — sealed, intended for black-market sale in Adventure 3
+- **Ricochet Mk.IV counter-battery system** — 2 radar units + 1 turret (see Adv 2 stat block). Currently held by the party (originally from Kojo)
+- Possible salvage from Cpl. Reyes' kill team (TBC)
+
+## Active Faction Standings (post-Adv 2)
+
+- **Kojo Asante (Mats's fixer):** Strong ally, trust earned via perfect negotiation roll
+- **Dr. Yuki Voss (ripperdoc):** Paid in full, even, respects the team
+- **Ryla Vox (media):** Friendly contact, has not been given evidence yet
+- **Trauma Team:** Neutral — depot job was clean
+- **Lazard / Arasaka black ops:** Hostile, but their kill team was repulsed. Lazard's internal status uncertain
+- **The Mole:** Out of Arasaka, no further contact
+
+---
+
+## Solo [Fredrik]
 
 ### Core Identity
 - **Role:** Solo
@@ -14,10 +33,10 @@
 | INT  | 7     | | COOL | 7     |
 | REF  | 8     | | WILL | 6     |
 | DEX  | 7     | | LUCK | 4/7   |
-| TECH | 4     | | MOVE | 6 (+1)|
+| TECH | 4     | | MOVE | 6     |
 | BODY | 6     | | EMP  | 4/4   |
 
-- **HP:** 29/40 (Seriously Wounded at 20)
+- **HP:** 29/40 (Seriously Wounded at 20) — _post-Adv 2: heavy damage taken, healing back; one party member was revived near death (which one TBC)_
 - **Humanity:** 18/40 (in therapy)
 
 ### Key Skills
@@ -30,7 +49,7 @@
 
 ### Cyberware
 - Neural Link
-- Road Runner (MA +1)
+- ~~Road Runner (MA +1)~~ — _extracted with droneware in Adv 2_
 - Right Cybereye (options unclear from sheet)
 - Left Cyberarm: Pop-up Very Heavy Pistol
 
@@ -104,7 +123,7 @@
 
 ---
 
-## Fixer [Fredrik]
+## Fixer [Mats]
 
 ### Core Identity
 - **Role:** Fixer

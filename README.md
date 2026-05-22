@@ -6,8 +6,8 @@ Tabletop RPG campaign using Cyberpunk RED rules.
 - **Daniel** (also plays Netrunner "Digitz" as GMPC; Olof may take over if he joins)
 
 ## Players
-- **Mats** - Solo (combat specialist)
-- **Fredrik** - Fixer (social/connections)
+- **Fredrik** - Solo (combat specialist)
+- **Mats** - Fixer (social/connections)
 
 ## Structure
 
@@ -18,5 +18,6 @@ adventures/
 ```
 
 ## Campaign Status
-- Adventure 1 "Cyber Drones" - COMPLETED (session 2024-02-03)
-- Adventure 2 - TBD
+- Adventure 1 "Cyber Drones" — COMPLETED (session 2024-02-03)
+- Adventure 2 "Dead Signal" — COMPLETED (session ~April 2026); session notes filed
+- Adventure 3 "Costa Muerta" — DRAFT (Tijuana + offshore auction; first draft of adventure.md filed)
