@@ -45,6 +45,28 @@ The auction is fixed. The journey is paced backwards from auction night.
 
 ---
 
+## Running This Adventure
+
+**Key DVs used (Cyberpunk RED scale):**
+- Easy: **DV 11** (basic STREETWISE)
+- Standard: **DV 13** (Aldecaldos negotiations, border bribe persuasion, basic interference at ringside)
+- Difficult: **DV 15** (most buyer haggling, key AWARENESS reads on Tanaka, vehicle-pit counter-driving, NET architecture intrusion)
+- Hard: **DV 17** (Tía Esmé bond upgrades, deep reads on Tanaka, top-tier addendum upgrades, syndicate floor exception)
+- Very Hard: **DV 19** (catching the Arasaka watch logo on Tanaka, max Vega cash escalation)
+
+**Leveling between Adv 2 and Adv 3 (or at the close of Adv 3):**
+
+Run a flat leveling package per PC rather than counting IP for two infrequent sessions of damage and stress. Suggested package per PC:
+- **+1 to two skills** of the player's choice (their pick — usually role-defining ones)
+- **+1 Role Ability rank** if they're under Rank 6 (Fredrik's Combat Awareness, Mats's Operator, Digitz's Interface). If they're at Rank 5 already, this is a non-trivial jump
+- **Up to 5,000 eb of new cyberware or gear** (player's pick, GM approval):
+  - Fredrik: Optical Camo cloak, Smartlink, or a serious melee weapon upgrade
+  - Mats: Voice Stress Analyzer, Subdermal Armor (BODY+1), or a personal driver-AI
+  - Digitz: a new program slot or two, Cybermodem upgrade, or Interface Plugs upgrade
+- **+1 Humanity recovery** for any character below max — they had two months off, and Fredrik specifically had therapy time
+
+---
+
 ## Adventure Structure
 
 ### Part 0: The Send-Off (Night City)
@@ -632,82 +654,7 @@ Mats buys flowers. Digitz, the GMPC, calls his mentor.
 
 ---
 
-## Events (Random/Triggered)
-
-### Phantom signal (placebo)
-**Trigger:** Once, mid-adventure, GM discretion. Ideally at the buyer tour when stakes feel highest.
-
-**Effect:** One player gets a flash-pop of static behind the eyes. A 1-second taste of the droneware signal — *but the droneware is gone.* It's a psychosomatic ghost. -1 to that player's next INT check. Pure unease. No mechanical threat.
-
-This is for atmosphere. The players experienced an existential horror in Adv 2. The horror doesn't actually leave the body when the chrome does.
-
-### Calls from Ryla Vox
-**Trigger:** Anytime between Parts 4-6.
-
-Ryla calls Mats. She has been investigating Arasaka's level 17 internal collapse from her end. The official story is the players don't exist. The unofficial story (the Arasaka rumor mill) has them as *legendary*. Mercs in Night City are starting to drop their handles like a story. *"You okay? Tell me you're somewhere far away."* Mats can share as little or as much as he wants. She mentions: she's writing the long-form story for News 54. It runs in three weeks. *Their names will not be in it.*
-
-### Day of the Dead overlay
-**Trigger:** Tijuana scenes, Parts 4-6.
-
-Every scene in TJ should have a Día de los Muertos beat. A street altar. A face-painted child. A mariachi band warming up for the festival. Marigold petals on a doorstep. *Atmosphere only.* Don't make it heavy.
-
----
-
-## Session Pacing Guide
-
-| Phase | Target Time | Notes |
-|-------|-------------|-------|
-| Part 0: The Send-Off | 30-45 min | Cyberware install at Voss's, vehicles at Kojo's, loadout choices |
-| Part 1: The Long Road | 30-40 min | Establish road tone, run the highway ambush |
-| Part 2: Snake's Nest | 25-35 min | Roleplay with Mateo + abstracted Ricochet defense (single resolution roll) |
-| Part 3: La Frontera | 15-25 min | Quick negotiation, the Mole cameo |
-| Part 4: Tijuana arrival | 30-40 min | Atmosphere, Ofelia, buyer landscape |
-| Part 5: La Lucha Cromada | 40-60 min | Fredrik's spotlight, narrative combat |
-| Part 6: Buyer Tour | 50-65 min | Three scenes: Doña+Vega combined at Plaza Santa Cecilia, Tía Esmé at the cantina, Tanaka at dinner |
-| Part 7: Costa Muerta | 90-120 min | Auction + Section-9 climax |
-| Part 8: Aftermath | 25-40 min | Faction states, Día beat |
-
-**Total estimated session time:** 5-7 hours, single session.
-
----
-
-## GM Quick Reference
-
-**Key DVs used in this adventure:**
-- Easy: DV 11 (basic STREETWISE)
-- Standard: DV 13 (Aldecaldos negotiations, border bribe persuasion)
-- Difficult: DV 15 (most buyer haggling, key AWARENESS reads on Tanaka)
-- Hard: DV 17 (vehicle-pit counter-driving, top-tier buyer raises, deep reads on Tanaka)
-- Very Hard: DV 19 (catching the Arasaka watch logo, max Vega negotiation)
-
-**Loot/Rewards (typical):**
-- 100,000-250,000 eb cash (auction proceeds)
-- Faction relationships (Curanderos clinic privileges, Aldecaldos family bond, possible Militech asset status)
-- Captured Section-9 gear if applicable (mil-spec SMGs, EVA suits, smart frag grenades — ~30k eb resale value, but very heat-y)
-- Tanaka captured = political bargaining chip; never sell publicly, only trade
-- Mateo's snake-mark tattoo (if accepted) — perennial Aldecaldos goodwill chip
-- A painted cyber-mask from Reyna Solano (sentimental, no stats)
-
-**Leveling guidance (between Adv 2 and Adv 3, or at the close of #3):**
-
-Run a flat leveling package per PC rather than counting IP for two infrequent sessions of damage and stress. Suggested package:
-
-- **+1 to two skills of the player's choice** (their pick — usually role-defining ones)
-- **+1 Role Ability rank** if they're under Rank 6 (Fredrik's Combat Awareness, Mats's Operator, Digitz's Interface). If they're at Rank 5 already, this is a non-trivial jump
-- **Up to 5,000 eb of new cyberware or gear** (player's pick, GM approval). Reasonable suggestions:
-  - Fredrik: an Optical Camo cloak, a Smartlink, or a serious melee weapon upgrade (now that he's done melee, he might want a real chrome blade)
-  - Mats: a Voice Stress Analyzer upgrade, a Subdermal Armor (BODY+1), or a personal driver-AI for his vehicles
-  - Digitz: a new program slot or two, a Cybermodem upgrade, or an Interface Plugs upgrade
-- **+1 Humanity recovery** for any character below max — they had two months off, and Fredrik specifically had therapy time
-
-**Faction standing inheritance from this adventure:**
-- Track each faction (Curanderos, Aldecaldos, Militech, Arasaka, Trauma Team, Tanaka/Section-9) on a -2 to +2 scale and update at session close. Future adventures should reference these
-
----
-
 ## Player Handouts
-
-*The pages that follow are formatted to be printed and handed to the players. No GM commentary, no purpose notes — just menus.*
 
 ### Voss's Menu — Cyberware
 
