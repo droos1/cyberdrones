@@ -43,8 +43,6 @@ The auction is fixed. The journey is paced backwards from auction night.
 | D-1 | Buyer tour (Curanderos, Militech, Aldecaldos, Tanaka). |
 | D-0 | Helicopter transit to Nueva Costa. Costa Muerta auction. |
 
-**GM Note:** Don't run the calendar as a literal pressure clock. Use it as a structural skeleton. The auction date is the only hard deadline — if the players want to spend two sessions on the credibility tour because they're loving it, let them. The schedule above is "if they keep moving."
-
 ---
 
 ## Adventure Structure
@@ -53,14 +51,9 @@ The auction is fixed. The journey is paced backwards from auction night.
 
 Two weeks of downtime have given the team time to heal, sit on the droneware, and — crucially — *spend money.* Past adventures have been frugal; the team is thin on chrome. With a 100k+ eb sale on the horizon, Kojo's 15k brokerage already on the table, and a credible road ahead, this is the moment to fix that.
 
-**GM Note:** This is essentially a structured shopping montage with three stops. Aim for 30-45 minutes of play. The point is to let players pick their loadout, get a return-visit beat with Voss, and arrive at the highway *kitted.* Don't make it a fetch quest — there's no obstacles or rolls here unless the players insert their own drama. Run it like a montage with a few dialogue beats.
-
 **Actions:**
 - Kojo pitches the southern run at Suki's — sells them on the trip (no roll, exposition beat)
 - Negotiate Kojo's brokerage cut — **Mats's scene** as the Fixer. Default ask: **15k up front + 10% backend.** PERSUASION DV 13 → drop to 10k up front. DV 15 → drop to 5k up front. DV 17 → no cash up front, 12% backend instead. DV 19 → flat 10% backend, nothing up front. (He won't go below 10% on principle — he's putting his name on this)
-- **Stop 1 — Voss's clinic:** cyberware install. Hand players the *Voss's Menu* handout
-- **Stop 2 — Kojo's Yard:** pick **Van or Sedan** (one or the other). Optional bike for Fredrik. Hand players the *Kojo's Garage* handout
-- **Stop 3 — Final Prep:** ammo, comms, melee weapon for Fredrik (lucha-ready), level-up paperwork resolved here
 
 ---
 
@@ -207,6 +200,7 @@ Don Bicho's crew has been growing. They hit the Snake's Nest three weeks ago —
 
 **The Players' Choice:**
 - Accept: Aldecaldos goodwill, safe passage, an introduction to Tía Esmé (one of the four buyers)
+- // Lend him the ricochet - skill check to get idea, or natural ?
 - Decline: They leave tonight, but the Aldecaldos won't extend hospitality on the way back, and Tía Esmé won't take their meeting cold
 
 **PERSUASION / CONVERSATION:** Mats can negotiate additional terms (DV 15: Aldecaldos contribute fighters to the camp defense Mats can position; DV 17: they throw in fuel and a swap vehicle).
@@ -259,8 +253,6 @@ The old US-Mexico border crossing south of San Ysidro. The Federal infrastructur
 A line of trucks, motorcycles, and one impossibly old yellow taxi. Castillo's men work the line professionally — a kind of feudal bureaucracy. Forms, fees, vehicle search. The whole operation feels closer to a TSA checkpoint than to a smuggler crossing.
 
 
-*"They got out."*
-
 ---
 
 **At the Window.**
@@ -298,22 +290,34 @@ The team reaches Castillo's clerk. Standard interrogation. Vehicle search incomi
 
 **The buyer landscape briefing.**
 
-Ofi sits the players down with a bottle of mezcal and a hand-drawn diagram. She walks them through the four buyers Kojo identified, plus a fifth she's adding herself:
+Ofi sits the players down with a bottle of mezcal and a hand-drawn diagram. She walks them through the four buyers Kojo identified:
 
 | Buyer | Represents | Pays In | Ofi's Read |
 |-------|------------|---------|-----------|
 | **Doña Esperanza Vargas** | Los Curanderos (ripperdoc cartel) | Cash + permanent clinic favor | Reliable. Religious. Means what she says. *Will not* meet you cold — must earn it through Tuesday's lucha card |
-| **Mr. Vega** | Militech cutout (almost certainly) | Cash, a lot of it | Smooth. Educated. Will know your file. Selling here puts you on Militech's roster permanently — they call, you answer |
+| **Mr. Vega** | Militech cutout (almost certainly) | Cash, a lot of it, + corporate extraction shield | Smooth. Educated. Will know your file. Selling here puts you on Militech's roster permanently — they call, you answer |
 | **Tía Esmé Aldecaldo** | The Aldecaldos Nomad family | Modest cash + deep alliance + a Nomad family bond | Best long-term play. Won't outbid Vega on cash. Will outbid him on *what it gets you for the rest of your life.* Needs Mateo's letter |
-| **Iku Tanaka** | Pacific Rim medical conglomerate (claims) | Top dollar, clean transfer | Slick. *Too clean.* Ofi doesn't trust him. Won't say why. Won't tell you not to take the meet |
-| **The Auction itself** | Open bidding floor at Nueva Costa | Whatever the room pays | Maximum cash if it goes well, total exposure if it goes badly. Recommended only with a sponsor in the room |
+| **Iku Tanaka** | Pacific Rim medical conglomerate (claims) | Top dollar, clean transfer, *no other terms offered* | Slick. *Too clean.* Ofi doesn't trust him. Won't say why. Won't tell you not to take the meet |
+
+**How the sale works — Ofi's lecture, listen carefully.**
+
+*"You don't sell from this apartment. You sell on the floor at Nueva Costa. That is the rule, and it is not my rule, it is the rule of the three syndicates that run the rigs and they will burn anyone who tries to walk a sale around them. The house takes **12% of the cash hammer price**, split between the three. That's how we eat. You don't pay it, you bleed."*
+
+She breaks it down:
+
+- **The meetings (Wednesday):** Each buyer gets a brief sealed-case inspection — they scan it, weigh it, ask provenance questions. They cannot open it. They cannot match-fire the firmware. They get **90 seconds** under Ofi's eyes. The point is they verify the goods are real
+- **The addendum:** Each buyer signs a **non-cash addendum** at the meeting — witnessed by Ofi, real ink, real chop. The clinic, the bond, the extradition shield, whatever they're offering on top of cash. *That's the contract.* It's binding on whichever buyer wins the bid at auction
+- **The auction (Thursday):** Open cash bidding on Lot 4 (the sealed pair). Each buyer's bid is "**X cash + my signed addendum.**" Players have **seller's discretion** — they choose the winning bid, not necessarily the highest cash number. *They pick the package they want*
+- **The 80% floor:** To stop sham closes to friends, syndicate rules require the accepted bid be at least 80% of the highest cash bid on the table. So you can take a lower cash number to grab a richer addendum — but not absurdly lower
+
+*"That's why the meetings matter. Cash is cash, you can chase it. The addendum is what you actually buy with the deal. Pay attention to what each one is willing to put their name on."*
 
 She lays out the **3-day plan**:
 - **Day D-2 (Tuesday):** La Lucha Cromada. Curanderos gate. *"Win or lose, fight well. The Doña watches the card herself"*
-- **Day D-1 (Wednesday):** Buyer meetings around the city. Each on the buyer's terms
-- **Day D-0 (Thursday):** Helicopter from the seawall at sundown. Auction on Nueva Costa, sundown to midnight
+- **Day D-1 (Wednesday):** Buyer meetings around the city. Case inspections + addendum signings. Indicative cash discussed but never locked
+- **Day D-0 (Thursday):** Helicopter from the seawall at sundown. Auction on Nueva Costa, sundown to midnight. *That* is where the deal closes
 
-**Player initiative:** They can deviate. They can scout the auction venue early. They can try to meet Doña Esperanza without the lucha (won't work cold — but Mats can establish that he tried). They can spend the morning of Tuesday at the Día de los Muertos parade to soak in the local flavor. The schedule is theirs.
+**Player initiative:** They can deviate. They can scout the auction venue early. They can try to meet Doña Esperanza without the lucha (won't work cold — but Mats can establish that he tried). They can spend the morning of Tuesday at the Día de los Muertos parade to soak in the local flavor. The schedule is theirs — but the sale has to land on the floor at Nueva Costa.
 
 **GM Note:** Lean into atmosphere here. Tijuana should feel as physically different from Night City as you can make it — sun, dust, food smells, color, languages braided together, infrastructure that is *older* and *more human-scale.* Spend time on it. The players will reward it.
 
@@ -327,33 +331,41 @@ She lays out the **3-day plan**:
 
 **The Card.** Three matches before the main event. Players can mingle, place bets, listen. STREETWISE/PERSUASION rolls reveal: Reyna Solano "La Viuda" is the biggest star on this card. She wants out of the circuit but the syndicate has her contract. She fights *clean.* Her partners El Padre and El Hijo are veterans, professional, not psychopaths.
 
-**The Match.** Players are slotted as the challenger team in the final card. 3-on-3 tag-team, two falls out of three, non-lethal cyberware ruleset (no firearms, no monoblade weapons, no lethal-effect cyberware).
+**The Match.** Singles bout, two falls out of three, non-lethal cyberware ruleset (no firearms, no monoblade weapons, no lethal-effect cyberware). **Fredrik** is the fighter in the ring against **La Viuda.** Mats and Digitz work the corner as her opponents' stable will work theirs — *segundos*, cornermen, fixers in tuxedos. **They do not climb the ropes; they hold the gate.**
 
 **Crowd payoff:** Reyna recognizes Fredrik and Mats when they enter — *"Aldecaldos!"* she shouts to her cornermen, having heard about the camp defense from her cousin. She raises a fist to them across the ring. The crowd reads it as a salute between champions. **Faction goodwill, made physical.**
 
-**Mat: Fredrik's spotlight.** Run this combat with Fredrik as the on-table lead. Mats and Digitz can tag in for shorter sequences, but Fredrik's Combat Awareness +5 DMG, his Melee Weapon 6, his cyberarm slam (use as Big Knuckles 3d6 for in-ring purposes since the Pop-up pistol is banned) — all of this is built for this scene.
+**Fredrik's spotlight.** This is built for him. Combat Awareness +5 DMG, Melee Weapon 6, cyberarm slam used as Big Knuckles 3d6 (the Pop-up pistol is banned by ruleset). He's tested in the ring on his own.
+
+**The Corner Game.** The kayfabe trick — Reyna's stable (El Padre, El Hijo) work ringside, and they *will* try to "interfere" the way every wrestling heel does: a hand on the rope when Fredrik runs for the corner, a thrown chair, El Hijo spitting flashpaste at the canvas when the ref isn't looking, a quiet shiv pressed into Reyna's palm between rounds (kayfabe; she will not actually use it). Mats and Digitz are the ones who stop it. **They can also flip it — interfere *for* Fredrik.** Slip him a chrome upgrade, jam a Sandevistan trigger, rile the crowd into noise that covers a stomp.
+
+The ref is one underpaid man in a striped shirt. He sees what the crowd wants him to see. Most interference will pass — but obvious interference loses the *crowd*, which is what Doña is actually watching.
 
 **Round structure (run as 3 narrative rounds, ~3 exchanges each):**
 
-| Round | Action | Stakes |
-|-------|--------|--------|
-| 1 | Establishment. Posturing, crowd work, first exchanges. Opponents test stats. Aim for a back-and-forth | Crowd warming up |
-| 2 | The mid-fight wrinkle. **La Viuda's Sandevistan activates** for a turn — gives her +3 init and the chance to land a clean shot. Crowd gasps. She *almost* uses the monoblade fan — visibly pulls the strike at the last second. The ref doesn't see it. **El Padre slams Fredrik for a near-pin** — escape with REF check DV 15 or take the first fall | Match tied 1-1 by end |
-| 3 | The closer. Both teams desperate. **El Hijo's flashpaste cyberware misfires** (or is set off intentionally — GM choice) creating a 1-round visibility drop and chaos. Whoever uses the chaos best wins. Either team can take the second fall | Match ends here |
+| Round | In-Ring (Fredrik vs Reyna) | Ringside (Mats + Digitz) |
+|-------|----------------------------|--------------------------|
+| 1 | Establishment. Posturing, crowd work, first exchanges. Reyna tests Fredrik's reach | El Padre paws at the ropes when Fredrik backs into them. Mats glares him off (PERSUASION/INTIMIDATE DV 13) or shoulder-checks him (BRAWLING DV 13). El Hijo plays to the crowd, no interference yet |
+| 2 | The wrinkle. **La Viuda's Sandevistan activates** for a turn — +3 init, clean shot at Fredrik. She *almost* uses the monoblade fan — visibly pulls the strike. Ref doesn't see it. **First fall available either way** (REF DV 15 to escape a pin) | El Hijo's flashpaste lights — he's about to spit it across the canvas under Fredrik's feet. **Digitz can fritz the rig** (TECH/Electronics DV 15) to misfire it into El Hijo's own face. **Or** Mats can grab El Padre as he tries to slip Reyna a small chrome shiv between rounds (PERCEPTION DV 13 to spot, BRAWLING DV 13 to stop) |
+| 3 | The closer. Either fighter can take the second fall. If El Hijo's flashpaste was fritzed, that's the 1-round visibility chaos beat in their corner instead of Fredrik's. If not, it hits the canvas and Fredrik fights blind for a round | Mats/Digitz can interfere *for* Fredrik — slipping him a knux upgrade (DV 15, ref looks away but the crowd notices), spiking the PA so the bell rings on his swing (DV 17), or simply riling the front row into a chant that breaks Reyna's focus (PERSUASION DV 13). Every "for" interference is a +1 to Fredrik's next roll **but** stacks toward a dirty-finish read |
 
 **Stats (use as guidance, simplified):**
 
 | Fighter | HP | SP | Attack | Key Trait |
 |---------|-----|----|---------|------|
-| El Padre | 60 | 14 | Cyberarm slam 4d6, grapple specialist | Slow, strong. Tank. Hard to escape grapple (DV 15) |
-| La Viuda (Reyna) | 35 | 9 | Cyberarm 3d6, Sandevistan 1x | Glass cannon. Fast. Won't actually go lethal |
-| El Hijo del Diablo | 40 | 11 | Cyber-foot kicks 3d6, flashpaste 2d6 fire (3m cone, once per match) | Theatrical. Tries to play to the crowd |
+| La Viuda (Reyna) — **in ring** | 35 | 9 | Cyberarm 3d6, Sandevistan 1x | Glass cannon. Fast. Won't actually go lethal |
+| El Padre — **ringside heel** | 60 | 14 | Cyberarm slam 4d6, grapple specialist | Slow, strong. Hands on the rope. Hard to physically dislodge (Brawling DV 15) |
+| El Hijo del Diablo — **ringside heel** | 40 | 11 | Cyber-foot kicks 3d6, flashpaste 2d6 fire (3m cone) | Theatrical, plays to the crowd. The interference *engine* — he's the one with the toys |
 
-**Damage handling:** All damage is "tracked" but doesn't actually reduce HP below 1 — the ref calls submissions and pins on cumulative damage milestones. Run as a narrative-mechanical hybrid; don't be afraid to fudge for drama. Players cannot die in this match. They can lose face, take chrome scuffs, and earn the crowd's respect or its boos.
+**Damage handling:** All damage is "tracked" but doesn't actually reduce HP below 1 — the ref calls submissions and pins on cumulative damage milestones. Run as a narrative-mechanical hybrid; don't be afraid to fudge for drama. Fredrik cannot die in this match. He can lose face, take chrome scuffs, and earn the crowd's respect or its boos.
+
+**Crowd read (the thing Doña is actually scoring).** Track a rough **Crowd dial** — start at neutral, each clean Fredrik strike or escape moves it toward him, each obvious chrome-assist or ringside grapple moves it away. Where the dial ends matters more than who took the second fall.
 
 **Outcome:**
-- **Win:** Crowd erupts. Doña Esperanza tips her ceramic cup toward them. A handler arrives within 5 minutes: *"La Doña verá a ustedes mañana. Sus términos."* Vega ALSO approaches that night (see below)
-- **Lose:** Crowd respects them anyway if they fought clean. Doña Esperanza watches them out — judgmental but not dismissive. Handler arrives with: *"La Doña dice que tienen valor. Mañana a las tres."* Curanderos meet still happens, but Doña Esperanza will price them as B-list. Vega still approaches
+- **Clean win (Fredrik finishes on his own merits or with subtle/legal corner-work, crowd dial positive):** Crowd erupts. Doña tips her ceramic cup. Handler arrives in 5 min: *"La Doña verá a ustedes mañana. Sus términos."* Vega approaches that night. Reyna seeks them out after — wants to talk to them later, alone
+- **Dirty win (Fredrik wins but the crowd saw the chrome, dial negative):** Curanderos handler arrives anyway but cooler: *"La Doña dice que tienen estilo, pero no honor."* B-list pricing on Doña's offer. Vega approaches *more* warmly — he respects the result over the optics
+- **Loss (clean):** Crowd respects them. Doña handler: *"La Doña dice que tienen valor. Mañana a las tres."* B-list Doña meet still happens. Vega still approaches. Reyna still seeks them out
+- **Loss (dirty — Fredrik loses *and* they were caught cheating):** Doña does not send a handler. They have lost the Curanderos as a buyer. Vega still approaches but quotes a lower opening offer. Down to two buyers (Tía Esmé, Tanaka)
 
 **Mr. Vega's approach.** After the bout, in the cooldown corridor under the stands. A man in a linen suit, no visible chrome, no obvious security but *something is wrong with the air around him.* He extends a card. *"Mr. Vega. I represent interested parties from the north. I was given a recommendation, and I confirmed it tonight. May we speak tomorrow?"* Hands them a coordinates card for a rooftop bar. *"Five o'clock. Just the three of you. Pay for your own drinks; I will not insult you with hospitality."* Then he is gone.
 
@@ -363,7 +375,14 @@ She lays out the **3-day plan**:
 
 **Wednesday. Players run their meetings.**
 
-This part is roleplay-heavy. Three scenes total — the first stacks Doña Esperanza and Vega together at a public plaza, then a private cantina meet with Tía Esmé, then dinner with Tanaka. Each buyer will try to learn what the others offered (Mats picks up on this immediately, Human Perception), and each raises terms once they realize they're in a competitive bid.
+This part is roleplay-heavy. Three scenes total — the first stacks Doña Esperanza and Vega together at a public plaza, then a private cantina meet with Tía Esmé, then dinner with Tanaka. **Ofelia accompanies them to every meeting** with the sealed case in a hardshell messenger bag, and *she* runs the 90-second inspection each buyer is allowed. The players don't carry the case themselves — that's not what they're paying her 12% for.
+
+**At each meeting, three things happen:**
+1. **Inspection (90 seconds).** Buyer scans, weighs, examines the seal. Asks 1-3 provenance questions — firmware lock state, lab origin, has it been powered on. Ofi enforces the clock. *No buyer is allowed to open the case.*
+2. **The addendum is signed.** Each buyer puts their non-cash term on paper — real ink, witnessed by Ofi. Doña's clinic-for-life, Tía's family bond, Vega's extradition shield. Binding on whoever wins the auction bid
+3. **Indicative cash discussed.** Each buyer states a *range* they're prepared to bid in. Not locked. The cash is the part that floats — that's what the auction floor is for
+
+Each buyer will try to learn what the others offered (Mats picks up on this immediately, Human Perception), and each may raise the *addendum* once they realize they're in a competitive bid. Cash they'll save for the room.
 
 ---
 
@@ -375,34 +394,38 @@ Ofelia warned the team: *"They'll both be there. They both know you're coming. D
 
 Run this as **one ~25-30 minute scene** where the players shuttle between the two buyers, each pitch happening in earshot or eyeline of the other. The competitive pressure is the whole point of stacking them.
 
-**Doña Esperanza intercepts first**, near the altar.
+**Doña Esperanza intercepts first**, near the altar. Ofi opens the messenger bag. Doña's ripperdoc — a woman with chrome on her hands and a holstered scanner — does the inspection. Three questions: *"Has it been powered? Is the seal Voss's work or someone after her? What does the firmware lock say to a Curanderos handshake?"* Ninety seconds, clean. The seal closes.
 
-*"Both units. I do not need to be a monopolist — I need to be the buyer your community remembers fondly. 140,000 eb for the pair, and you have permanent surgical privileges at any Curanderos clinic, for the three of you, for life. This is a forever offer."*
+Then Doña sits with the players on a marigold-lined bench.
+
+*"Both units. I do not need to be a monopolist — I need to be the buyer your community remembers fondly. I'll bid in the room. The addendum I will put my name to today is **permanent surgical privileges at any Curanderos clinic, for the three of you, for life.** That is forever. The cash I will fight for on the floor; expect me to open around 140,000 eb."*
+
+She signs the addendum. Ofi witnesses.
 
 **Read:** Genuine. The "permanent clinic" terms are real and traceable through Curanderos's reputation. The *safest* buyer.
 
-**Negotiation (Mats):**
-- DV 13: +15,000 eb cash
-- DV 15: Curanderos-installed mid-grade cyberware (~5k eb value) for each PC
-- DV 17: Curanderos militia protection if Arasaka comes asking
+**Addendum upgrades (Mats):**
+- DV 15: Curanderos-installed mid-grade cyberware (~5k eb value) for each PC, written in
+- DV 17: Curanderos militia protection if Arasaka comes asking, written in
 
-**Vega's staffer intercepts** as the players step away from the tent and gestures them toward the float. Vega meets them in the shade of the awning — Fredrik AWARENESS DV 15: a sniper team is set up across the boulevard, not for the players, for Vega's safety. Standard practice.
+**Vega's staffer intercepts** as the players step away from the tent and gestures them toward the float. Vega meets them in the shade of the awning — Fredrik AWARENESS DV 15: a sniper team is set up across the boulevard, not for the players, for Vega's safety. Standard practice. A man with a corporate-grade scanner does Vega's inspection. He asks one question: *"Original Arasaka serials still readable on the chassis, or scrubbed?"* The answer matters to him; he watches the players' faces, not the case.
 
-*"I represent parties for whom your two units are of substantial interest. We pay 150,000 eb for both. Wire transfer through any laundry of your choosing. We do not require a sponsor's mark or an alliance. We do not require gratitude. We do require that the units transfer cleanly and that you and we never have this conversation again."*
+*"My principals are very interested. On the floor we'll be aggressive on cash — expect 150,000-200,000 eb depending on the room. My addendum on paper today is a **non-extradition guarantee in Militech-aligned territories**. If Arasaka issues a bounty on you, no one we hold a line with will honor it."*
+
+He signs. Ofi witnesses.
 
 **The catch:** He never says "Militech," but his speech, his protection detail, his briefcase, the man's *posture* all say it. Selling here means:
 - They become *assets* on Militech's books — not enemies, but people Militech can call on
 - They never appear on the payroll, but they will be expected to receive Militech calls in the future
-- If Arasaka ever comes back at them, Militech *might* help. Or might not. *"Discretion serves both parties."*
+- If Arasaka ever comes back at them, Militech *might* help — and now it's *contractual*
 
-**Negotiation:**
-- DV 15: +20,000 eb
-- DV 17: A non-extradition guarantee — if Arasaka issues a bounty, Militech-aligned territories will not honor it
-- DV 19: Vega will go to 250,000 total but at this point he's irritated and the relationship sours. Mats will *feel* the chill
+**Addendum upgrades:**
+- DV 15: Add a small Militech extraction-team standby for one future emergency (one-time use, written in)
+- DV 17: Add a Militech-grade safehouse rotation in three Pacific Rim cities
 
-**Cross-pressure (the reason they're stacked).** Doña has a clean sightline of Vega's awning across the plaza, and vice versa. Each is *watching* the other talk to the players. Mats can leverage this:
-- **PERSUASION DV 15:** Either buyer raises an additional 10,000 eb on the spot, *because the other one is looking*. Works once per buyer
-- **PERSUASION DV 17:** Get one buyer to publicly de-escalate (back off a term) in exchange for a verbal exclusivity tease the players don't have to actually honor
+**Cross-pressure (the reason they're stacked).** Doña has a clean sightline of Vega's awning across the plaza, and vice versa. Each is *watching* the other sign their addendum. Mats can leverage this:
+- **PERSUASION DV 15:** Either buyer adds one extra clause to their addendum on the spot, *because the other one is watching*. Works once per buyer
+- **PERSUASION DV 17:** Get one buyer to telegraph a higher indicative cash range — useful intel for the auction floor
 
 **Tanaka is not here.** Día de los Muertos PR isn't his crowd, and he'd be remembered.
 
@@ -412,37 +435,44 @@ Run this as **one ~25-30 minute scene** where the players shuttle between the tw
 
 Location: Cantina La Serpiente, in a Nomad-owned compound on the eastern edge of TJ. Players need Mateo's letter to get past the door. Inside: bandana-and-leather, kids running between tables, a band playing norteño-electric.
 
-Tía Esmé is in her 50s, lean, gray-streaked braid, snake-mark coin on a chain. She receives them at a corner table with two bowls of birria.
+Tía Esmé is in her 50s, lean, gray-streaked braid, snake-mark coin on a chain. She receives them at a corner table with two bowls of birria. Ofi sets the case on a third chair. Tía Esmé's tech — a kid with a scarred face and good hands — does the ninety-second pass. He asks one question: *"Will it talk to a Nomad rig that wasn't built by Arasaka?"* He's checking for proprietary lockout.
 
 *"Mateo says you defended his people. That is rare. Most of the time a stranger 'defends our people' to mean they fired their weapon in our direction and called it brotherhood. You actually fought. That changes the conversation."*
 
 *"The Aldecaldos want the droneware. We want it because every year more of us die to corps who think we are road kill. We want a weapon that puts the fear on the other side of the equation. We cannot pay what Militech pays. We can pay what alliance pays."*
 
-**Her offer (for the pair):**
-- 60,000 eb in cash
-- Permanent Aldecaldos family bond for the three of them — meaning every Aldecaldos waystation, on every road in the Americas, becomes a place where they sleep safe, eat free, and can call for backup
+**Her addendum (signed today):**
+- **Permanent Aldecaldos family bond** for the three of them — every Aldecaldos waystation, on every road in the Americas, becomes a place where they sleep safe, eat free, and can call for backup
 - A position with the family if any of them ever wants it (relevant for long-term character arcs)
-- **One condition:** they don't tell *anyone* it was the Aldecaldos who bought
+- **One clause she writes in:** they don't tell *anyone* it was the Aldecaldos who bought
+
+**Her cash:** *"I will bid 50-70,000 eb on the floor. I will not chase Militech's number. I refuse, on principle. If you want the bond, you accept the lower cash. That is how alliance works."*
 
 **Read:** True. The family bond is the kind of thing that pays out for the rest of their lives. The cash is lousy by comparison to Vega's offer. The bond is priceless.
 
-**Negotiation:** Tía Esmé won't raise the cash. She'll raise the bond's depth if Mats impresses her (DV 15: a personal stake from her own clan; DV 17: a kuvasz dog-sized cyber-mastiff trained as a guardian, given to whichever PC she likes most)
+**Addendum upgrades:** Tía Esmé won't raise the cash. She'll deepen the bond if Mats impresses her (DV 15: a personal stake from her own clan, written in; DV 17: a kuvasz-sized cyber-mastiff trained as a guardian, given to whichever PC she likes most)
 
 ---
 
 **Meet 3: Iku Tanaka (the trap)**
 
-Location: A private dining room at a sushi place near the seawall. White tablecloths. Quiet. Tanaka is alone. Mid-40s, Japanese, perfect posture, a single subtle neural-link port behind his ear.
+Location: A private dining room at a sushi place near the seawall. White tablecloths. Quiet. Tanaka is alone. Mid-40s, Japanese, perfect posture, a single subtle neural-link port behind his ear. He has no technician — *he* does the inspection himself, with a handheld scanner pulled from a leather portfolio. He asks no provenance questions. He just *looks* at the case, scans it, hands it back.
 
-*"I represent a Pacific Rim medical foundation. We have a particular interest in advanced neural-bridging cyberware. We are willing to pay 180,000 eb for both units, payable in immediate cash on transfer at the auction. We would prefer a private transaction; we will accept the auction venue if you require it."*
+*"I represent a Pacific Rim medical foundation. We have a particular interest in advanced neural-bridging cyberware. On the floor we will be aggressive — expect 180,000 eb cash, possibly higher. Payable in immediate clean transfer at hammer."*
 
-**Read on Tanaka — multiple Human Perception checks build a picture:**
+Ofi prompts: *"And your addendum, señor?"*
+
+Tanaka smiles, slightly. *"None. We prefer a clean transaction. Cash, transfer, no further entanglement. Discretion is its own value."*
+
+**The bid-shape tell (free, no roll required).** Every other buyer has put a non-cash term on paper. Tanaka refuses to. *Every real buyer wants a relationship.* He is buying a transaction. **A sharp player at the table should notice this on its own** — flag it explicitly to whoever is paying attention. This is the cheapest tell in the adventure and the design wants players to clock it.
+
+**Read on Tanaka — Human Perception checks build a richer picture:**
 - DV 13: He is extremely good at small talk. He has memorized details about each player from somewhere
 - DV 15: His "Pacific Rim medical foundation" doesn't show up in any of the searches Digitz can run during dinner. Nothing. *Nothing at all.* A real entity would have some footprint
 - DV 17: His Japanese is too good to be a Pacific Rim general dialect — it's *Tokyo metropolitan, Arasaka corporate dialect.* This is a tell only Fredrik might catch, given his Japanese-1 background skill, or only if Mats has been listening for it
 - DV 19: There is a very small Arasaka logo embossed inside the band of his watch. Visible only when he tilts his wrist to drink. Lucky catch only
 
-**He is Arasaka counterintelligence.** He is not here to buy. He is here to *learn the meet location, learn who else is bidding, and arrange a Section-9 takedown at the auction venue.*
+**He is Arasaka counterintelligence.** He is not here to buy. He is here to *learn the meet location, learn who else is bidding, and arrange a Section-9 takedown at the auction venue.* The no-addendum bid shape is consistent with this — he never expected the deal to actually close.
 
 **If players signal they're onto him:** Tanaka is polite, finishes dinner, leaves the bill. He has now *confirmed* that the team is alert — the Section-9 auction-night raid will be heavier and better prepared (add 2 troopers, see Part 7).
 
@@ -470,11 +500,16 @@ Picture a daisy-chain of converted Pemex platforms, lashed together with bridges
 - All firearms checked at the central platform armory on arrival. PCs get one concealed sidearm each (house norm; can't enforce *zero* weapons among professional buyers)
 - The Ricochet stays on the helicopter. *Cannot* be brought to the auction floor
 - Internal disputes are handled by **the Pacers** — a small contingent of armored peacekeepers from each syndicate, ~12 total, who patrol the central platform. They don't break up bidding disputes. They break up shootings
-- Auction lots are presented one at a time. Bidding is open. The seller (the players) sit in a sponsor box. The high bidder takes the lot at end-of-bidding. Failed lots return to the seller
+- Auction lots are presented one at a time. Bidding is open. The seller (the players) sit in a sponsor box
+- **The house takes 12% of the cash hammer price**, split between the three syndicates. Non-cash addendums are not taxable (the syndicates cannot tax a family bond or a clinic favor)
+- **Seller's discretion:** the seller chooses the winning bid, not the auctioneer. The accepted bid must be at least **80% of the highest cash bid on the table** (anti-collusion floor). So players can take a lower cash number to grab a richer addendum — but not absurdly lower
+- Failed lots return to the seller, minus a 5,000 eb listing fee
 
 **Auction Mechanics.**
 
 There are five lots tonight. The droneware is **Lot 4**, sold as a sealed pair — Ofelia made this a non-negotiable house rule when she sealed the case ("*they go together or they don't go at all; I'm not selling halves of a thing that should never have left a lab*"). Other lots include: a militec-grade dataset, a Petrochem core sample (chemistry secret), some other dark-end items. None of those are the players' problem.
+
+**The bid format.** Each buyer who signed an addendum at Wednesday's meetings will, when their turn comes, state their bid as: *"X cash, plus my addendum on file."* Players track these on a side card — Ofi keeps the actual ledger. At the close they pick which package they prefer (subject to the 80% floor).
 
 **Pre-bid setup:** Before Lot 4, the auctioneer (a woman in a black-and-gold mask, mic'd to the room) introduces the lot. The room sees what they're buying — both units in a single glass case, paired. Doña Esperanza nods slightly. Tía Esmé's bodyguard whispers something to her. Vega's staffer is taking notes on a paper pad. **Tanaka is not there.**
 
@@ -533,20 +568,34 @@ Fastest combat — about 4 rounds of running fight across gangways. Players make
 
 Assuming the players survive Section-9 and protect the case:
 
-The auction *continues.* The room knows they just watched a corporate raid get repelled by the sellers of the lot in question. **This is worth bidding for.** A unit that the Arasaka Special Recovery Division wants this badly is a unit worth owning.
+The auction *resumes.* The room knows they just watched a corporate raid get repelled by the sellers of the lot in question. **This is worth bidding for.** A unit that the Arasaka Special Recovery Division wants this badly is a unit worth owning. Indicative cash ranges firm up and climb — the post-raid risk premium pushes every buyer's number up by roughly 20%.
 
-- **Doña Esperanza** opens at 100,000 eb
-- **Tía Esmé** matches and offers her bond terms verbally
-- **Vega's staffer** opens a phone line, gets approval, raises to 200,000 eb
-- **A new buyer** — a quiet Petrochem rep who hadn't been on Ofelia's list — opens at 220,000 eb (GM may introduce this only if pacing wants a complication)
+**Final bids on Lot 4 (typical, after the raid risk premium):**
 
-**Final price floor: 220,000 eb for the paired lot.**
+| Buyer | Cash bid | Addendum on file |
+|-------|----------|------------------|
+| **Doña Esperanza** | 160,000 eb | Curanderos clinic-for-life (+ any DV 15/17 upgrades signed Wednesday) |
+| **Tía Esmé Aldecaldo** | 65,000 eb | Aldecaldos family bond (+ any DV 15/17 upgrades) |
+| **Mr. Vega's staffer** (phone-cleared) | 220,000 eb | Militech non-extradition shield (+ any signed upgrades) |
+| **Quiet Petrochem rep** (optional cameo, no addendum) | 230,000 eb | None — clean cash, like Tanaka | 
 
-The pair sells to a single winner. Tía Esmé's family bond is offered alongside her bid, so picking her means a lower cash number in exchange for the alliance — players decide on values, not on splits.
+**The 80% floor in practice:** Vega's 220k or Petrochem's 230k sets the cash ceiling. The lowest acceptable bid on the table is 80% of that — so ~184k if Vega tops, ~184k if Petrochem cameos. **Tía Esmé's 65k is technically below the floor** — to accept her bond addendum, the players must either negotiate her cash up (PERSUASION DV 17 in real-time on the floor; she'll grudgingly push to ~150k if Mats lands it because the Section-9 raid just *proved* the Aldecaldos need this) or negotiate the syndicates' floor down (PERSUASION DV 17 with the auctioneer — invokes the Section-9 raid as cause for an exception)
 
-**Negotiation tools at this point:**
-- PERSUASION DV 13: extract a "you owe me a favor" from whoever wins, on top of cash
-- PERSUASION DV 15: get a non-disclosure pact from the winners (they don't say who they bought from)
+**Seller's call.** Players pick the winning package. They can:
+- Take **Doña** (160k cash, clinic-for-life) — safest long-term
+- Take **Vega** (220k cash, extradition shield) — most cash, you're a Militech asset
+- Take **Tía Esmé** (negotiated 150k cash + family bond) — best Nomad-flavored future, hardest to land mechanically
+- Take **Petrochem** (230k clean) — most cash, no relationship, *and the room will read it as repeating Tanaka's mistake*
+
+**Net to players** (after 12% house cut on cash, before any final-table negotiation):
+- Doña: 160k × 0.88 = **140,800 eb + clinic for life**
+- Vega: 220k × 0.88 = **193,600 eb + extradition shield**
+- Tía (if negotiated up to 150k): 150k × 0.88 = **132,000 eb + family bond**
+- Petrochem: 230k × 0.88 = **202,400 eb, no relationship**
+
+**Final-table negotiation tools** (after the winning bid is chosen, before the hammer):
+- PERSUASION DV 13: extract a "you owe me a favor" from the winner, on top of the contract
+- PERSUASION DV 15: get a non-disclosure pact (the winner doesn't say who they bought from)
 - PERSUASION DV 17: get a Pacers stand-down on any future attempt to interfere with the players in Nueva Costa's reach (long-term — they can come back here safely)
 
 ---
