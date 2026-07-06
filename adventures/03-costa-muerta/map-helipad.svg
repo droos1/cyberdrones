@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a2a3a" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <!-- Water hatch -->
+    <pattern id="water" width="40" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 10 Q10 4 20 10 T40 10" fill="none" stroke="#0f2438" stroke-width="1" opacity="0.6"/>
+    </pattern>
+    <!-- Cage / grating pattern for the gangway -->
+    <pattern id="cage" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 0 L12 12 M12 0 L0 12" fill="none" stroke="#3a5a7a" stroke-width="0.6" opacity="0.6"/>
+    </pattern>
+    <!-- Section-9 operator icon (hostile, red) -->
+    <symbol id="s9" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="5" fill="#e63946" stroke="#fff" stroke-width="1.5"/>
+      <path d="M6 22 L6 16 A6 6 0 0 1 18 16 L18 22" fill="#e63946" stroke="#fff" stroke-width="1.5"/>
+    </symbol>
+    <!-- Objective / case marker -->
+    <symbol id="target" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#06d6a0" stroke-width="2"/>
+      <circle cx="12" cy="12" r="5" fill="none" stroke="#06d6a0" stroke-width="1.5"/>
+      <circle cx="12" cy="12" r="1.5" fill="#06d6a0"/>
+      <line x1="12" y1="0" x2="12" y2="5" stroke="#06d6a0" stroke-width="1.5"/>
+      <line x1="12" y1="19" x2="12" y2="24" stroke="#06d6a0" stroke-width="1.5"/>
+      <line x1="0" y1="12" x2="5" y2="12" stroke="#06d6a0" stroke-width="1.5"/>
+      <line x1="19" y1="12" x2="24" y2="12" stroke="#06d6a0" stroke-width="1.5"/>
+    </symbol>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background: ocean -->
+  <rect width="900" height="720" fill="#081019"/>
+  <rect width="900" height="720" fill="url(#water)"/>
+
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" fill="#e63946" font-size="22" font-weight="700" letter-spacing="3">NUEVA COSTA — HELIPAD DECK</text>
+  <text x="450" y="68" text-anchor="middle" fill="#8899aa" font-size="12" letter-spacing="2">TACTICAL OVERVIEW — SHEET 7: THE EXTRACTION</text>
+
+  <!-- === SALÓN EXIT (top) === -->
+  <rect x="355" y="88" width="190" height="34" fill="#1a2d44" stroke="#5a8aaa" stroke-width="1.5" rx="3"/>
+  <text x="450" y="110" text-anchor="middle" fill="#5a8aaa" font-size="12" font-weight="600" letter-spacing="1">SALÓN EXIT</text>
+
+  <!-- === CAGED GANGWAY (chokepoint) === -->
+  <rect x="420" y="122" width="60" height="132" fill="#132238" stroke="#3a5a7a" stroke-width="1.5"/>
+  <rect x="420" y="122" width="60" height="132" fill="url(#cage)"/>
+  <text x="410" y="158" text-anchor="end" fill="#ffd166" font-size="11" font-weight="600">CAGED GANGWAY</text>
+  <text x="410" y="173" text-anchor="end" fill="#ffd166" font-size="10">1-wide chokepoint —</text>
+  <text x="410" y="186" text-anchor="end" fill="#ffd166" font-size="10">hold it, or the crane</text>
+  <text x="410" y="199" text-anchor="end" fill="#ffd166" font-size="10">sweeps it (DV 15)</text>
+
+  <!-- === HELIPAD DECK (octagon platform) === -->
+  <polygon points="240,255 660,255 730,325 730,555 660,625 240,625 170,555 170,325"
+           fill="#132238" stroke="#3a5a7a" stroke-width="2.5"/>
+  <polygon points="240,255 660,255 730,325 730,555 660,625 240,625 170,555 170,325"
+           fill="url(#grid)"/>
+  <!-- Deck edge railing note -->
+  <polygon points="240,255 660,255 730,325 730,555 660,625 240,625 170,555 170,325"
+           fill="none" stroke="#e63946" stroke-width="1" stroke-dasharray="3,4" opacity="0.5"/>
+  <text x="450" y="643" text-anchor="middle" fill="#e63946" font-size="9" opacity="0.8">DECK EDGE — 30m DROP TO OCEAN (no railing on the south run)</text>
+
+  <!-- Helipad H marking -->
+  <circle cx="450" cy="445" r="95" fill="none" stroke="#2a4a6a" stroke-width="2" stroke-dasharray="6,5"/>
+  <text x="365" y="452" text-anchor="middle" fill="#2a4a6a" font-size="60" font-weight="800" opacity="0.5">H</text>
+
+  <!-- === CHOPPER (the goal) === -->
+  <!-- rotor blades -->
+  <ellipse cx="450" cy="405" rx="110" ry="7" fill="#0a1520" stroke="#06d6a0" stroke-width="1.5" opacity="0.9"/>
+  <!-- fuselage -->
+  <ellipse cx="450" cy="445" rx="42" ry="24" fill="#0a1520" stroke="#06d6a0" stroke-width="2" filter="url(#glow)"/>
+  <!-- tail boom -->
+  <rect x="490" y="440" width="70" height="10" fill="#0a1520" stroke="#06d6a0" stroke-width="1.5" rx="2"/>
+  <!-- tail rotor -->
+  <line x1="560" y1="430" x2="560" y2="460" stroke="#06d6a0" stroke-width="2"/>
+  <!-- rotor hub -->
+  <circle cx="450" cy="415" r="4" fill="#06d6a0"/>
+  <!-- skids -->
+  <line x1="415" y1="470" x2="485" y2="470" stroke="#06d6a0" stroke-width="1.5"/>
+  <text x="450" y="449" text-anchor="middle" fill="#06d6a0" font-size="11" font-weight="700">CHOPPER</text>
+  <text x="450" y="505" text-anchor="middle" fill="#06d6a0" font-size="10" font-weight="600">SPOOLING — DUST-OFF IN 3 ROUNDS</text>
+  <text x="450" y="519" text-anchor="middle" fill="#8899aa" font-size="9">Ofi + pilot aboard · RICOCHET aboard (slave it: INTERFACE DV 13 → deck-sweeper)</text>
+
+  <!-- === FUEL DRUMS (explosive cover, top-left) === -->
+  <g>
+    <ellipse cx="235" cy="318" rx="12" ry="5" fill="#ff6b35" stroke="#fff" stroke-width="0.8"/>
+    <rect x="223" y="318" width="24" height="30" fill="#c9531f" stroke="#fff" stroke-width="0.8"/>
+    <ellipse cx="235" cy="348" rx="12" ry="5" fill="#c9531f" stroke="#fff" stroke-width="0.8"/>
+    <ellipse cx="262" cy="330" rx="12" ry="5" fill="#ff6b35" stroke="#fff" stroke-width="0.8"/>
+    <rect x="250" y="330" width="24" height="30" fill="#c9531f" stroke="#fff" stroke-width="0.8"/>
+    <ellipse cx="262" cy="360" rx="12" ry="5" fill="#c9531f" stroke="#fff" stroke-width="0.8"/>
+  </g>
+  <text x="248" y="382" text-anchor="middle" fill="#ff6b35" font-size="9" font-weight="700">FUEL DRUMS</text>
+  <text x="248" y="394" text-anchor="middle" fill="#ff6b35" font-size="9">6d6 AoE if shot</text>
+
+  <!-- === CRANE ARM (top-right) === -->
+  <rect x="628" y="300" width="26" height="26" fill="#2a3a4a" stroke="#ffd166" stroke-width="1.5"/>
+  <line x1="641" y1="313" x2="500" y2="200" stroke="#ffd166" stroke-width="3" opacity="0.9"/>
+  <line x1="500" y1="200" x2="500" y2="230" stroke="#ffd166" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <rect x="493" y="230" width="14" height="10" fill="#ffd166" opacity="0.8"/>
+  <text x="641" y="345" text-anchor="middle" fill="#ffd166" font-size="9" font-weight="700">CRANE</text>
+  <text x="641" y="357" text-anchor="middle" fill="#ffd166" font-size="9">swing DV 15</text>
+
+  <!-- === CARGO CONTAINERS (hard cover) === -->
+  <rect x="195" y="520" width="120" height="60" fill="#1a2838" stroke="#5a8aaa" stroke-width="1.5" rx="2"/>
+  <line x1="215" y1="520" x2="215" y2="580" stroke="#2a4a6a" stroke-width="1"/>
+  <line x1="235" y1="520" x2="235" y2="580" stroke="#2a4a6a" stroke-width="1"/>
+  <line x1="295" y1="520" x2="295" y2="580" stroke="#2a4a6a" stroke-width="1"/>
+  <text x="255" y="555" text-anchor="middle" fill="#5a8aaa" font-size="9" font-weight="600">CONTAINER</text>
+  <text x="255" y="567" text-anchor="middle" fill="#4a6a7a" font-size="8">hard cover</text>
+
+  <rect x="585" y="520" width="120" height="60" fill="#1a2838" stroke="#5a8aaa" stroke-width="1.5" rx="2"/>
+  <line x1="605" y1="520" x2="605" y2="580" stroke="#2a4a6a" stroke-width="1"/>
+  <line x1="665" y1="520" x2="665" y2="580" stroke="#2a4a6a" stroke-width="1"/>
+  <line x1="685" y1="520" x2="685" y2="580" stroke="#2a4a6a" stroke-width="1"/>
+  <text x="645" y="555" text-anchor="middle" fill="#5a8aaa" font-size="9" font-weight="600">CONTAINER</text>
+  <text x="645" y="567" text-anchor="middle" fill="#4a6a7a" font-size="8">hard cover</text>
+
+  <!-- === PLAYERS ENTER (case) === -->
+  <use href="#target" x="436" y="262" width="28" height="28"/>
+  <text x="450" y="248" text-anchor="middle" fill="#06d6a0" font-size="9" font-weight="700">PCs ENTER w/ CASE + BUYER'S REP</text>
+  <!-- route to chopper -->
+  <path d="M 450 300 L 450 380" fill="none" stroke="#06d6a0" stroke-width="1.5" stroke-dasharray="7,4" opacity="0.7"/>
+  <polygon points="446,376 450,388 454,376" fill="#06d6a0" opacity="0.7"/>
+
+  <!-- === SECTION-9 BOARDING === -->
+  <!-- bottom-left fast-rope -->
+  <use href="#s9" x="205" y="595" width="22" height="22"/>
+  <use href="#s9" x="235" y="600" width="22" height="22"/>
+  <line x1="220" y1="655" x2="235" y2="600" stroke="#e63946" stroke-width="1" stroke-dasharray="6,4" opacity="0.7"/>
+  <polygon points="231,606 237,598 240,608" fill="#e63946" opacity="0.7"/>
+  <text x="225" y="672" text-anchor="middle" fill="#e63946" font-size="9" font-weight="600">▲ climb rig legs</text>
+
+  <!-- bottom-center fast-rope -->
+  <use href="#s9" x="420" y="600" width="22" height="22"/>
+  <use href="#s9" x="455" y="600" width="22" height="22"/>
+  <line x1="450" y1="670" x2="450" y2="622" stroke="#e63946" stroke-width="1" stroke-dasharray="6,4" opacity="0.7"/>
+  <polygon points="446,628 450,618 454,628" fill="#e63946" opacity="0.7"/>
+  <text x="450" y="688" text-anchor="middle" fill="#e63946" font-size="9" font-weight="600">▲ fast-rope from sub-launched drone</text>
+
+  <!-- bottom-right fast-rope + lead -->
+  <use href="#s9" x="650" y="600" width="22" height="22"/>
+  <use href="#s9" x="682" y="595" width="24" height="24"/>
+  <line x1="690" y1="655" x2="670" y2="600" stroke="#e63946" stroke-width="1" stroke-dasharray="6,4" opacity="0.7"/>
+  <polygon points="666,606 672,598 675,608" fill="#e63946" opacity="0.7"/>
+  <text x="678" y="672" text-anchor="middle" fill="#e63946" font-size="9" font-weight="600">▲ TEAM LEAD + drone</text>
+
+  <!-- === LEGEND === -->
+  <rect x="40" y="660" width="300" height="0" fill="none"/>
+  <rect x="560" y="90" width="300" height="150" fill="#0a1520" stroke="#1a2a3a" stroke-width="1" rx="3" opacity="0.95"/>
+  <text x="575" y="110" fill="#8899aa" font-size="11" font-weight="700" letter-spacing="1">FORCES</text>
+  <use href="#s9" x="573" y="118" width="18" height="18"/>
+  <text x="598" y="131" fill="#e63946" font-size="10">Section-9 Op ×5 — SP 15, HP 45</text>
+  <use href="#s9" x="573" y="140" width="18" height="18"/>
+  <text x="598" y="153" fill="#e63946" font-size="10" font-weight="600">Team Lead — SP 17, HP 55 + drone</text>
+  <text x="575" y="173" fill="#ffd166" font-size="9">Kill the drone → S9 loses coordination</text>
+  <text x="575" y="190" fill="#06d6a0" font-size="9">Break: lose 4 ops, OR Lead falls = immediate</text>
+  <text x="575" y="212" fill="#8899aa" font-size="10" font-weight="700">OBJECTIVE</text>
+  <text x="575" y="228" fill="#06d6a0" font-size="9">Case + rep + all PCs aboard, then lift off</text>
+
+  <!-- Bottom banner -->
+  <text x="450" y="710" text-anchor="middle" fill="#4a6a7a" font-size="10">Rig disarmed them — sidearms + Fredrik's VHP + melee only, until they reach the Ricochet on the chopper</text>
+</svg>
