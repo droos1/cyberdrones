@@ -2,30 +2,18 @@
 
 Minimal cheat sheet for at-the-table fast lookup. The core book has the full rules and the detail tables (hit locations, ammo types, critical injury table, cyberware Humanity costs, netrunning architecture). This file is just enough to spot-check during play and to size up NPC stats on the fly.
 
-> **📖 = official core-book rule.** This sheet runs several deliberate house simplifications. Where we diverge from the book, a `📖` line notes what the original rule is, so we know what we're bending. Summary below; details inline.
+> **This sheet now follows the official Cyberpunk RED core rules,** with **one deliberate house rule:** the campaign's compressed Difficulty Value ladder (11 / 13 / 15 / 17 / 19), because that's what every adventure in `adventures/` is written to. It's flagged with 📖 below; everything else here is book-accurate.
 
 ---
 
-## House Rules vs. Official RED — at a glance
+## The one house rule: the DV ladder
 
-| Rule | This table (house) | Official Cyberpunk RED |
-|------|--------------------|------------------------|
-| **Difficulty ladder** | 11 / 13 / 15 / 17 / 19 (Easy→Very Hard) | 13 Everyday · 15 Difficult · 17 Professional · 21 Heroic · 24 Incredible |
-| **Move distance** | MOVE in metres; run = ×2 | MOVE **×2** metres per Move Action; run (2nd Move Action) = ×4 |
-| **Dodging bullets** | Anyone may dodge ranged fire | Only characters with **REF 8+** can Evade ranged attacks |
-| **Range DVs** | Flat 13 / 15 / 20 / 25 | A separate range-DV table **per weapon type** (our flat table ≈ a pistol) |
-| **Autofire** | Pick ROF 2–4, DV 17, damage ROF × 2d6 | **Autofire skill** vs normal range DV; damage 2d6 × (amount you beat the DV), capped at the gun's Autofire (SMG ×3 / AR ×4); ≤25m |
-| **Suppressive fire** | 25m area, Evasion DV 15 or take 2d6 | 8×8m area, **no damage**; acting in the zone = −2; costs a Full Action + 10 rounds |
-| **Critical Injury trigger** | Any **two matching** damage dice; no bonus damage | **Two or more 6s** → **+5 damage that ignores armor** *and* roll on the Critical Injury table |
-| **"Critical Hit" (nat 10 to-hit)** | Roll a d10, add to damage | No such rule — a natural 10 explodes the **attack roll**, not damage |
-| **AP ammo** | Halves target SP | Halves SP **and** ablates armor by **2** (not 1) |
-| **Mortally Wounded** | Unconscious | Still **conscious & can act**, at −4 to all Checks and −6 MOVE; auto-Critical Injury if hit again |
-| **Death Save success** | "Stabilizes" you | Only **survives that round** — you keep rolling every turn until someone Stabilizes you |
-| **Stabilize DV** | First Aid DV 13 | First Aid **or** Paramedic at **DV 15** |
-| **First Aid / MedTech HP** | Heal 1d6 / 2d6 per scene | First Aid only **stabilizes** (0 HP restored); HP returns via rest (BODY/day) or Medtech surgery |
-| **Cover** | +2 light / +4 heavy to defense | Cover has its **own HP** and gets shot away — no flat defense bonus |
+| | Easy | Standard | Difficult | Hard | Very Hard |
+|--|------|----------|-----------|------|-----------|
+| **This campaign** | 11 | 13 | 15 | 17 | 19 |
+| **Official RED** | *(none)* | 13 Everyday | 15 Difficult | 17 Professional | 21 Heroic · 24 Incredible |
 
-Everything not listed here (skill-check formula, exploding 10 / fumble 1, initiative, ranged/melee attack rolls, damage → SP → HP, ablation on penetrating hits, headshot ×2, aimed-shot −8, Seriously Wounded −2, natural healing = BODY/day, Pain Editor) matches the book as written.
+The middle of the ladder (13 / 15 / 17) already matches the book — the campaign just adds an easier **DV 11** tier and caps the top at **19** instead of the book's 21 / 24. Kept on purpose so the DVs baked into the adventures stay calibrated. Everything else in this file is the book rule as written.
 
 ---
 
@@ -57,16 +45,13 @@ Everything not listed here (skill-check formula, exploding 10 / fumble 1, initia
 **Initiative:** `1d10 + REF` (no skill bonus). Rolled once at combat start; order holds.
 
 **Each turn, choose:**
-- **Move** (up to your MOVE stat in meters) **+ 1 Action**
-- *or* **Move ×2** (run, no action)
-
-> 📖 **Book:** a Move Action covers MOVE **×2** metres; running is a second Move Action (MOVE ×4 total) and spends your Action. Ours is ~half book speed.
+- **Move Action** (up to **MOVE ×2** metres) **+ 1 Action**
+- *or* **Run** — spend your Action on a second Move Action for **MOVE ×4** metres total (no attack)
 
 **Common Actions:** attack, aimed shot, autofire, suppressive fire, reload, draw weapon, skill use, brace, dodge, pick someone up.
 
 **Defending:**
-- **Dodge** ranged: `1d10 + DEX + Evasion` vs. attacker's roll. Most NPCs don't bother — they take the hit and rely on armor.
-  - 📖 **Book:** only characters with **REF 8+** may Evade ranged attacks at all. The DEX + Evasion roll itself is book-correct.
+- **Dodge** ranged: `1d10 + DEX + Evasion` vs. attacker's roll — but **only if you have REF 8+** (otherwise you can't dodge bullets). Most NPCs don't bother; they take the hit and rely on armor.
 - **Block / Parry** melee: `1d10 + DEX + Melee or Brawling` vs. attacker's roll.
 
 ---
@@ -75,24 +60,26 @@ Everything not listed here (skill-check formula, exploding 10 / fumble 1, initia
 
 **Ranged:** `1d10 + REF + Weapon Skill` vs. target's defense (their Evasion roll, or DV by range if they don't dodge).
 
-**Default range DVs** (when not using book bands):
+**Ranged DV by range & weapon** (the DV to hit — each weapon type has its own row):
 
-| Range | DV |
-|-------|----|
-| Point Blank / Close (≤6m) | 13 |
-| Medium (≤25m) | 15 |
-| Long (≤50m) | 20 |
-| Extreme (50m+) | 25 |
+| Range | Pistol | Shotgun (shell) | Assault Rifle |
+|-------|--------|-----------------|---------------|
+| 0–6m | 13 | 13 | 17 |
+| 7–12m | 15 | 15 | 16 |
+| 13–25m | 20 | 20 | 15 |
+| 26–50m | 25 | 25 | 13 |
+| 51–100m | 30 | 30 | 15 |
+| 101–200m | 30 | 35 | 20 |
+| 201–400m | — | — | 25 |
+| 401–800m | — | — | 30 |
+
+Pistols and shotguns are close-range tools — cheap DVs out to ~25m, brutal past that. Rifles stay usable far out (an AR is *easiest* at 26–50m). SMGs track the pistol column closely; snipers mirror the rifle (poor up close, best at range) — check the book for the exact SMG, sniper, bow and grenade rows.
 
 **Melee:** `1d10 + DEX + Melee Weapon or Brawling` vs. defender's Evasion or Block.
 
-**Autofire:** Choose ROF 2-4. DV 17 base to hit. Damage = ROF × 2d6 (typical) or as weapon spec.
+**Autofire:** Roll the **Autofire skill** (`1d10 + REF + Autofire`) vs the target's normal range DV. Damage = **2d6 × (how much you beat the DV by)**, capped at the gun's Autofire rating (**SMG ×3, Assault Rifle ×4**). Only works at **≤25m**.
 
-> 📖 **Book:** autofire uses the separate **Autofire skill** vs the normal range DV; damage = 2d6 × (how much you beat the DV), capped at the gun's Autofire rating (SMG ×3, AR ×4), range ≤25m. No flat DV 17, no "choose ROF."
-
-**Suppressive Fire:** All targets in 25m area make Evasion DV 15 or take 2d6, must stay in cover.
-
-> 📖 **Book:** suppressive fire deals **no damage** — it's an 8×8m zone (Full Action + 10 rounds); anyone who acts inside it other than moving in cover takes −2.
+**Suppressive Fire:** Spend a **Full Action + 10 rounds** to saturate an area (~8×8m). **No damage** — it's area denial: anyone caught in the zone who does anything other than stay/move in cover is penalised. Pins heads down.
 
 **Aimed Shot:** -8 to roll, choose location (most often head = damage ×2 after head armor).
 
@@ -103,13 +90,11 @@ Everything not listed here (skill-check formula, exploding 10 / fumble 1, initia
 1. Roll weapon dice
 2. Subtract target's **SP** (Stopping Power) at the relevant location
 3. Remaining = HP loss
-4. **Ablation:** each hit that goes *through* armor reduces that armor's SP by 1
-5. **Critical Injury trigger:** if any **two dice match** in the damage roll, target also takes a Critical Injury (roll on table OR pick a flavorful penalty — see below)
-
-> 📖 **Book:** a Critical Injury triggers only on **two or more 6s**, and it also deals **+5 damage straight to HP (ignoring armor)**. We use any matching pair and drop the +5.
+4. **Ablation:** each hit that penetrates armor reduces that armor's SP by 1 (AP ammo ablates by 2)
+5. **Critical Injury:** roll **two or more 6s** on the damage dice → the target takes **+5 bonus damage straight to HP (ignoring armor)** *and* a Critical Injury (roll on the Head or Body table, or pick a fast-play effect below)
 
 **Headshot:** damage doubled *after* head armor is applied.
-**Armor-Piercing ammo:** target SP is halved for that hit.
+**Armor-Piercing ammo:** halves the target's SP for that hit (round up) and ablates that armor by 2 instead of 1.
 
 **Weapon damage at-a-glance (use for NPCs):**
 
@@ -130,13 +115,11 @@ Everything not listed here (skill-check formula, exploding 10 / fumble 1, initia
 
 ---
 
-## Critical Hits & Injuries
+## Critical Injuries
 
-**Critical Hit (natural 10 to-hit roll):** Roll a second d10. **Add** to damage roll. (If the second roll is also a 10, keep exploding.)
+**Natural 10 on a roll** explodes that roll — roll again and add. On an **attack roll** that just means a bigger to-hit total (it can turn a near-miss into a hit); it does **not** add to damage. RED has no separate bonus-damage "critical hit."
 
-> 📖 **Book:** RED has no bonus-damage crit. A natural 10 explodes the **attack roll** (roll again, add to the to-hit), not damage — the only bonus damage in the book is the +5 from a two-6s Critical Injury. Our "add a d10 to damage" is a house call.
-
-**Critical Injury (two matching dice in the damage roll):** Beyond HP loss, the target suffers a lasting injury. Roll on the Body or Head Critical Injury table in the book, OR — for fast play — pick from this lazy substitute:
+**Critical Injury (two or more 6s in the damage roll):** on top of the +5 bonus damage, the target suffers a lasting injury. Roll on the Body or Head Critical Injury table in the book, OR — for fast play — pick from this lazy substitute:
 
 | Quick Crit Effect | Use For |
 |-------------------|---------|
@@ -157,19 +140,14 @@ When in doubt: **-2 to all rolls for the rest of the fight** is the boring defau
 | State | Threshold | Effect |
 |-------|-----------|--------|
 | **Lightly Wounded** | > HP/2 | No penalty |
-| **Seriously Wounded** | ≤ HP/2 | **-2 to all rolls.** Pain Editor cyberware ignores this. |
-| **Mortally Wounded** | 0 or below | Unconscious; begin Death Saves |
+| **Seriously Wounded** | ≤ HP/2 | **−2 to all rolls.** Pain Editor cyberware ignores this. |
+| **Mortally Wounded** | 0 or below | **−4 to all Checks, −6 MOVE** (min 1); Death Save each turn; auto-Critical Injury if hit again. *Not* unconscious — you can still act. |
 
-> 📖 **Book:** a Mortally Wounded character isn't knocked out — they can still act, at **−4 to all Checks and −6 MOVE** (min 1), and take an **automatic** Critical Injury if hit again. (Seriously Wounded's −2 is book-correct.)
-
-**Death Save (each round at 0 HP or below):**
-- Roll `1d10`
-- If `d10 + cumulative death-save penalty ≤ BODY` → stabilize this round
-- If exceeds BODY → death
-- Penalty starts at 0, **+1 per prior save attempt**
-- A successful **First Aid (DV 13)** or **MedTech (DV 15)** stabilizes them and stops further saves
-
-> 📖 **Book:** you roll **under** your BODY (a natural 10 always fails), and passing only means you **survive that round and can still act** — it does NOT stabilize you. Stabilizing is a separate First Aid **or** Paramedic check at **DV 15** (our DV 13 is a house discount); one success ends the saves and leaves you at 1 HP.
+**Death Save (start of each turn while Mortally Wounded):**
+- Roll `1d10 + cumulative death-save penalty`. If the total is **under your BODY**, you survive the turn and act normally. **A natural 10 always fails.**
+- Penalty starts at 0, **+1 per save attempt** (and +1 whenever you're hit while down) — so it gets harder each turn.
+- Surviving a save does **not** stabilize you; you keep rolling every turn until treated.
+- **Stabilize:** a **First Aid or Paramedic check, DV 15**. Success ends the Death Saves and leaves the character at 1 HP (unconscious).
 
 ---
 
@@ -177,13 +155,12 @@ When in doubt: **-2 to all rolls for the rest of the fight** is the boring defau
 
 | Method | Effect | Notes |
 |--------|--------|-------|
-| **First Aid** (TECH, DV 13) | 1d6 HP / scene | Once per character per scene |
-| **MedTech / Paramedic** (TECH, DV 15) | 2d6 HP / scene | Also stabilizes Death Saves |
-| **MedTech autoinjector** | 1d6 HP | Single-use consumable |
-| **Surgery / clinic** | Restores HP over hours/days of downtime | Ripperdoc / Trauma Team work |
-| **Natural rest** | BODY HP per day of full rest | Cumulative |
+| **First Aid** (TECH + First Aid; DV 15 to stabilize, DV 13 to treat some injuries) | **No HP** — stabilizes the dying and treats specific Critical Injuries | Does not restore hit points |
+| **Paramedic / Medtech** | Stabilizes; a Medtech restores HP via **Surgery** & pharma over downtime | The real source of HP recovery besides rest |
+| **Natural rest** | **BODY HP per full day** of rest (once stabilized) | Cumulative |
+| **Speedheal / drugs** | Some consumables restore HP | See gear lists |
 
-> 📖 **Book:** First Aid only **stabilizes** — it restores **0 HP**. Lost HP comes back through natural rest (BODY/day, once stabilized) or a Medtech's Surgery over downtime. Our per-scene 1d6 / 2d6 heals are a house shortcut to keep fights moving. (Natural rest = BODY/day is book-correct.)
+> **No mid-combat topping-up:** by the book you can't just First-Aid someone back to fighting shape during a fight — HP returns over downtime. If you want faster in-scene healing for pacing, make that a deliberate house call.
 
 ---
 
@@ -242,14 +219,11 @@ NPCs roll `1d10 + REF`. Quick-tier:
 
 ## Common Modifiers
 
-**Cover (adds to defender's effective DV / Evasion):**
-- Light cover (chair, car door): +2
-- Heavy cover (wall, engine block): +4
-- Full cover with firing slit: effectively immune except through slit
+**Cover:** while **fully behind** something that can stop a bullet, you **can't be hit** — but the cover has its own HP (each 2×2m chunk) and gets shot away; at 0 HP it's gone. You're exposed the moment you lean out to shoot. No flat to-hit bonus.
 
-> 📖 **Book:** cover gives no flat bonus — each 2×2m chunk of cover has its **own HP** and gets shot away; you're safe behind it until it's destroyed or you lean out. The +2/+4 is our fast stand-in.
+> *Fast-play option:* if tracking cover HP is a drag, many tables instead give the defender **+2 (light) / +4 (heavy)**. Use it if you like, but it's a house shortcut, not the book rule.
 
-**Range step beyond close (when not using book bands):** +3 DV to hit per step
+**Range:** use the Ranged DV table above — the DV is set by weapon type and range band.
 
 **Visibility / Environment:**
 - Darkness (no low-light optics): -3 ranged
