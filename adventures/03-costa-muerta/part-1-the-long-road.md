@@ -25,7 +25,7 @@ Kojo has the lead. He's been quietly putting out the word south of the border, w
 | **Ofelia "Ofi" Castañeda** | Kojo's Tijuana fixer | Runs the players' TJ safehouse and a flower-shop front in Zona Norte. Sharp, fast, doesn't sleep. Knows everybody who matters. *(Full role in Session Two.)* |
 | **The Mole** | Recurring from Adv 1–2 | Brief background sighting on the road north. No interaction this session. Confirms they got out |
 
-*Session Two buyers (Doña Esperanza, Vega, Tía Esmé, Iku Tanaka) and the cyber-lucha cast are in `part-2-the-auction.md`.*
+*Session Two buyers (Vega, Tía Esmé, Iku Tanaka), the Curanderos host Don Rafael Vargas, and the cyber-lucha cast are in `part-2-the-auction.md`.*
 
 ## Calendar (Session One leg)
 
@@ -246,8 +246,8 @@ Run this as a **single resolution beat**, not a full combat. The highway chase a
 
 | Successes | Outcome |
 |-----------|---------|
-| 3 | Clean win. No PC injuries. Cati and Reyna's cousin both fine. Full faction reward |
-| 2 | Win, messy. One PC takes a Light Wound (their choice). Reyna's cousin is among the wounded (sets up the Part 5 hook) |
+| 3 | Clean win. No PC injuries. Cati and El Viudo's cousin both fine. Full faction reward |
+| 2 | Win, messy. One PC takes a Light Wound (their choice). El Viudo's cousin is among the wounded (sets up the Part 5 hook) |
 | 1 | Pyrrhic. One PC Seriously Wounded. Cati is grazed and shaken (lives). Camp holds but Mateo is grim |
 | 0 | Camp barely holds. Two PCs Seriously Wounded. Mateo's gratitude is muted — Tía Esmé's family-bond offer in Part 6 requires PERSUASION DV 17 instead of being offered freely |
 
@@ -378,7 +378,7 @@ The team reaches Castillo's clerk. Standard interrogation. Vehicle search incomi
 - **Session break:** Ended on **arrival in Tijuana** (D-3).
 
 **Assumed from the above — confirm with Daniel before/at the start of Session Two:**
-- [ ] **Camp defense success tier?** "Good showing, minor injuries" reads as **2–3 successes**. If it was exactly **2**, then **Reyna Solano's cousin was among the wounded** — that's the warm-recognition hook at the Session Two cyber-lucha bout. Nail this down; it changes Reyna's greeting.
+- [ ] **Camp defense success tier?** "Good showing, minor injuries" reads as **2–3 successes**. If it was exactly **2**, then **El Viudo's cousin was among the wounded** — that's the warm-recognition hook at the Session Two cyber-lucha bout. Nail this down; it changes El Viudo's greeting.
 - [ ] **Mateo's letter to Tía Esmé** — earned? (Needed to get in the door for her buyer meeting in Session Two.) Assumed **yes**.
 - [ ] **Castillo's snake-mark coin** — earned, and used at the border for clean passage? Assumed **yes** (they got south clean). Confirm the border was crossed on the coin vs. bribe/bluff/netrun.
 - [ ] **Leveling package applied?** Skills / Role rank / cyberware / Humanity recovery recorded on sheets. Update `campaign/player-characters.md` if not already done.
