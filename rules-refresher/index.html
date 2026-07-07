@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cyberdrones — RED Rules Refresher</title>
+<style>
+  :root{
+    --bg:#0a0b10; --panel:#12141d; --panel2:#171a26; --ink:#e8ecf4;
+    --dim:#8b93a7; --line:#262b3d; --cyan:#22d3ee; --mag:#f0289b;
+    --yellow:#ffd23f; --green:#33e39f; --red:#ff5470;
+    --shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(240,40,155,.10), transparent 60%),
+      radial-gradient(1000px 500px at -10% 10%, rgba(34,211,238,.10), transparent 55%),
+      var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5; -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:20px 16px 48px}
+  header.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px}
+  .brand{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+    font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan)}
+  h1{font-size:26px;margin:2px 0 4px;letter-spacing:-.01em}
+  .sub{color:var(--dim);font-size:13.5px;margin:0 0 20px}
+  .sub code{color:var(--yellow);font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:12px}
+
+  /* category grid */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:520px){.grid{grid-template-columns:1fr}}
+  .card{
+    background:linear-gradient(180deg,var(--panel2),var(--panel));
+    border:1px solid var(--line);border-radius:14px;padding:16px;
+    cursor:pointer;text-align:left;color:inherit;font:inherit;
+    transition:border-color .15s ease, transform .06s ease;
+    display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow);
+    position:relative;overflow:hidden;
+  }
+  .card:hover{border-color:var(--cyan)}
+  .card:active{transform:translateY(1px)}
+  .card .em{font-size:22px}
+  .card h3{margin:0;font-size:16.5px}
+  .card p{margin:0;color:var(--dim);font-size:12.5px}
+  .card .meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;
+    font-size:11.5px;color:var(--dim);padding-top:6px}
+  .badge{font-family:"SF Mono",ui-monospace,Menlo,monospace;padding:2px 8px;border-radius:999px;
+    border:1px solid var(--line);color:var(--dim)}
+  .badge.good{color:var(--green);border-color:rgba(51,227,159,.4)}
+  .badge.mid{color:var(--yellow);border-color:rgba(255,210,63,.4)}
+  .badge.low{color:var(--red);border-color:rgba(255,84,112,.4)}
+
+  .rowbtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+  button.ghost{
+    background:transparent;border:1px solid var(--line);color:var(--dim);
+    padding:9px 14px;border-radius:10px;font:inherit;font-size:13px;cursor:pointer}
+  button.ghost:hover{border-color:var(--red);color:var(--red)}
+
+  /* quiz */
+  .qbar{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+  .back{background:transparent;border:1px solid var(--line);color:var(--dim);
+    border-radius:10px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer}
+  .back:hover{border-color:var(--cyan);color:var(--cyan)}
+  .progress{flex:1;height:8px;background:var(--panel);border:1px solid var(--line);
+    border-radius:999px;overflow:hidden}
+  .progress > i{display:block;height:100%;width:0;
+    background:linear-gradient(90deg,var(--cyan),var(--mag));transition:width .25s ease}
+  .count{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:12px;color:var(--dim);min-width:44px;text-align:right}
+
+  .qcat{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--mag);margin-bottom:8px}
+  .qtext{font-size:19px;font-weight:600;margin:0 0 18px;line-height:1.4}
+  .hr-badge{display:inline-flex;align-items:center;gap:5px;font-family:"SF Mono",ui-monospace,Menlo,monospace;
+    font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);
+    border:1px solid rgba(255,210,63,.45);background:rgba(255,210,63,.08);
+    padding:3px 9px;border-radius:999px;margin:0 0 14px;font-weight:700}
+  .hr-badge.mini{font-size:9.5px;padding:2px 7px;margin:0}
+
+  .choices{display:flex;flex-direction:column;gap:10px}
+  .choice{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:14px 16px;font:inherit;font-size:15px;color:var(--ink);text-align:left;
+    cursor:pointer;display:flex;gap:12px;align-items:flex-start;
+    transition:border-color .12s ease,background .12s ease}
+  .choice:hover:not(:disabled){border-color:var(--cyan)}
+  .choice:disabled{cursor:default}
+  .choice .key{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:13px;color:var(--dim);
+    border:1px solid var(--line);border-radius:6px;min-width:24px;height:24px;
+    display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
+  .choice.correct{border-color:var(--green);background:rgba(51,227,159,.10)}
+  .choice.correct .key{border-color:var(--green);color:var(--green)}
+  .choice.wrong{border-color:var(--red);background:rgba(255,84,112,.10)}
+  .choice.wrong .key{border-color:var(--red);color:var(--red)}
+  .choice.correct .mark,.choice.wrong .mark{margin-left:auto;font-weight:700}
+  .choice.correct .mark{color:var(--green)}
+  .choice.wrong .mark{color:var(--red)}
+
+  .why{margin-top:16px;border:1px solid var(--line);border-left:3px solid var(--cyan);
+    background:var(--panel);border-radius:10px;padding:13px 15px;font-size:14px;
+    opacity:0;max-height:0;overflow:hidden;transition:opacity .2s ease}
+  .why.show{opacity:1;max-height:400px}
+  .why b{color:var(--cyan);font-family:"SF Mono",ui-monospace,Menlo,monospace;
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:4px}
+  .why.miss{border-left-color:var(--red)}
+  .why.miss b{color:var(--red)}
+  .why .official{display:block;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);
+    color:var(--dim);font-size:13px}
+  .why .official b{display:inline;color:var(--yellow);font-family:"SF Mono",ui-monospace,Menlo,monospace;
+    font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin:0}
+  .why .official b::before{content:"📖 "}
+
+  .next{margin-top:18px;display:flex;justify-content:flex-end}
+  .next button{background:linear-gradient(90deg,var(--cyan),var(--mag));border:none;color:#04060a;
+    font:inherit;font-weight:700;font-size:15px;padding:12px 22px;border-radius:11px;cursor:pointer;
+    opacity:0;pointer-events:none;transition:opacity .2s ease}
+  .next button.show{opacity:1;pointer-events:auto}
+
+  /* results */
+  .result{text-align:center;padding:24px 8px}
+  .score{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:64px;font-weight:700;
+    line-height:1;margin:10px 0}
+  .score small{font-size:24px;color:var(--dim)}
+  .verdict{font-size:18px;margin:6px 0 4px}
+  .resnote{color:var(--dim);font-size:13.5px;margin-bottom:22px}
+  .result .rowbtns{justify-content:center}
+  .result button.primary{background:linear-gradient(90deg,var(--cyan),var(--mag));border:none;
+    color:#04060a;font-weight:700}
+  footer{color:var(--dim);font-size:11.5px;text-align:center;margin-top:34px;
+    font-family:"SF Mono",ui-monospace,Menlo,monospace;letter-spacing:.04em}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+
+<script>
+/* ============================================================
+   Cyberpunk RED — Rules Refresher
+   All answers sourced from this repo's RULES.md (the campaign's
+   house-ruled quick reference), NOT the official core book.
+   Where the table differs from the book, the reasoning says so.
+   ============================================================ */
+
+const QUIZ = [
+  {
+    id:"skills", name:"Skill Checks & DVs", em:"🎲",
+    blurb:"The core roll, crits, and the campaign difficulty scale.",
+    questions:[
+      {q:"What's the core formula for a skill check?",
+       choices:["1d10 + STAT + SKILL vs. DV","1d20 + SKILL vs. DV","2d6 + STAT vs. DV","1d10 × SKILL vs. DV"],
+       answer:0, why:"Every non-combat check is 1d10 plus the relevant STAT plus the SKILL, compared to a target Difficulty Value."},
+      {q:"You roll a natural 10 on the d10. What happens?",
+       choices:["Roll another d10 and ADD it (it can keep chaining)","Auto-success, stop rolling","Roll another d10 and take the higher","Nothing special — 10 is just 10"],
+       answer:0, why:"A natural 10 explodes: roll again and add. If that's also a 10, keep going."},
+      {q:"You roll a natural 1 on the d10. What happens?",
+       choices:["Roll another d10 and SUBTRACT it (a critical failure)","Auto-fail, no matter the total","Reroll the whole check","Roll another d10 and add it"],
+       answer:0, why:"A natural 1 is a critical failure: roll again and subtract. It also chains on another 1."},
+      {q:"In this campaign, what DV is a routine professional / 'Standard' task?",
+       choices:["13","9","15","11"],
+       answer:0, why:"The campaign scale puts Standard at DV 13 (awareness in a crowd, a routine pro task).", house:true, official:"Book ladder: 13 Everyday · 15 Difficult · 17 Professional · 21 Heroic · 24 Incredible. This table uses its own compressed 11–19 scale (13/15/17 happen to line up)."},
+      {q:"What DV does the campaign use for an 'Easy' task like hailing a cab?",
+       choices:["11","9","13","10"],
+       answer:0, why:"Easy is DV 11 on the campaign scale (the book's ladder is different — this table starts at 11).", house:true, official:"Book ladder: 13 Everyday · 15 Difficult · 17 Professional · 21 Heroic · 24 Incredible. There is no DV 11 in the book — this table's 11–19 scale is house."},
+      {q:"'Very Hard' — spotting the Arasaka logo in dim light — is what DV?",
+       choices:["19","17","21","20"],
+       answer:0, why:"The campaign tops its everyday ladder at DV 19 = Very Hard.", house:true, official:"Book's hard tiers are higher: Heroic 21, Incredible 24. This table caps its ladder at 19."},
+      {q:"Hacking a panel under pressure or a hard negotiation is 'Difficult'. What DV?",
+       choices:["15","13","17","14"],
+       answer:0, why:"Difficult tasks sit at DV 15 on the campaign scale.", house:true, official:"15 = Difficult in the book too — same value, part of the 13/15/17/21/24 ladder."},
+      {q:"On an opposed check that ends in a tie, who wins?",
+       choices:["The defender","The attacker","Re-roll","Whoever has the higher STAT"],
+       answer:0, why:"Both sides roll, highest total wins, and ties go to the defender."},
+      {q:"DV 17 on the campaign scale represents which difficulty?",
+       choices:["Hard","Difficult","Very Hard","Standard"],
+       answer:0, why:"17 = Hard (cross a collapsing rooftop, talk an exec into a real concession).", house:true, official:"The book calls DV 17 Professional. This table renames the tiers (Easy→Very Hard, 11–19)."},
+      {q:"Does the exploding 10 only happen once?",
+       choices:["No — a 10 on the bonus die explodes again, chaining","Yes, only the first 10 counts","Only if your skill is 10+","Only on combat rolls"],
+       answer:0, why:"Both the +10 (success) and −1 (failure) chains keep going as long as you keep rolling the trigger number."},
+      {q:"How many dice do you physically roll for the base of a check (before crits)?",
+       choices:["One d10","Two d10","One d6","One d20"],
+       answer:0, why:"It's a single d10 added to STAT + SKILL. Extra dice only appear on a natural 10 or 1."},
+      {q:"On an opposed check with no ties, who wins?",
+       choices:["Highest total wins","Lowest total wins","Attacker always","Defender always"],
+       answer:0, why:"Opposed = both roll their full 1d10 + STAT + SKILL; the higher total takes it."}
+    ]
+  },
+  {
+    id:"turns", name:"Combat Turns & Actions", em:"⏱️",
+    blurb:"Initiative, your move + action, and defending.",
+    questions:[
+      {q:"What do you roll for Initiative?",
+       choices:["1d10 + REF (no skill)","1d10 + REF + a combat skill","1d10 + DEX","1d20 + REF"],
+       answer:0, why:"Initiative is 1d10 + REF only — no skill bonus is added."},
+      {q:"Is a skill added to your Initiative roll?",
+       choices:["No","Yes, your best combat skill","Yes, Evasion","Only if you have a Sandevistan"],
+       answer:0, why:"Just the raw REF stat plus the die. Cyberware like Kerenzikov can add a flat bonus, but no skill."},
+      {q:"When is Initiative rolled?",
+       choices:["Once at the start of combat; the order holds","Every round","Only when someone new joins","At the end of each round"],
+       answer:0, why:"Roll once at combat start and keep that order for the whole fight."},
+      {q:"On a normal turn, what do you get?",
+       choices:["A Move (up to your MOVE in meters) + 1 Action","Two Actions","1 Action only","Unlimited moves + 1 Action"],
+       answer:0, why:"Standard turn = move up to your MOVE stat in meters, plus one Action such as an attack.", house:true, official:"By the book a Move Action covers MOVE ×2 metres (running = a second move, MOVE ×4). This table uses MOVE metres, run = ×2 — about half book speed."},
+      {q:"You want to run flat-out this turn. What do you give up?",
+       choices:["Your Action — Move ×2 means no action","Nothing, you can still attack","Your next turn","Half your armor"],
+       answer:0, why:"Running is Move ×2 and uses your whole turn — no Action."},
+      {q:"How far can you move on a normal turn?",
+       choices:["Up to your MOVE stat in meters","Up to MOVE ×2 meters","Exactly 6 meters","Up to your BODY in meters"],
+       answer:0, why:"A normal move is up to MOVE meters. Doubling it (running) costs your Action.", house:true, official:"By the book a Move Action is MOVE ×2 metres, and running (a second move) is MOVE ×4. This table halves that."},
+      {q:"Which of these uses up your one Action for the turn?",
+       choices:["Making an attack","Breathing","Standing still","Being in cover"],
+       answer:0, why:"Attacks, reloads, drawing a weapon, aimed shots, skill use, etc. each take your Action."},
+      {q:"To dodge a ranged attack, what do you roll?",
+       choices:["1d10 + DEX + Evasion vs. the attacker's roll","1d10 + REF vs. DV 15","1d10 + BODY + armor","You can't dodge bullets"],
+       answer:0, why:"Dodging ranged fire is an opposed 1d10 + DEX + Evasion against the shooter's attack total.", house:true, official:"By the book only characters with REF 8+ can Evade ranged fire at all. The DEX + Evasion roll itself is book-correct."},
+      {q:"Do most NPCs bother dodging incoming fire?",
+       choices:["No — they take the hit and rely on armor","Yes, always","Only bosses","Only if unarmored"],
+       answer:0, why:"By convention most NPCs eat the shot and let their SP soak it, saving dodges for named threats."},
+      {q:"To block or parry a melee attack, what do you roll?",
+       choices:["1d10 + DEX + Melee or Brawling vs. the attacker","1d10 + REF + Evasion","1d10 + BODY","1d10 + WILL"],
+       answer:0, why:"Melee defense is an opposed 1d10 + DEX + Melee (or Brawling) against the attacker's roll."},
+      {q:"Can you Move ×2 (run) and also make an attack the same turn?",
+       choices:["No","Yes","Only with a pistol","Only if you rolled a 10 on initiative"],
+       answer:0, why:"Running is the whole turn. Attacking needs your Action, which running consumes."},
+      {q:"An aimed shot is taken as…",
+       choices:["Your Action, at −8 to the roll","A free bonus each turn","Two Actions","Your Move"],
+       answer:0, why:"An aimed shot uses your Action and takes a −8 penalty in exchange for choosing the hit location."}
+    ]
+  },
+  {
+    id:"ranged", name:"Ranged Combat", em:"🔫",
+    blurb:"Shooting: stat, range DVs, autofire, aimed shots.",
+    questions:[
+      {q:"What's the ranged attack roll?",
+       choices:["1d10 + REF + Weapon Skill","1d10 + DEX + Weapon Skill","1d10 + BODY + Weapon Skill","1d10 + REF only"],
+       answer:0, why:"Ranged attacks use 1d10 + REF + the relevant weapon skill (Handgun, Shoulder Arms, etc.)."},
+      {q:"Which stat drives ranged attacks?",
+       choices:["REF","DEX","BODY","COOL"],
+       answer:0, why:"Reflexes (REF) is the shooting stat. DEX is for melee — don't mix them up."},
+      {q:"If the target isn't dodging, what do you roll against?",
+       choices:["A DV set by the range to the target","Always DV 15","Their BODY","Their armor SP"],
+       answer:0, why:"An undodged shot is vs. a range-based DV; a dodging target instead makes an opposed Evasion roll."},
+      {q:"Close range (≤6m) — what's the to-hit DV?",
+       choices:["13","11","15","9"],
+       answer:0, why:"Point-blank / Close is DV 13 on the campaign's simplified range table.", house:true, official:"The book sets range DVs from a table per weapon type, so a rifle and a pistol differ. This flat 13/15/20/25 table is a house simplification (it roughly matches a pistol)."},
+      {q:"Medium range (≤25m) — what's the DV?",
+       choices:["15","13","17","20"],
+       answer:0, why:"Medium range is DV 15.", house:true, official:"Book range DVs come from a per-weapon table, not one flat scale. This 13/15/20/25 table is a house stand-in (≈ a pistol)."},
+      {q:"Long range (≤50m) — what's the DV?",
+       choices:["20","15","17","25"],
+       answer:0, why:"Long range jumps to DV 20; beyond 50m (Extreme) it's 25.", house:true, official:"Book range DVs vary by weapon (a rifle stays easier at long range than a pistol). This flat table is a house simplification."},
+      {q:"What's the penalty for taking an aimed shot?",
+       choices:["−8 to the roll","−4 to the roll","−2 to the roll","No penalty"],
+       answer:0, why:"Aiming costs −8, the trade for choosing where you hit (usually the head)."},
+      {q:"What does an aimed shot let you do?",
+       choices:["Choose the hit location","Ignore all armor","Attack twice","Add +5 damage automatically"],
+       answer:0, why:"It lets you pick the location — commonly the head, which doubles damage after head armor."},
+      {q:"What's the base DV to land an autofire attack?",
+       choices:["17","13","15","19"],
+       answer:0, why:"Autofire is harder — DV 17 base to hit.", house:true, official:"Book autofire uses the Autofire skill vs the normal range DV — there is no flat DV 17 and no choosing a ROF."},
+      {q:"How much damage does autofire typically deal?",
+       choices:["ROF × 2d6","Flat 2d6","5d6 always","ROF × 1d6"],
+       answer:0, why:"Pick a ROF of 2–4; typical autofire damage is ROF × 2d6 (or the weapon's spec).", house:true, official:"Book autofire damage = 2d6 × how much you beat the DV, capped at the gun's rating (SMG ×3, AR ×4), range ≤25m. Not ROF × 2d6."},
+      {q:"Suppressive fire forces targets in the area to…",
+       choices:["Make an Evasion check (DV 15) or take 2d6 and stay in cover","Fall prone automatically","Lose their next turn","Drop their weapon"],
+       answer:0, why:"Everyone in the 25m zone rolls Evasion DV 15 — fail and they take 2d6 and must stay pinned in cover.", house:true, official:"Book suppressive fire deals no damage: an 8×8m zone (Full Action + 10 rounds); acting inside it other than moving in cover gives −2."},
+      {q:"A target behind heavy cover (a wall or engine block) gets…",
+       choices:["+4 to their defense","+2 to their defense","No benefit","Half damage only"],
+       answer:0, why:"Heavy cover adds +4; light cover (a car door, a chair) adds +2.", house:true, official:"Book cover has no flat bonus — it has its own HP and gets shot away; you're safe until it's destroyed. The +2/+4 is a house stand-in."}
+    ]
+  },
+  {
+    id:"melee", name:"Melee & Brawling", em:"🥊",
+    blurb:"Fists, knives, blades — the up-close game.",
+    questions:[
+      {q:"What's the melee / brawling attack roll?",
+       choices:["1d10 + DEX + Melee Weapon or Brawling","1d10 + REF + Brawling","1d10 + BODY + Brawling","1d10 + DEX only"],
+       answer:0, why:"Up close you use 1d10 + DEX + Melee Weapon (armed) or Brawling (unarmed)."},
+      {q:"Which stat powers a brawling attack?",
+       choices:["DEX","REF","BODY","WILL"],
+       answer:0, why:"Melee and brawling run off DEX. REF is only for ranged — a common mix-up."},
+      {q:"A melee attack is resolved against…",
+       choices:["The defender's Evasion or Block roll","A flat DV 15","The defender's armor SP","The defender's BODY"],
+       answer:0, why:"Melee is opposed: your attack vs. the defender's dodge (Evasion) or block/parry."},
+      {q:"How much damage does a heavy melee weapon (sword, axe) do?",
+       choices:["3d6","2d6","1d6","5d6"],
+       answer:0, why:"Heavy melee lands 3d6 — same as a Heavy Pistol."},
+      {q:"A combat knife / light melee weapon does how much?",
+       choices:["1d6","2d6","3d6","1d10"],
+       answer:0, why:"Light melee (knives) is 1d6."},
+      {q:"'Big Knux' brawling boosters bump unarmed damage to…",
+       choices:["2d6","1d6","3d6","4d6"],
+       answer:0, why:"Big Knux (and similar cyber-knuckles) raise brawling damage to 2d6."},
+      {q:"Which stat does NOT go into a brawling attack?",
+       choices:["REF","DEX","The Brawling skill","1d10"],
+       answer:0, why:"Brawling is DEX + Brawling + 1d10. REF belongs to ranged attacks."},
+      {q:"You attack an enemy who is prone (on the ground) in melee. What happens to your roll?",
+       choices:["It's harder — attacker takes +2 to the DV","It's easier — you get +2","No change","You auto-hit"],
+       answer:0, why:"A prone target is +2 to the melee DV (harder to hit). At range, though, prone helps the defender."},
+      {q:"Can a melee/brawling hit cause a Critical Injury?",
+       choices:["Yes — the same damage-dice trigger applies","No, only guns crit","Only with a sword","Only on a natural 10"],
+       answer:0, why:"Any damage roll — melee included — can trigger a Critical Injury via matching dice.", house:true, official:"Book: a crit still needs two or more 6s (which also add +5 damage). This table uses any matching pair and drops the +5 — melee and ranged alike."},
+      {q:"On an opposed melee roll that ties, who comes out ahead?",
+       choices:["The defender — the blow doesn't land","The attacker","Both take damage","Re-roll"],
+       answer:0, why:"Ties favor the defender, so a tied attack simply misses."},
+      {q:"Can Brawling be used to block an incoming punch, not just throw one?",
+       choices:["Yes — block/parry uses Melee or Brawling","No, only Evasion blocks","Only Martial Arts blocks","Only if you're armed"],
+       answer:0, why:"The same Melee/Brawling skill covers both attacking and parrying in a melee."},
+      {q:"When would you use REF instead of DEX in a fight?",
+       choices:["For ranged attacks and Initiative","Never in combat","For melee damage","For blocking"],
+       answer:0, why:"REF handles shooting and Initiative; DEX handles hand-to-hand. Keep the two lanes straight."}
+    ]
+  },
+  {
+    id:"damage", name:"Damage, Armor & Crits", em:"💥",
+    blurb:"Turning hits into HP loss — SP, ablation, crits.",
+    questions:[
+      {q:"After rolling weapon dice, what's the next step?",
+       choices:["Subtract the target's SP; the rest is HP loss","Subtract the target's BODY","Halve the damage","Roll to confirm the hit"],
+       answer:0, why:"Damage − Stopping Power at that location = HP lost. Armor soaks first."},
+      {q:"What does 'SP' stand for?",
+       choices:["Stopping Power","Structural Points","Shield Power","Skill Points"],
+       answer:0, why:"SP = Stopping Power, the armor value you subtract from incoming damage."},
+      {q:"What is armor ablation?",
+       choices:["Each hit that goes through drops that armor's SP by 1","Armor gains SP over time","Armor is destroyed after one hit","SP doubles when hit"],
+       answer:0, why:"Every hit that penetrates ablates the armor by 1 SP, so it wears down over a firefight."},
+      {q:"In THIS campaign, what triggers a Critical Injury on a damage roll?",
+       choices:["Any two dice showing the same number (matching dice)","Two or more 6s specifically","Rolling max on every die","A natural 10 to hit"],
+       answer:0, why:"House rule: any two matching damage dice trigger a Critical Injury. (The core book uses two 6s — this table doesn't.)", house:true, official:"Book: two or more 6s → Critical Injury AND +5 damage straight to HP (ignoring armor). We use any matching pair and drop the +5."},
+      {q:"A headshot's damage is…",
+       choices:["Doubled, after head armor is subtracted","Doubled, before armor","Tripled","+5 flat"],
+       answer:0, why:"Apply head SP first, then double the remaining damage."},
+      {q:"Armor-Piercing ammo does what to the target's SP?",
+       choices:["Halves it for that hit","Ignores it completely","Doubles the damage","Nothing — it just looks cool"],
+       answer:0, why:"AP rounds halve the target's SP for that hit (and typically ablate as normal)."},
+      {q:"You roll a natural 10 on your to-hit roll (a Critical Hit). What's the bonus?",
+       choices:["Roll a second d10 and ADD it to the damage roll","Double the whole damage","+5 damage flat","Ignore armor"],
+       answer:0, why:"A crit hit adds an extra d10 to damage — and if that d10 is a 10, it keeps exploding.", house:true, official:"Book: RED has no bonus-damage crit. A natural 10 explodes the attack ROLL (not damage). The only bonus damage in the book is the +5 from a two-6s Critical Injury."},
+      {q:"A Very Heavy Pistol deals how much damage?",
+       choices:["4d6","3d6","2d6","5d6"],
+       answer:0, why:"Very Heavy Pistol = 4d6 (Fredrik's Pop-up arm territory)."},
+      {q:"A standard Heavy Pistol deals…",
+       choices:["3d6","2d6","4d6","1d6"],
+       answer:0, why:"Heavy Pistol = 3d6. Medium is 2d6, Very Heavy is 4d6."},
+      {q:"An Assault Rifle's single-shot damage is…",
+       choices:["5d6","3d6","4d6","2d6"],
+       answer:0, why:"Assault Rifle = 5d6 (same as a shotgun slug or sniper), with autofire up to ROF 4."},
+      {q:"A frag grenade does how much, and over what area?",
+       choices:["6d6 in an 8m radius","3d6 in a 5m radius","5d6, single target","4d6 in a 10m radius"],
+       answer:0, why:"Frag grenade = 6d6 to everyone in an 8m radius."},
+      {q:"A Medium Pistol deals how much damage?",
+       choices:["2d6","1d6","3d6","4d6"],
+       answer:0, why:"Medium Pistol = 2d6; Light Pistol is 1d6."}
+    ]
+  },
+  {
+    id:"wounds", name:"Wounds, Death & Healing", em:"🩸",
+    blurb:"Wound states, Death Saves, and patching up.",
+    questions:[
+      {q:"You drop to half your max HP or below. What state are you in?",
+       choices:["Seriously Wounded","Lightly Wounded","Mortally Wounded","Fine"],
+       answer:0, why:"At or below half HP you're Seriously Wounded."},
+      {q:"What's the mechanical penalty for being Seriously Wounded?",
+       choices:["−2 to all rolls","−4 to all rolls","Half MOVE only","No penalty, just narrative"],
+       answer:0, why:"Seriously Wounded is a flat −2 to all rolls. A Pain Editor ignores it."},
+      {q:"You hit 0 HP or below. What now?",
+       choices:["Mortally Wounded — unconscious, begin Death Saves","You die instantly","Seriously Wounded","You keep fighting at −2"],
+       answer:0, why:"0 or below = Mortally Wounded: you're down and start rolling Death Saves each round.", house:true, official:"Book: a Mortally Wounded character isn't unconscious — they can still act, at −4 to all Checks and −6 MOVE, and take an automatic Critical Injury if hit again."},
+      {q:"What penalty do you take while merely Lightly Wounded (above half HP)?",
+       choices:["None","−1 to all rolls","−2 to all rolls","Half MOVE"],
+       answer:0, why:"Lightly Wounded carries no penalty — the −2 only kicks in once you're Seriously Wounded."},
+      {q:"How is a Death Save resolved?",
+       choices:["Roll 1d10; if d10 + cumulative penalty ≤ BODY, you stabilize","Roll 1d10 vs DV 15","Roll under your WILL","Roll 2d6 vs BODY"],
+       answer:0, why:"Roll 1d10 and add the running penalty; if the total is ≤ your BODY you hold on this round.", house:true, official:"Book: roll UNDER your BODY (a natural 10 always fails). Passing means you survive that round and can still act — you're not yet stabilized; that's a separate First Aid/Paramedic check at DV 15."},
+      {q:"How does the Death Save penalty change over time?",
+       choices:["Starts at 0, +1 for each prior save attempt","Stays at 0","+2 each round","Equals your missing HP"],
+       answer:0, why:"The penalty climbs by 1 every save, so surviving gets harder the longer you're down."},
+      {q:"What stops a character from having to keep rolling Death Saves?",
+       choices:["A successful First Aid (DV 13) or MedTech (DV 15) to stabilize them","Waiting one full round","Any healing item","Nothing — they roll until combat ends"],
+       answer:0, why:"Stabilizing (First Aid DV 13 or MedTech DV 15) ends the Death Saves.", house:true, official:"Book: stabilizing is First Aid OR Paramedic at DV 15 (our DV 13 is a house discount). One success ends the saves and leaves you at 1 HP."},
+      {q:"First Aid (TECH, DV 13) restores how much HP?",
+       choices:["1d6 HP per scene","2d6 HP per scene","Full HP","1d6 per round"],
+       answer:0, why:"First Aid heals 1d6 HP, once per character per scene.", house:true, official:"Book: First Aid only stabilizes — it restores 0 HP. Lost HP comes back via rest (BODY/day) or a Medtech's surgery. The 1d6/scene heal is a house shortcut."},
+      {q:"MedTech / Paramedic (TECH, DV 15) does what First Aid can't?",
+       choices:["Heals 2d6 and also stabilizes Death Saves","Heals 1d6 only","Nothing extra","Restores all HP instantly"],
+       answer:0, why:"MedTech heals 2d6 per scene and can stabilize a dying character.", house:true, official:"Book: a Medtech stabilizes and heals via Surgery over downtime, not a flat 2d6/scene. The per-scene heal is a house shortcut."},
+      {q:"How much does a full day of natural rest restore?",
+       choices:["HP equal to your BODY per day","1d6 per day","Half your max HP","Nothing without a medic"],
+       answer:0, why:"Full rest heals BODY HP per day, and it stacks across days."},
+      {q:"Which cyberware lets you ignore the Seriously Wounded penalty?",
+       choices:["Pain Editor","Kerenzikov","Sandevistan","Subdermal Armor"],
+       answer:0, why:"A Pain Editor shrugs off the −2 from being Seriously Wounded."},
+      {q:"When do you make a Death Save?",
+       choices:["Each round while at 0 HP or below","Once, when you drop","Only at the end of combat","Every time you're hit"],
+       answer:0, why:"You roll a Death Save every round you remain at 0 HP or lower."}
+    ]
+  }
+];
+
+/* ---------------- storage ---------------- */
+const LS_KEY = "cdr_quiz_v1";
+function loadStats(){ try{ return JSON.parse(localStorage.getItem(LS_KEY)) || {}; }catch(e){ return {}; } }
+function saveStats(s){ try{ localStorage.setItem(LS_KEY, JSON.stringify(s)); }catch(e){} }
+function recordResult(catId, correct, total){
+  const s = loadStats();
+  const pct = Math.round(100*correct/total);
+  const prev = s[catId] || {best:0, attempts:0};
+  s[catId] = { best: Math.max(prev.best, pct), lastPct: pct, attempts: (prev.attempts||0)+1, total };
+  saveStats(s);
+}
+
+/* ---------------- helpers ---------------- */
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+const KEYS = ["A","B","C","D","E"];
+const app = document.getElementById("app");
+
+/* ---------------- screens ---------------- */
+function renderHome(){
+  const stats = loadStats();
+  const cards = QUIZ.map(cat=>{
+    const st = stats[cat.id];
+    let badge = `<span class="badge">${cat.questions.length} Q</span>`;
+    if(st){
+      const cls = st.best>=80 ? "good" : st.best>=50 ? "mid" : "low";
+      badge = `<span class="badge ${cls}">Best ${st.best}%</span>`;
+    }
+    const hr = cat.questions.filter(q=>q.house).length;
+    const hrTag = hr ? `<span class="hr-badge mini">⚑ ${hr}</span>` : '';
+    return `<button class="card" data-cat="${cat.id}">
+      <span class="em">${cat.em}</span>
+      <h3>${cat.name}</h3>
+      <p>${cat.blurb}</p>
+      <span class="meta"><span style="display:flex;gap:6px;align-items:center">${badge}${hrTag}</span><span>${st? "tap to retry":"tap to start"}</span></span>
+    </button>`;
+  }).join("");
+
+  app.innerHTML = `
+    <header class="top">
+      <span class="brand">// Cyberdrones</span>
+      <span class="brand" style="color:var(--mag)">RED v1</span>
+    </header>
+    <h1>Rules Refresher</h1>
+    <p class="sub">Quick multiple-choice drills for Cyberpunk&nbsp;RED. Answers follow this campaign's <code>RULES.md</code>. A <span class="hr-badge mini">⚑</span> marks a <b style="color:var(--yellow);font-weight:600">house rule</b> — those questions also show what the official core book says.</p>
+    <div class="grid">${cards}</div>
+    <div class="rowbtns">
+      <button class="ghost" id="reset">Reset all progress</button>
+    </div>
+    <footer>Scores saved locally on this device · ${QUIZ.reduce((n,c)=>n+c.questions.length,0)} questions</footer>
+  `;
+  app.querySelectorAll(".card").forEach(b=>b.onclick=()=>startQuiz(b.dataset.cat));
+  app.querySelector("#reset").onclick=()=>{
+    if(confirm("Clear all saved scores on this device?")){ saveStats({}); renderHome(); }
+  };
+  window.scrollTo(0,0);
+}
+
+let session = null; // {cat, order:[{q, choices:[{text,correct}]}], idx, score, answered}
+
+function startQuiz(catId){
+  const cat = QUIZ.find(c=>c.id===catId);
+  const order = shuffle(cat.questions).map(item=>{
+    const choices = shuffle(item.choices.map((text,i)=>({text, correct:i===item.answer})));
+    return { q:item.q, why:item.why, choices, house:!!item.house, official:item.official||"" };
+  });
+  session = { cat, order, idx:0, score:0, answered:false };
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const {cat, order, idx, score} = session;
+  const item = order[idx];
+  session.answered = false;
+  const pct = Math.round(100*idx/order.length);
+
+  app.innerHTML = `
+    <div class="qbar">
+      <button class="back" id="back">← Menu</button>
+      <div class="progress"><i style="width:${pct}%"></i></div>
+      <span class="count">${idx+1}/${order.length}</span>
+    </div>
+    <div class="qcat">${cat.em} ${cat.name} · Score ${score}</div>
+    ${item.house?'<div class="hr-badge">⚑ House Rule</div>':''}
+    <h2 class="qtext">${item.q}</h2>
+    <div class="choices">
+      ${item.choices.map((c,i)=>`
+        <button class="choice" data-i="${i}">
+          <span class="key">${KEYS[i]}</span>
+          <span class="txt">${c.text}</span>
+        </button>`).join("")}
+    </div>
+    <div class="why" id="why"></div>
+    <div class="next"><button id="next">${idx+1<order.length?"Next →":"See results →"}</button></div>
+  `;
+  app.querySelector("#back").onclick=()=>{ if(confirm("Leave this quiz? Progress in it won't be saved.")) renderHome(); };
+  app.querySelectorAll(".choice").forEach(btn=>btn.onclick=()=>pickAnswer(btn));
+  window.scrollTo(0,0);
+}
+
+function pickAnswer(btn){
+  if(session.answered) return;
+  session.answered = true;
+  const item = session.order[session.idx];
+  const chosen = item.choices[+btn.dataset.i];
+  const buttons = app.querySelectorAll(".choice");
+
+  buttons.forEach((b,i)=>{
+    b.disabled = true;
+    if(item.choices[i].correct){
+      b.classList.add("correct");
+      b.querySelector(".txt").insertAdjacentHTML("afterend",'<span class="mark">✓</span>');
+    }
+  });
+  if(!chosen.correct){
+    btn.classList.add("wrong");
+    btn.querySelector(".txt").insertAdjacentHTML("afterend",'<span class="mark">✗</span>');
+  } else {
+    session.score++;
+  }
+
+  const why = app.querySelector("#why");
+  why.className = "why show" + (chosen.correct? "" : " miss");
+  const officialLine = item.official
+    ? `<span class="official"><b>Official RED</b> ${item.official}</span>` : "";
+  why.innerHTML = `<b>${chosen.correct?"Correct":"Why"}</b>${item.why}${officialLine}`;
+
+  app.querySelector("#next").classList.add("show");
+  app.querySelector("#next").onclick = nextQuestion;
+}
+
+function nextQuestion(){
+  if(session.idx+1 < session.order.length){
+    session.idx++;
+    renderQuestion();
+  } else {
+    renderResults();
+  }
+}
+
+function renderResults(){
+  const {cat, order, score} = session;
+  const total = order.length;
+  const pct = Math.round(100*score/total);
+  recordResult(cat.id, score, total);
+
+  let verdict, note;
+  if(pct>=90){ verdict="Chromed and dialed in."; note="You could run a table blindfolded."; }
+  else if(pct>=70){ verdict="Solid. You know the beats."; note="A couple of edge cases to nail down."; }
+  else if(pct>=50){ verdict="Rusty but functional."; note="Worth another pass before the next session."; }
+  else { verdict="Flatlined. Time to re-read the sheet."; note="Run it again — this is how it sticks."; }
+
+  const color = pct>=70?"var(--green)":pct>=50?"var(--yellow)":"var(--red)";
+  app.innerHTML = `
+    <div class="result">
+      <div class="qcat" style="justify-content:center">${cat.em} ${cat.name}</div>
+      <div class="score" style="color:${color}">${pct}<small>%</small></div>
+      <div class="verdict">${verdict}</div>
+      <div class="resnote">${score} of ${total} correct · ${note}</div>
+      <div class="rowbtns">
+        <button class="primary" id="retry" style="border:none;color:#04060a;font-weight:700;padding:11px 20px;border-radius:11px;cursor:pointer;font:inherit;font-size:15px">Try again</button>
+        <button class="ghost" id="menu" style="color:var(--cyan);border-color:var(--line)">Back to menu</button>
+      </div>
+    </div>
+  `;
+  app.querySelector("#retry").onclick=()=>startQuiz(cat.id);
+  app.querySelector("#menu").onclick=renderHome;
+  window.scrollTo(0,0);
+}
+
+renderHome();
+</script>
+</body>
+</html>
